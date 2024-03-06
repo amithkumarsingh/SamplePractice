@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+
+        <shape>
+            <solid android:color="@color/gray_light"></solid>
+        </shape>
+    </item>
+
+    <!--<item >
+        <shape>
+            <solid android:color="@android:color/white"></solid>
+        </shape>
+    </item>-->
+    <item android:drawable="@drawable/block"/>
+</selector>
+
+
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    &lt;!&ndash; pressed &ndash;&gt;
+    <item android:drawable="?android:attr/selectableItemBackground" android:state_pressed="true"/>
+    &lt;!&ndash; focused &ndash;&gt;
+    <item android:drawable="?android:attr/selectableItemBackground" android:state_focused="true"/>
+    &lt;!&ndash; default &ndash;&gt;
+    <item android:drawable="@drawable/block"/>
+    </selector>-->

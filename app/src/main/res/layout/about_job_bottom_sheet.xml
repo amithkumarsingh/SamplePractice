@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/Preferred_location_speciality_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Preferred Speciality"
+        android:textColor="@color/gray" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Preferred_location_speciality_text"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray" />
+
+
+    <ListView
+        android:id="@+id/job_speciality_location_list"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/separator"
+        android:layout_marginTop="16dp"
+        android:divider="@null" />
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/job_speciality_location_list"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Done"
+        android:textColor="@color/app_green"
+        android:textSize="14sp" />
+
+</RelativeLayout>

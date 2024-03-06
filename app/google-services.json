@@ -1,0 +1,221 @@
+{
+  "project_info": {
+    "project_number": "252981997001",
+    "firebase_url": "https://ninth-arena-132423.firebaseio.com",
+    "project_id": "ninth-arena-132423",
+    "storage_bucket": "ninth-arena-132423.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252981997001:android:e46d33e3e85075e7",
+        "android_client_info": {
+          "package_name": "com.vam.whitecoats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252981997001-2ng0c6ifjls244fac3621s6ue84la25a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "252981997001-ffast305vdctrik6jh1elrt9ghl9blni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxjGhHcPVxJnIoypDHZyh5blRwViBRUvU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252981997001:android:e46d33e3e85075e7",
+        "android_client_info": {
+          "package_name": "com.vam.whitecoats.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252981997001-2ng0c6ifjls244fac3621s6ue84la25a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "252981997001-ffast305vdctrik6jh1elrt9ghl9blni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxjGhHcPVxJnIoypDHZyh5blRwViBRUvU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252981997001:android:e46d33e3e85075e7",
+        "android_client_info": {
+          "package_name": "com.vam.whitecoats.qakb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252981997001-2ng0c6ifjls244fac3621s6ue84la25a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "252981997001-ffast305vdctrik6jh1elrt9ghl9blni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxjGhHcPVxJnIoypDHZyh5blRwViBRUvU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252981997001:android:e46d33e3e85075e7",
+        "android_client_info": {
+          "package_name": "com.vam.whitecoats.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252981997001-2ng0c6ifjls244fac3621s6ue84la25a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "252981997001-ffast305vdctrik6jh1elrt9ghl9blni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxjGhHcPVxJnIoypDHZyh5blRwViBRUvU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252981997001:android:e46d33e3e85075e7",
+        "android_client_info": {
+          "package_name": "com.vam.whitecoats.stage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252981997001-2ng0c6ifjls244fac3621s6ue84la25a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "252981997001-ffast305vdctrik6jh1elrt9ghl9blni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxjGhHcPVxJnIoypDHZyh5blRwViBRUvU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252981997001:android:e46d33e3e85075e7",
+        "android_client_info": {
+          "package_name": "com.vam.whitecoats.uat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252981997001-2ng0c6ifjls244fac3621s6ue84la25a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "252981997001-ffast305vdctrik6jh1elrt9ghl9blni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxjGhHcPVxJnIoypDHZyh5blRwViBRUvU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

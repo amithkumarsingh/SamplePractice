@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="workplace"
+        android:id="@+id/work_place_txt"
+        style="@style/MyTextViewBody1"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="location"
+        android:id="@+id/work_city_txt"
+        android:layout_marginBottom="10dp"
+        style="@style/MyTextViewBody1"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="designation"
+        android:id="@+id/designation_txt"
+        style="@style/MyTextViewBody1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/availability_info_txt"
+        style="@style/MyTextViewBody2"
+        android:textColor="#8A231f20"
+        android:textStyle="italic"/>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="new_account_label_size">24sp</dimen>
+    <dimen name="time_info_lable_size">18sp</dimen>
+    <dimen name="register_button_lable_size">22sp</dimen>
+    <dimen name="already_user_label_size">18sp</dimen>
+    <dimen name="login_button_lable_size">22sp</dimen>
+
+    <dimen name="margin_bottom_new_account">12dp</dimen>
+    <dimen name="time_info_margin_bottom">12dp</dimen>
+
+    <dimen name="register_layout_padding">12dp</dimen>
+    <dimen name="login_layout_padding">16dp</dimen>
+</resources>

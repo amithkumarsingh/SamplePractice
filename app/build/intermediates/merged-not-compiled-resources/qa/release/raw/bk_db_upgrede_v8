@@ -1,0 +1,72 @@
+/*NOTE: the comment should end in same line*/
+
+/*Adding Columns to Activities table, vInboxFlag INT , ruleId TEXT , allUsers INT , appuid TEXT,*/
+ALTER TABLE Activities ADD COLUMN vInboxFlag INT DEFAULT 0;
+ALTER TABLE Activities ADD COLUMN ruleId TEXT;
+ALTER TABLE Activities ADD COLUMN allUsers INT DEFAULT 0;
+ALTER TABLE Activities ADD COLUMN appuid TEXT;
+
+/*create rule engine table*/
+CREATE TABLE IF NOT EXISTS BKRuleEngine (aggDef TEXT, aggMap TEXT, aggValues TEXT, rules TEXT, rulesJS TEXT, userId TEXT);
+
+/*Adding Columns to Badge table, CampaignName TEXT, achievedTime INT*/
+ALTER TABLE Badges ADD COLUMN campaignName TEXT;
+ALTER TABLE Badges ADD COLUMN achievedTime INT;
+
+/*Delete all records from badges table, all records will be udpated from get inbox response*/
+DELETE FROM Badges;
+
+/*PrimayKey is being changed in 'inbox' table and foreign key also changed in 'Activities' table, */
+/*Migration steps following as per sqlite documentation */
+/* https://sqlite.org/lang_altertable.html#otheralter */
+
+/* 1. disable foreign_key */ 
+PRAGMA foreign_keys = OFF;
+
+/*2. Start transaction */
+BEGIN TRANSACTION;
+
+/*3. cache INDEXs and TRIGGERS for reference*/
+/* SELECT type, sql FROM sqlite_master WHERE tbl_name = ''*/
+/* there are now indexes and triggers on inbox table, skipping the step*/
+
+/*4. create new table*/
+CREATE TABLE NewInbox(MessageID TEXT , MsgStatus TEXT , Title TEXT , Date TEXT , InsertedDate TEXT , appuid TEXT, PRIMARY KEY (MessageID, appuid));
+
+/*5. transfer data from old table to new table*/
+/*select distinct appuid from userinfo order by updatedTime desc limit 1*/
+/*INSERT INTO newTable SELECT ... FROM oldTable*/
+
+INSERT INTO NewInbox SELECT * FROM Inbox, (select distinct appuid from userinfo order by updatedTime desc limit 1);
+/*considering all available records belongs to last active appUid related*/
+
+
+/*6. drop old table*/
+DROP TABLE IF EXISTS Inbox;
+
+/*7. rename newTable to oldTable*/
+ALTER TABLE NewInbox RENAME TO Inbox;
+
+/*updating Activities table with same steps*/
+CREATE TABLE NewActivities(ActSLNo PRIMARY KEY , ActID TEXT , ActType TEXT , ActStatus TEXT , MessageID TEXT , CampaignID TEXT , ActivityData TEXT , CurrentSession INT , RepeatCount INT , SkipCount INT , ConsiderSkip INT , ActName TEXT , vInboxFlag INT , ruleId TEXT , allUsers INT , appuid TEXT, FOREIGN KEY (MessageID, appuid) REFERENCES Inbox(MessageID, appuid) ON DELETE CASCADE );
+
+INSERT INTO NewActivities SELECT * FROM Activities;
+UPDATE NewActivities set appuid = (select distinct appuid from userinfo order by updatedTime desc limit 1);
+
+DROP TABLE IF EXISTS Activities;
+ALTER TABLE NewActivities RENAME TO Activities;
+
+/*8. CREATE_INDEX and CREATE_TRIGGER if available at (3)*/
+/* as there are no indexes and triggers available on inbox and activities table, skipping this step*/
+
+/*9. DROP VIEW if oldtable has any; and CREATE VIEW*/
+/* there are no VIEWs available on inbox and activities table, skipping this step*/
+
+/*10. foreign_key_check*/
+PRAGMA foreign_key_check;
+
+/*11. commit transaction*/
+COMMIT TRANSACTION;
+
+/*12. enable foreign keys*/
+PRAGMA foreign_keys = ON;

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/network_selection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+
+        <TextView
+            android:id="@+id/share_with_everyOne_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WhiteCoats Network"
+            android:textColor="#00A76D"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visible to all members on WhiteCoats Network"
+            android:textColor="#8A231f20"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/about_me_border2"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#1A231f20"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/community_selection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/share_only_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share with a Group "
+                android:textColor="#D6231f20"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visible only to your community group members such as association members"
+                android:textColor="#8A231f20"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.vam.whitecoats.utils.BottomSheetListView
+        android:id="@+id/communityList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:dividerHeight="1dp"
+        android:visibility="visible"></com.vam.whitecoats.utils.BottomSheetListView>
+
+
+</LinearLayout>
+

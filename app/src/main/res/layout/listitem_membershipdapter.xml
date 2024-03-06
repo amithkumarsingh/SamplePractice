@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/awards_image"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/ic_awards"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:id="@+id/title_text"
+        style="@style/MyTextViewBody1"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_toRightOf="@+id/awards_image"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:id="@+id/presented_at"
+        style="@style/MyTextViewBody1"
+        android:layout_below="@+id/title_text"
+        android:layout_alignLeft="@+id/title_text"
+        android:layout_alignStart="@+id/title_text"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:id="@+id/presented_year"
+        style="@style/MyTextViewBody1"
+        android:layout_below="@+id/presented_at"
+        android:layout_alignLeft="@+id/presented_at"
+        android:layout_alignStart="@+id/presented_at"
+        android:textColor="#8A231f20"
+        android:layout_marginTop="8dp"/>
+
+
+</RelativeLayout>

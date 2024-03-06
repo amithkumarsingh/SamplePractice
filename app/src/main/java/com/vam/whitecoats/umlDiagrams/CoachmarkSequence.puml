@@ -1,0 +1,46 @@
+@startuml
+hide footbox
+actor User
+entity DashBoardActivity
+entity Channelsfragment
+entity ChatDialogsFragment
+entity MyConnectsFragment
+entity SearchContactsActivity
+entity FeedsFragment
+entity ContentFullView
+entity CaseroomDilogsFragment
+
+note over  User, CaseroomDilogsFragment
+   When user enters application for second session
+   MaterialShowcaseView Class fires and executed.
+end note
+alt if(AppConstants.COACHMARK_INCREMENTER > 1)[successful case]
+User ---->  DashBoardActivity
+DashBoardActivity  ---->  User : "Share an update, case or query"
+......
+User ---->  Channelsfragment
+Channelsfragment ---->  User : "Tap to view all updates from a channel"
+......
+User ---->  ChatDialogsFragment
+ChatDialogsFragment ---->  User : "Send a message or create a private group."
+......
+User ---->  MyConnectsFragment
+MyConnectsFragment ---->  User : "Like the app?! Tell your friends here."
+......
+User ---->  SearchContactsActivity
+SearchContactsActivity ---->  User : "See a quick profile by tapping here."
+......
+User ---->  FeedsFragment
+FeedsFragment ---->  User : "Tap on a story to start reading"
+......
+User ---->  ContentFullView
+ContentFullView ---->  User : "Tap and share your opinion"
+......
+
+User ---->  CaseroomDilogsFragment
+CaseroomDilogsFragment ---->  User : "Create a private case discussion."
+
+end
+
+
+@enduml

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/category_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+    <!--<FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp">
+
+        <ImageView
+            android:id="@+id/category_image"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image_feed"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/attach_type_video"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            android:id="@+id/attach_type_pdf"/>
+
+    </FrameLayout>-->
+    <com.vam.whitecoats.ui.customviews.RoundedImageView
+        android:id="@+id/trending_categories_img"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/default_channel_logo"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="Category Name"
+        android:textColor="#DE231f20"
+        android:textSize="12sp" />
+
+</LinearLayout>

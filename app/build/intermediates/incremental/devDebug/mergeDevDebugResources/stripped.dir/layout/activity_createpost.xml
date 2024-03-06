@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/radioGroup_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/post_type_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/label_post_type"
+                        android:textColor="#8A231f20"
+                        android:textSize="12sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--android:gravity="center_horizontal"-->
+
+
+                    </RadioGroup>
+
+
+                </RelativeLayout>
+
+                <!--
+                old sharedwith main layout was
+                -->
+                <RelativeLayout
+                    android:id="@+id/communityFormRelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/communityFormLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/helpTxtVw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/label_update_help_text"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/exampleLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/helpTxtVw"
+                            android:layout_marginTop="10dp">
+
+
+                            <TextView
+                                android:id="@+id/exampleTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Example:\n I have started a new hospital in Jaipur 2 years ago. Does anyone have reference for accreditation consultants?\n\n I am pediatrician with 3 years of experience. Which college/hospital is the best pediatric cardiac surgery in india?\n\nI hve a new practice in pune. What is best way to get patients online without commissions?\n\nHow to manage postpartum hemorrhage in a primi with RHD?"
+                                android:textColor="@color/gray"
+                                android:textSize="12sp" />
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/titleLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/exampleLayout"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/title_updates_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rectangle_blue"
+                                android:backgroundTint="@color/dark_gray"
+                                android:orientation="vertical"
+                                android:layout_marginTop="32dp"
+                                android:paddingBottom="10dp"
+                                android:visibility="visible">
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/titleHintText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:hint=""
+                                        android:padding="5dp"
+                                        android:textColorHint="@color/app_green"
+                                        android:textSize="12dp"
+                                        android:visibility="gone" />
+
+
+                                    <EditText
+                                        android:id="@+id/titleEdtTxt_update"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="84dp"
+                                        android:layout_below="@+id/titleHintText"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="top"
+                                        android:hint=""
+                                        android:inputType="textCapSentences|textMultiLine"
+                                        android:maxLength="500"
+                                        android:overScrollMode="always"
+                                        android:scrollbarStyle="insideInset"
+                                        android:scrollbars="vertical" />
+
+
+                                </RelativeLayout>
+
+
+
+                                <TextView
+                                    android:id="@+id/title_error_update"
+                                    style="@style/MyTextViewErrorStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="6dp"
+                                    android:inputType="textCapSentences|textMultiLine"
+                                    android:text="@string/post_title_update" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/titleCharLimit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:text="500"
+                                android:textColor="@color/gray"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/descriptionLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titleLayout"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/rectangle_blue"
+                            android:backgroundTint="@color/dark_gray"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/descriptionHintText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:padding="5dp"
+                                    android:text="Description (optional)"
+                                    android:textColor="@color/app_green"
+                                    android:textSize="12dp"
+                                    android:visibility="gone" />
+
+
+                                <EditText
+                                    android:id="@+id/descEdtTxt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="84dp"
+                                    android:layout_below="@+id/descriptionHintText"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="top"
+                                    android:hint="@string/label_desc_optional"
+                                    android:inputType="textCapSentences|textMultiLine"
+                                    android:overScrollMode="always"
+                                    android:scrollbarStyle="insideInset"
+                                    android:scrollbars="vertical" />
+                            </RelativeLayout>
+
+                            <!--                            <com.google.android.material.textfield.TextInputLayout-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:layout_marginTop="8dp"-->
+                            <!--                                app:hintTextAppearance="@style/FloatLableColor">-->
+
+                            <!--                                <EditText-->
+                            <!--                                    android:id="@+id/descEdtTxt"-->
+                            <!--                                    android:layout_width="match_parent"-->
+                            <!--                                    android:layout_height="84dp"-->
+                            <!--                                    android:background="@android:color/transparent"-->
+                            <!--                                    android:hint="@string/label_desc_optional"-->
+                            <!--                                    android:gravity="top"-->
+                            <!--                                    android:inputType="textCapSentences|textMultiLine"-->
+                            <!--                                    android:overScrollMode="always"-->
+                            <!--                                    android:scrollbarStyle="insideInset"-->
+                            <!--                                    android:scrollbars="vertical" />-->
+                            <!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/postAttachmentLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/descriptionLayout"
+                            android:layout_marginTop="16dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/post_attachment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:orientation="vertical"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp">
+
+                                <TextView
+                                    android:id="@+id/post_img"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:drawableLeft="@drawable/ic_attach"
+                                    android:drawablePadding="15dp"
+                                    android:text="@string/attach"
+                                    android:textColor="#DE231f20"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/post_maximgs"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/post_img"
+                                    android:paddingLeft="32dp"
+                                    android:text="@string/maxattachments"
+                                    android:textColor="#8A231f20"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <com.vam.whitecoats.ui.customviews.NonScrollableGridView
+                                android:id="@+id/post_gridview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:columnWidth="90dp"
+                                android:descendantFocusability="blocksDescendants"
+                                android:gravity="center"
+                                android:numColumns="2" />
+                        </LinearLayout>
+
+                        <!--Post On Layout-->
+                        <RelativeLayout
+                            android:id="@+id/appliesToRelativeLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/postAttachmentLayout"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="Where do you wish to publish this post?"
+                                android:textColor="@color/gray"
+                                android:textSize="12dp" />
+
+                            <LinearLayout
+                                android:id="@+id/appliesToLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/rectangle_blue"
+                                android:backgroundTint="@color/dark_gray"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingBottom="10dp">
+
+                                <TextView
+                                    android:id="@+id/appliesToInputLayout"
+                                    style="@style/FloatLableColor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:paddingLeft="6dp"
+                                    android:text="Post On"
+                                    android:textColor="@color/app_green" />
+                                <!--android:text="@string/label_applies_to"-->
+
+                                <EditText
+                                    android:id="@+id/specialityEdtTxt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:drawableRight="@drawable/ic_arrow_down"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:text="@string/label_default_specialty"
+                                    android:textColor="@color/gray" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <!--Shared With Layout-->
+                        <RelativeLayout
+                            android:id="@+id/shareWithMainLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/appliesToRelativeLayout"
+                            android:layout_marginTop="20dp">
+
+
+                            <RelativeLayout
+                                android:id="@+id/shareWithLabel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="Who should be able to see your post?"
+                                    android:textColor="@color/gray"
+                                    android:textSize="12dp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/shareWithLayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_below="@+id/shareWithLabel"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/rectangle_blue"
+                                android:backgroundTint="@color/dark_gray">
+
+                                <TextView
+                                    android:id="@+id/shareWithHeading"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Share With"
+                                    android:textColor="@color/app_green"
+                                    android:textSize="12sp"
+                                    android:visibility="visible" />
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="5dp"
+                                    android:padding="1dp">
+
+                                    <TextView
+                                        android:id="@+id/sharewith_option_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="WhiteCoats Network"
+                                        android:textColor="@color/gray" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginRight="5dp"
+                                        android:src="@drawable/ic_arrow_down" />
+
+                                </RelativeLayout>
+
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/postRelativeLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/shareWithMainLayout"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:id="@+id/departmentHeading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="Who should be able to see your post?"
+                                android:textColor="@color/gray"
+                                android:textSize="12dp" />
+
+                            <LinearLayout
+                                android:id="@+id/postToLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_below="@+id/departmentHeading"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/rectangle_blue"
+                                android:backgroundTint="@color/dark_gray"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/postToInputLayout"
+                                    style="@style/FloatLableColor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:paddingLeft="6dp"
+                                    android:text="Select Department"
+                                    android:textColor="@color/app_green"
+                                    android:visibility="gone" />
+                                <!--android:text="@string/label_post_to"-->
+                                <EditText
+                                    android:id="@+id/postToEdtTxt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:drawableRight="@drawable/ic_arrow_down"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:text="@string/label_default_department"
+                                    android:textColor="@color/gray"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <!--post button layout-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:id="@+id/postLayout"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/drawable_capsule_view"
+            android:backgroundTint="@color/app_green">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Post"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

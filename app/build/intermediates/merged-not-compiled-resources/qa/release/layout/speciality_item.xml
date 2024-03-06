@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:id="@+id/speciality_header_text_main"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/speciality_item"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="speciality name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/robotomedium"
+            android:padding="12sp"
+            android:id="@+id/speciality_name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/unread_count"
+            android:layout_toLeftOf="@+id/arrow_image"
+            android:textSize="14sp"
+            android:textColor="@color/app_green"
+            android:visibility="gone"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/arrow_image"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_forward_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

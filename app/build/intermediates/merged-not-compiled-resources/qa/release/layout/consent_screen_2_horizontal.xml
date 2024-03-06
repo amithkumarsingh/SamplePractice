@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_back_8" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:fillViewport="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnReportAd1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/white"
+                android:text="Ad is covering the content of the website."
+                android:textAppearance="@style/textview_consent_options"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnReportAd2"
+                app:layout_constraintWidth_percent="0.30"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnReportAd2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnSubReportAd1"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/white"
+                android:text="Ad was inappropriate."
+                android:textAppearance="@style/textview_consent_options"
+                app:layout_constraintEnd_toStartOf="@+id/btnReportAd3"
+                app:layout_constraintWidth_percent="0.30"
+                app:layout_constraintStart_toEndOf="@+id/btnReportAd1"
+                app:layout_constraintTop_toTopOf="@+id/btnReportAd1" />
+
+            <Button
+                android:id="@+id/btnReportAd3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/white"
+                android:text="Not interested in this Ad."
+                android:textAppearance="@style/textview_consent_options"
+                app:layout_constraintWidth_percent="0.30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnReportAd2"
+                app:layout_constraintTop_toTopOf="@+id/btnReportAd2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.vam.whitecoats.ui.activities.DashboardActivity">
+    <item
+        android:id="@+id/action_back"
+        android:icon="@drawable/ic_back"
+        android:orderInCategory="100"
+        android:title="Back"
+        app:showAsAction="always"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/ic_notifications"
+        android:orderInCategory="100"
+        android:title="@string/action_notification"
+        app:actionLayout="@layout/notification_count"
+        app:showAsAction="always" />
+    <!--<item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="100"
+        android:title="@string/action_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+-->
+    <!--<item
+        android:id="@+id/action_search_dashboard"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="100"
+        android:title="@string/action_search"
+        app:showAsAction="always" />-->
+    <!--pardha added for dashboard menu options-->
+    <item
+        android:id="@+id/menu_action_profile"
+        android:orderInCategory="100"
+        android:title="@string/action_profile"
+        app:actionLayout="@layout/profile_context_menu"
+        app:showAsAction="always"
+        android:visible="false"/>
+<!--    <item-->
+<!--        android:id="@+id/no_menu_action_profile"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="no_profile"-->
+<!--        android:visible="false"-->
+<!--        app:actionLayout="@layout/no_profile_context_menu"-->
+<!--        app:showAsAction="always"/>-->
+
+
+    <!-- <item
+         android:id="@+id/my_profile"
+         android:title="My Profile"
+         app:showAsAction="never|collapseActionView"/>
+     <item
+         android:id="@+id/my_home_preference"
+         android:title="@string/my_home_preferences"
+         app:showAsAction="never|collapseActionView"/>
+
+     <item
+         android:id="@+id/my_preferences"
+         android:title="@string/my_preferences"
+         app:showAsAction="never|collapseActionView"/>
+     <item
+         android:id="@+id/bookmarks"
+         android:title="@string/my_bookmarks"
+         app:showAsAction="never|collapseActionView"/>
+     <item
+         android:id="@+id/my_caserooms"
+         android:title="@string/my_caseromms"
+         android:visible="false"
+         app:showAsAction="never|collapseActionView"/>
+     <item
+         android:id="@+id/invite"
+         android:title="Invite to WhiteCoats"
+         app:showAsAction="never|collapseActionView"/>
+
+     <item
+         android:id="@+id/action_help"
+         android:title="Help"
+         app:showAsAction="never|collapseActionView"/>-->
+
+
+
+<!--    <item
+        android:id="@+id/action_me"
+        android:orderInCategory="100"
+        android:title="@string/action_me"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_context_menu"
+        />-->
+
+    <!--  <item android:id="@+id/action_changepassword" android:title="@string/changepassword"
+          android:orderInCategory="100" app:showAsAction="never" />-->
+    <!--<item
+        android:id="@+id/action_terms_of_use"
+        android:orderInCategory="100"
+        android:title="@string/terms_of_use"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/logout"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="@string/action_help"
+        app:showAsAction="never" />-->
+    <!--<item
+        android:id="@+id/action_me"
+        android:actionLayout="@layout/activity_meimageview"
+        android:orderInCategory="100"
+        android:title="@string/action_me"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_context_menu"
+        />-->
+
+        
+</menu>

@@ -1,0 +1,376 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80ffffff"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:hintTextAppearance="@style/FloatLableColor">
+
+                <AutoCompleteTextView
+                    android:id="@+id/workplace_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ. -&amp;'"
+                    android:hint="Name of Hospital or Clinic"
+                    android:inputType="textCapWords|textNoSuggestions"
+                    android:maxLength="240"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/workplace_error_text"
+                style="@style/MyTextViewErrorStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/dlg_not_workplace_field_entered" />
+
+
+            <FrameLayout
+                android:id="@+id/create_password_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="12dp"
+                    app:hintTextAppearance="@style/FloatLableColor">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/city_edit"
+                        style="@style/App_AutoCompleteTextViewStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="6dp"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:hint="City or Town"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLength="80"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/clear_text"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/ic_clear_black_24dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"/>
+            </FrameLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/location_error_text"
+                style="@style/MyTextViewErrorStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/dlg_not_city_field_entered" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:hintTextAppearance="@style/FloatLableColor">
+
+                <EditText
+                    android:id="@+id/designation_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="6dp"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:hint="@string/designation"
+                    android:inputType="textCapSentences|textMultiLine|textNoSuggestions"
+                    android:maxLength="50"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/working_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:text="@string/str_check" />
+
+            <TextView
+                android:id="@+id/check_error_text"
+                style="@style/MyTextViewErrorStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/dlg_corrently_working_case" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="6dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fromdate_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:hintTextAppearance="@style/FloatLableColor">
+
+                    <EditText
+                        android:id="@+id/fromdate_edit"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:cursorVisible="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/started_on"
+                        android:inputType="date"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/fromdate_error"
+                    style="@style/MyTextViewErrorStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fromdate_label"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/str_fromdate_error" />
+
+                <TextView
+                    android:id="@+id/tilldate_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/fromdate_label"
+                    android:hint="@string/till_now"
+                    android:visibility="gone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@+id/fromdate_label"
+                    app:hintTextAppearance="@style/FloatLableColor"
+                    android:id="@+id/todate_edit_text_input_lay">
+
+
+                    <EditText
+                        android:id="@+id/todate_edit"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/fromdate_label"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:cursorVisible="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/worked_till"
+                        android:inputType="date"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/available_parent_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Available Days" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Tap on days to select" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/week_days_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Timings" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/startTime_edt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_weight=".5"
+                            android:drawableRight="@drawable/arrow_down"
+                            android:focusable="false"
+                            android:hint="From " />
+
+                        <EditText
+                            android:id="@+id/endTime_edt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_weight=".5"
+                            android:drawableRight="@drawable/arrow_down"
+                            android:focusable="false"
+                            android:hint="To " />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/opd_ot_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/opd_radio_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="32dp"
+                            android:text="@string/label_opd" />
+
+                        <RadioButton
+                            android:id="@+id/ot_radio_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_ot" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="@string/str_toggle" />
+
+                        <ToggleButton
+                            android:id="@+id/toggleButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/toggle_selector"
+                            android:checked="false"
+                            android:textOff=""
+                            android:textOn="" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:background="@drawable/button_onselector"
+                android:text="@string/str_add_another_workplace"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textAllCaps="false"/>
+
+            <RelativeLayout
+                android:id="@+id/delete_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/delete_ig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_delete" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/delete_ig"
+                    android:text="@string/str_remove" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

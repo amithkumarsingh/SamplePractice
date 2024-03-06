@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sub_category_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="8dp">
+
+    <FrameLayout
+        android:id="@+id/image_lay"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circular_image_view">
+
+
+        <ImageView
+            android:id="@+id/sub_category_image"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pdf_icon" />
+
+        <TextView
+            android:id="@+id/category_item_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/explore_item_layout"
+            android:layout_gravity="right"
+            android:background="@drawable/circular_badge"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/sub_category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/image_lay"
+        android:text="" />
+
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_forward_arrow"
+        android:layout_marginRight="16dp"/>
+</RelativeLayout>

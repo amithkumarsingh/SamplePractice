@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textPrint"
+        style="@style/MyTextViewBody1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/print"
+        android:textColor="#8C231f20"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_text"
+        style="@style/MyTextViewBody1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Title"
+        android:textColor="@color/app_green"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/authors_text"
+        style="@style/MyTextViewBody2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:text="authors"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/journal_text"
+        style="@style/MyTextViewBody1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="#8A231f20"
+        android:text="journal"/>
+
+    <TextView
+        android:id="@+id/webpage_link_text"
+        style="@style/MyTextViewTitleLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/str_webpage_link"
+        android:textSize="12sp" />
+</LinearLayout>

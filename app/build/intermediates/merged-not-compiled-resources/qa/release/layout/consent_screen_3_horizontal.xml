@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_back_8" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnSubReportAd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm not interested\n in seeing ads for this product."
+                android:textAppearance="@style/textview_consent_options_small"
+                android:background="@drawable/btn_border_grey"
+                android:padding="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/btnSubReportAd2"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <Button
+                android:id="@+id/btnSubReportAd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm not interested\n in seeing ads for this brand."
+                android:textAppearance="@style/textview_consent_options_small"
+                android:padding="4dp"
+                android:background="@drawable/btn_border_grey"
+                app:layout_constraintEnd_toStartOf="@+id/btnSubReportAd3"
+                app:layout_constraintStart_toEndOf="@+id/btnSubReportAd1"
+                app:layout_constraintTop_toTopOf="@+id/btnSubReportAd1" />
+
+            <Button
+                android:id="@+id/btnSubReportAd3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm not interested\n in seeing ads for this category."
+                android:textAppearance="@style/textview_consent_options_small"
+                android:padding="4dp"
+                android:background="@drawable/btn_border_grey"
+                app:layout_constraintStart_toEndOf="@+id/btnSubReportAd2"
+                app:layout_constraintEnd_toStartOf="@+id/btnSubReportAd4"
+                app:layout_constraintTop_toTopOf="@+id/btnSubReportAd2"/>
+
+            <Button
+                android:id="@+id/btnSubReportAd4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm not interested in\n seeing ads from pharmaceutical brands."
+                android:textAppearance="@style/textview_consent_options_small"
+                android:background="@drawable/btn_border_grey"
+                android:padding="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnSubReportAd3"
+                app:layout_constraintTop_toTopOf="@+id/btnSubReportAd3"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

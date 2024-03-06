@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.vam.whitecoats.viewmodel.ExploreViewModel"/>
+
+        <variable
+            name="adapter"
+            type="com.vam.whitecoats.ui.adapters.ExploreAdapter"/>
+    </data>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/explore_swipe_refresh"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="8dp"
+            tools:context=".ui.fragments.ExploreFragment"
+            android:background="#F9FFFE">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/categoty_grid"
+                android:paddingStart="8dp"
+                app:adapter="@{adapter}"
+                app:customVisibility="@{viewModel.isListVisible}"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data_available"
+                android:textSize="16sp"
+                android:layout_centerInParent="true"
+                app:customVisibility="@{viewModel.isEmptyMsgVisible}"
+                android:gravity="center_horizontal">
+
+
+
+            </TextView>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:indicatorName="BallClipRotatePulseIndicator"
+                android:id="@+id/aviInExplore"
+                app:indicatorColor="@color/app_green"
+                app:customVisibility="@{viewModel.isLoaderVisible}"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="250dp"/>
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</layout>

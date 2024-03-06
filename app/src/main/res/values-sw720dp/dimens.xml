@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <dimen name="register_layout_padding">20dp</dimen>
+    <dimen name="login_layout_padding">24dp</dimen>
+</resources>

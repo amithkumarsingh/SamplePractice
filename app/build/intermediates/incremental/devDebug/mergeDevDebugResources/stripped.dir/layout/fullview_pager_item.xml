@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    ScrollViewfocusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/linearLayout4"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:id="@+id/feed_content_scroll_view"
+    android:background="#80ffffff"
+    android:transitionGroup="true">
+
+    <LinearLayout
+        android:id="@+id/full_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/context_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image_feed"
+                android:transitionName="profile"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/audio_player_layout"
+                layout="@layout/activity_mediaplayer"
+                android:visibility="gone" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:transitionName="profile"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp">
+
+            </androidx.viewpager.widget.ViewPager>
+
+
+            <LinearLayout
+                android:id="@+id/community_attachment_layout_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#80231f20"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="10dp"
+
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/attachment_icon_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                     />
+
+                <TextView
+                    android:id="@+id/label_attachment_name_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:layout_marginLeft="8dp"
+                    android:singleLine="true"
+                    android:text="Tap to zoom"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/attachment_video_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_playvideo"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ln1"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fullView_thumbnail_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:id="@+id/type_bookmark_lay">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center_vertical"
+                android:layout_weight="4">
+
+                <TextView
+                    android:id="@+id/article_type_community"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:maxWidth="250dp"
+                    android:paddingBottom="03dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="03dp"
+                    android:text="CASE"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+                <RelativeLayout
+                    android:id="@+id/type_webinar_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:background="@color/app_green"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/webinar_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:maxWidth="250dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:text="WEBINAR"
+                        android:fontFamily="sans-serif-medium"/>
+
+                    <TextView
+                        android:id="@+id/webinar_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/webinar_type"
+                        android:text="Live"
+                        android:textColor="@color/red"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:textSize="10sp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/webinar_status_full_view_bg"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/edited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- Edited"
+                    android:drawablePadding="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:visibility="visible"
+                    android:textColor="#8A231f20"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bookmark_community_fullView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:id="@+id/bookmark_community_fullView_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/ic_bookmark_feed" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/blank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/feed_title"
+            style="@style/MyTextViewFeedsHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Heading..."
+            android:textColor="#231F20"
+            android:textIsSelectable="true"
+            android:textSize="24sp" />
+
+        </RelativeLayout>
+<!--
+        <com.vam.whitecoats.ui.customviews.FixedTextView
+            android:id="@+id/feed_short_desc"
+            style="@style/MyTextViewBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="4dp"
+            android:lineSpacingMultiplier="1.3"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Description..."
+            android:textColor="#231F20"
+            android:textIsSelectable="true"
+            android:visibility="gone"
+            android:textSize="16sp" />
+-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:orientation="vertical"
+            android:id="@+id/feed_desc_layout">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/survey_root_full_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/survey_layout"></include>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/webinar_time_date"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/webinar_time_date_lay"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/if_interested_button"
+            android:layout_width="138dp"
+            android:layout_height="38dp"
+            android:text="@string/eoi_if_interested_text"
+            android:background="@drawable/webinar_register_bg"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:textAllCaps="false"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:weightSum="1">
+
+            <com.vam.whitecoats.ui.customviews.RoundedImageView
+                android:id="@+id/prfLogo_fullview"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/default_profilepic" />
+
+            <TextView
+                android:id="@+id/fullPost_createdBy"
+                style="@style/MyTextViewBody3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="textview1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/feed_posted_date"
+                style="@style/MyTextViewBody3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0"
+                android:padding="6dp"
+                android:paddingRight="16dp"
+                android:text="Posted Date  :"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <include
+            android:id="@+id/feed_fullview_comment_layout"
+            layout="@layout/latest_comment_viewgroup"
+            android:visibility="gone"></include>
+
+        <include layout="@layout/recommendationslist_layout"></include>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

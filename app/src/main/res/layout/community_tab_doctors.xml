@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.vam.whitecoats.viewmodel.DrugClassViewModel"/>
+        <variable
+            name="adapter"
+            type="com.vam.whitecoats.ui.adapters.DrugClassAdapter"/>
+    </data>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ui.activities.DrugClassActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drug_class_refresh">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                android:visibility="visible"
+                android:background="#E1E1E1"
+                android:id="@+id/drug_search">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Search Drugs"
+                    android:background="@drawable/ic_search_bar_new"
+                    android:padding="8dp"
+                    android:drawableStart="@drawable/ic_search_grey"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/search_drug"/>
+            </LinearLayout>-->
+            <include android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/search_layout"
+                android:id="@+id/drug_search_layout">
+
+            </include>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/drug_recycler"
+                android:layout_below="@+id/drug_search_layout"
+                app:adapter="@{adapter}"
+                app:customVisibility="@{viewModel.isListVisible}"
+                android:overScrollMode="never"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data_available"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                app:customVisibility="@{viewModel.isEmptyMsgVisible}"
+                android:gravity="center_horizontal"/>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:indicatorName="BallClipRotatePulseIndicator"
+                android:id="@+id/aviInExplore"
+                app:indicatorColor="@color/app_green"
+                app:customVisibility="@{viewModel.isLoaderVisible}"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</layout>

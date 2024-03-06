@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_button_size">25sp</dimen>
+    <dimen name="activity_edit_text_size">25sp</dimen>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="login_layout_padding">24dp</dimen>
+    <dimen name="register_layout_padding">20dp</dimen>
+    <dimen name="title_size">25sp</dimen>
+    <dimen name="web_icon_between_margin">10dp</dimen>
+    <dimen name="web_icon_edges_margin">15dp</dimen>
+</resources>

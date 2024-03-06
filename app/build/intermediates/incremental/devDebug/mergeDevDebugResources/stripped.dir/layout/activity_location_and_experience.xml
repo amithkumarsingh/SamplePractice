@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vam.whitecoats.ui.activities.LocationAndExperienceActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:id="@+id/main_lay">
+
+  <ImageView
+      android:id="@+id/image"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/location_experience_icon"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="8dp"
+      android:layout_alignParentTop="true"
+      />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/enhanced_whitecoats_text"
+       android:id="@+id/enhanced_text"
+       android:layout_below="@+id/image"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="16dp"
+       android:gravity="center"
+       android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/app_green"
+        android:text="@string/enter_text"
+        android:textColor="@color/white"
+        android:layout_below="@+id/enhanced_text"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:id="@+id/better_serve_text"
+        android:gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/city_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/better_serve_text"
+        android:layout_marginTop="14dp"
+        app:hintTextAppearance="@style/FloatLableColor">
+
+            <AutoCompleteTextView
+                android:id="@+id/city_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/city"
+                android:maxLength="80"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:textSize="15sp"
+                android:textColor="#99000EA2" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/city_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your city of residence"
+        style="@style/MyTextViewErrorStyle"
+        android:layout_below="@+id/city_lay"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/experience_autocomplete_view_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city_error_text"
+        android:layout_marginTop="14dp"
+        app:hintTextAppearance="@style/FloatLableColor">
+
+        <AutoCompleteTextView
+            android:id="@+id/experience_autocomplete_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Overall Experience"
+            android:inputType="number"
+            android:textSize="15sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/experience_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select the overall experience"
+        style="@style/MyTextViewErrorStyle"
+        android:layout_below="@+id/experience_autocomplete_view_lay"/>
+
+    <Button
+        android:id="@+id/profile_submit_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_onselector"
+        android:paddingLeft="52dp"
+        android:paddingRight="52dp"
+        android:text="UPDATE"
+        android:textColor="@color/white"
+        android:layout_below="@+id/experience_error_text"
+        android:layout_marginTop="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/skip_lay"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_below="@+id/profile_submit_action">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="skip"
+        android:id="@+id/skip_text"
+        />
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- <TextView
+         android:id="@+id/next_button"
+         style="@style/ActionBarText"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="16dp"
+         android:gravity="center"
+         android:text="Next" />-->
+    <TextView
+        android:id="@+id/title_edit"
+        style="@style/ActionBarTextViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/delete_btn"
+        android:gravity="center|left"
+        android:paddingRight="4dp"
+        android:text="Whitecoats"
+        android:maxLines="1"
+        android:ellipsize="end"
+       />
+    <ImageView
+        android:id="@+id/delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ActionBarText"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_delete_white"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_lay"
+    android:layout_width="82dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp">
+
+    <RelativeLayout
+        android:id="@+id/explore_item_layout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/category_background">
+
+        <ImageView
+            android:id="@+id/explore_item_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_appicon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/explore_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/explore_item_layout"
+        android:background="@drawable/circular_badge"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/explore_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/explore_item_layout"
+        android:gravity="center"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/robotomedium"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">252981997001-2ng0c6ifjls244fac3621s6ue84la25a.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://ninth-arena-132423.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">252981997001</string>
+    <string name="google_api_key" translatable="false">AIzaSyBxjGhHcPVxJnIoypDHZyh5blRwViBRUvU</string>
+    <string name="google_app_id" translatable="false">1:252981997001:android:e46d33e3e85075e7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBxjGhHcPVxJnIoypDHZyh5blRwViBRUvU</string>
+    <string name="google_storage_bucket" translatable="false">ninth-arena-132423.appspot.com</string>
+    <string name="project_id" translatable="false">ninth-arena-132423</string>
+</resources>

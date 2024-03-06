@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/button_backround" android:state_focused="true" android:state_pressed="false" />
+    <item android:drawable="@color/button_backround" android:state_focused="true" android:state_pressed="true" />
+    <item android:drawable="@color/button_backround" android:state_focused="false" android:state_pressed="true" />
+    <item android:drawable="@android:color/transparent" />
+    <item android:drawable="@drawable/button" />
+    <!--<color name = "backround">#53a689</color>
+
+
+
+
+
+    <item android:state_selected="true">
+        <color name="editcolor">#53a689</color>
+        <color android:color="@color/section_list_background"/>
+    </item>
+    <item android:state_selected="false">
+        <color android:color="@color/section_list_background"/>
+    </item>-->
+</selector>

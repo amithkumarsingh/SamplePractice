@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/tileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true">
+
+        <com.vam.whitecoats.ui.customviews.RoundedImageView
+            android:id="@+id/doctor_profile_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/default_profilepic" />
+
+        <TextView
+            android:id="@+id/doctor_name"
+            style="@style/Doctor_name_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/doctor_profile_pic"
+            android:gravity="center|left"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doctor_name"
+            android:layout_alignStart="@+id/doctor_name"
+            android:layout_below="@+id/doctor_name"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="10"
+            android:textColor="#8A231f20"
+            android:textSize="12sp"
+            android:visibility="visible" />
+        <RelativeLayout
+            android:id="@+id/context_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingBottom="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_context_menu_grey"
+            />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/comment_time"
+            android:layout_alignStart="@+id/comment_time"
+            android:layout_below="@+id/comment_time"
+            android:textColor="#de231f20"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/attach_image"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/tileLayout"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_profilepic"
+        android:visibility="visible" />
+
+
+</LinearLayout>

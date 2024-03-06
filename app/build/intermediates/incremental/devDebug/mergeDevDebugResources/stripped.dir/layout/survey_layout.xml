@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/survey_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/options_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/survey_submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/btn_submit"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/buttons_profile"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/survey_greet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:text="Thanks for participating"/>
+    <TextView
+        android:id="@+id/survey_later_result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Survey results will be announced once the survey closes"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/survey_close_date_txt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Survey closes in"/>
+        <TextView
+            android:id="@+id/survey_more_options_txt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="+2 more options"
+            android:textColor="@color/app_green"/>
+    </LinearLayout>
+</LinearLayout>

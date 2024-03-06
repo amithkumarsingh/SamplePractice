@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ececec">
+
+
+    <TextView
+        android:id="@+id/skillClearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/app_green"
+        android:textStyle="bold"
+        android:text="Clear"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/skilling_filters_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/skillClearBtn"
+        android:background="@color/action_selector_pressed"
+        android:scrollbars="horizontal"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/grayOverlayLayout"
+        android:layout_width="match_parent"
+        android:background="#BF999999"
+        android:visibility="visible"
+        android:clickable="false"
+        android:layout_height="100dp"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/skilling_filters_list">
+
+        <ProgressBar
+            android:id="@+id/loading_progress_bookMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+        </ProgressBar>
+
+        <include
+            layout="@layout/shimmer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></include>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/category_filter_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeContainer_content_feeds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_filter_list">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/feeds_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:visibility="gone" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/no_bookMarks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/label_no_bookmarks"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

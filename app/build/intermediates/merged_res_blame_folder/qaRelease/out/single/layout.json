@@ -1,0 +1,1166 @@
+[
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/recommendationslist_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/recommendationslist_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_search_contacts.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_search_contacts.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/dialog_mandatory_page.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/dialog_mandatory_page.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_caseroomeditatt.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_caseroomeditatt.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/feeds_notofiction_row_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/feeds_notofiction_row_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/load_more_footer.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/load_more_footer.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/channel_header_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/channel_header_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_listallfiles.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_listallfiles.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/youtube_video_activity.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/youtube_video_activity.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_feed_notification.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_feed_notification.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_awards.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_awards.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_online_publications.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_online_publications.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_login.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_login.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/audio_placeholder_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/audio_placeholder_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/textview_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/textview_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/globalsearchactivity.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/globalsearchactivity.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/listitem_vitalsinfoadapter.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/listitem_vitalsinfoadapter.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/listitem_chatdialog.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/listitem_chatdialog.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/view_notification_badge.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/view_notification_badge.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_comments.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_comments.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/content_feeds_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/content_feeds_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/professional_fragment_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/professional_fragment_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_invite_contacts.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_invite_contacts.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_notifications.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_notifications.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_forgot_password.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_forgot_password.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/categories_list_parent_dashboard.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/categories_list_parent_dashboard.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/webinar_time_date_lay.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/webinar_time_date_lay.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/job_application_bottom_sheet.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/job_application_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_job_organization.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_job_organization.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/dialog_chat_attach.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/dialog_chat_attach.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/directory_row.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/directory_row.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_pdf_listadapter.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_pdf_listadapter.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/listitem_publicationsadapter.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/listitem_publicationsadapter.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_about_job_role.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_about_job_role.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_preferences.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_preferences.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/connects_notify_list_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/connects_notify_list_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/admin_list.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/admin_list.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_contact_support.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_contact_support.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_getstarted.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_getstarted.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_registration_screen_three.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_registration_screen_three.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/trending_categories_list.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/trending_categories_list.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_professional_mem.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_professional_mem.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/listitem_selectcontactsgroup.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/listitem_selectcontactsgroup.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/feeds_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/feeds_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/professional_list_header.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/professional_list_header.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/custom_dialog_box.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/custom_dialog_box.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/social_bar_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/social_bar_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/notify_pending.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/notify_pending.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/my_snackbar.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/my_snackbar.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/area_of_interest_section.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/area_of_interest_section.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_dialog_overlay.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_dialog_overlay.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_share_with_contacts.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_share_with_contacts.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_registrations.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_registrations.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/notification_count.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/notification_count.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/empty_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/empty_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/webinar_dashbord_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/webinar_dashbord_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/registration_terms_policy_dialog.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/registration_terms_policy_dialog.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_invite_overlay.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_invite_overlay.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/postcreator_and_latestcomment_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/postcreator_and_latestcomment_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/horizontal_list_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/horizontal_list_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_publications_print_list_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_publications_print_list_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_error_response.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_error_response.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_splash_screen.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_change_password.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_change_password.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/tab_notify_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/tab_notify_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_visit_other_profile.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_visit_other_profile.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/drug_search_activity.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/drug_search_activity.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/notification_settings_row.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/notification_settings_row.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/dotted_border_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/dotted_border_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/navigation_view_footer_header.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/navigation_view_footer_header.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_permission_access.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_permission_access.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/professinal_jobs_lay.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/professinal_jobs_lay.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/section_heading.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/section_heading.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_visit_profile.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_visit_profile.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_default_home_page_selection.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_default_home_page_selection.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/user_connects_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/user_connects_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/item_loading.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/item_loading.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/search_popup.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/search_popup.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/contacts_network_header.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/contacts_network_header.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/directory_list_header.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/directory_list_header.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_createpost.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_createpost.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/latest_comment_viewgroup.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/latest_comment_viewgroup.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_dashboard.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_registrationone.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_registrationone.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/home_page_child.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/home_page_child.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_feed_search.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_feed_search.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_publications.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_publications.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_me.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_me.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/viewpager_imagedisplay.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/viewpager_imagedisplay.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/navigation_view_footer.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/navigation_view_footer.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/drug_header.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/drug_header.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/horizontal_list_row_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/horizontal_list_row_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/professional_list_footer.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/professional_list_footer.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/listitem_academicadapter.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/listitem_academicadapter.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_introslides.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_introslides.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/profile_aboutme_section.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/profile_aboutme_section.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/notification_enable_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/notification_enable_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/no_profile_context_menu.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/no_profile_context_menu.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_categories_speciality_tab.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_categories_speciality_tab.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/search_contacts_listitem.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/search_contacts_listitem.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_registeration_screen_one.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_registeration_screen_one.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/subscription_cat_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/subscription_cat_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_termsofservice.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_termsofservice.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/introslides_image_display.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/introslides_image_display.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/progressbar.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/progressbar.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/notification_tray.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/notification_tray.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/media_tab_list_item_child.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/media_tab_list_item_child.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_add_events.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_add_events.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/network_myconnects.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/network_myconnects.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/home_preference_bottom_sheet.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/home_preference_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_audio_player_acivity.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_audio_player_acivity.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_memberinfo.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_memberinfo.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/post_an_update_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/post_an_update_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/custom_gallery_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/custom_gallery_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/custom_gallery.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/custom_gallery.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_channels.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_channels.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/skilling_filters_child_lay.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/skilling_filters_child_lay.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_post.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_post.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_drug_sub_class.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_drug_sub_class.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_meimageview.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_meimageview.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_networksearch.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_networksearch.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/professional_skilling_fragment.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/professional_skilling_fragment.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/about_job_bottom_sheet.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/about_job_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/profile_qualification_section.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/profile_qualification_section.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/dashboard_bottom_sheet_modal_report_spam.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/dashboard_bottom_sheet_modal_report_spam.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/tab_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/tab_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_login.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/recyclelayout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/recyclelayout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/main_activity_app_bar.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/main_activity_app_bar.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_my_bookmarks.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_my_bookmarks.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_category_search.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_category_search.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_location_and_experience.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_location_and_experience.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/empty_notify_pending.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/empty_notify_pending.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/drug_searched_item_row.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/drug_searched_item_row.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/community_tab_organization.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/community_tab_organization.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/profile_publication_section.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/profile_publication_section.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_drugs.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_drugs.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/listitem_groupinfo.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/listitem_groupinfo.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/about__fragment.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/about__fragment.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/content_fullview.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/content_fullview.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_memberships.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_memberships.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_customgallery.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_customgallery.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_associations_det.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_associations_det.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/doceree_ad_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/doceree_ad_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/notification_info_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/notification_info_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/delete_account_popup.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/delete_account_popup.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/custom_view.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/custom_view.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/explore_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/explore_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_filtersearch.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_filtersearch.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/tab_text_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/tab_text_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/recommendations_list.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/recommendations_list.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_card_dialog.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_card_dialog.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/list_headerview.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/list_headerview.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_profilefullview.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_profilefullview.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/professional_tab_fragment.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/professional_tab_fragment.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/association_timeline_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/association_timeline_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_feedsearch.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_feedsearch.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/listadapter_listitem.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/listadapter_listitem.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/profile_professional_section.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/profile_professional_section.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/caseroom_notify_list_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/caseroom_notify_list_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/listitem_professionaladapter.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/listitem_professionaladapter.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_notifiction_setting.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_notifiction_setting.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/feedssearch_list.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/feedssearch_list.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_account_delete_ack.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_account_delete_ack.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_profile.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_profile.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_area_of_interest.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_area_of_interest.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/survey_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/survey_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_page.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_page.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_drug_feeds.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_drug_feeds.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_apply_job.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_apply_job.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_dialog_webview.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_dialog_webview.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/association_frament_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/association_frament_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_drug_details.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_drug_details.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fileslist_row.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fileslist_row.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/connects_network_header.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/connects_network_header.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_selectcontacts_listitem.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_selectcontacts_listitem.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/networktab_search.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/networktab_search.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_dashboard.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/comments_row_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/comments_row_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_print_fragement.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_print_fragement.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/item_available_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/item_available_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/channel_main.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/channel_main.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_inactive_members_card.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_inactive_members_card.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_reg.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_reg.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/subsciption_cat_section_header.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/subsciption_cat_section_header.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/knowledge_feeds_tab.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/knowledge_feeds_tab.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/sub_categories_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/sub_categories_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_video_stream.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_video_stream.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/available_at_section.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/available_at_section.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/knowledge_tab_feed.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/knowledge_tab_feed.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_web_view.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_web_view.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/navigation_view_header.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/navigation_view_header.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/no_sub_category_distribution_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/no_sub_category_distribution_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/community_tab_doctors.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/community_tab_doctors.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_speacility_dialog.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_speacility_dialog.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_signup_flow.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_signup_flow.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_invite_custom_message.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_invite_custom_message.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/category_tile_dashboard.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/category_tile_dashboard.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/view_loadmore.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/view_loadmore.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/media_tab_list_item_parent.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/media_tab_list_item_parent.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/item_imagethumbnail.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/item_imagethumbnail.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/imgplaceholder.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/imgplaceholder.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_empty.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_empty.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_media.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_media.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/my_contacts_listitem.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/my_contacts_listitem.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/tab_fragment_community.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/tab_fragment_community.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/profile_award_membership_section.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/profile_award_membership_section.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/spinner_text.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/spinner_text.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/listitem_eventcalenderadapter.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/listitem_eventcalenderadapter.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/profile_context_menu.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/profile_context_menu.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/community_list.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/community_list.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_category_loading.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_category_loading.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_previewcomments.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_previewcomments.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fullview_pager_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fullview_pager_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_academic.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_academic.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/community_tab_feed.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/community_tab_feed.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_connects.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_connects.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/dashboard_bottom_sheet_modal.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/dashboard_bottom_sheet_modal.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_drug_details.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_drug_details.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/network_connects.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/network_connects.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_settings_list_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_settings_list_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/preferences_child.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/preferences_child.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/feeds_fragment.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/feeds_fragment.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_selectcontacts.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_selectcontacts.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_community_pager.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_community_pager.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_preview.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_preview.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/dialog_help.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/dialog_help.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_community.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_community.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/otp_dialog_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/otp_dialog_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/search_contacts.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/search_contacts.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_drug_class.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_drug_class.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/jobfeedcompleteview.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/jobfeedcompleteview.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/trending_categories_child.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/trending_categories_child.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/survey_option_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/survey_option_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/community_tab_spotlight.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/community_tab_spotlight.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_basic_profile.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_basic_profile.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/user_search_results.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/user_search_results.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/listitem_systematicadapter.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/listitem_systematicadapter.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/notificationgroupadapter_listitem.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/notificationgroupadapter_listitem.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/search_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/search_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/chat_list_header.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/chat_list_header.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/speciality_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/speciality_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/tab_fragment_knowledge.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/tab_fragment_knowledge.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_media_files.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_media_files.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_feeds_summary.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_feeds_summary.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/event_calendar_section.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/event_calendar_section.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/knowledge_tab_drug.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/knowledge_tab_drug.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_comment.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_comment.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_department_members.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_department_members.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_caseroominvite.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_caseroominvite.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_categories_recent_tab.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_categories_recent_tab.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_filtersearch.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_filtersearch.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/channel_dashboard.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/channel_dashboard.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/bottom_sheet_child_lay_jobs.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/bottom_sheet_child_lay_jobs.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/bottom_sheet_modal.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/bottom_sheet_modal.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_network.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_network.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/no_sub_category_distribution.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/no_sub_category_distribution.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_profile_view.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_profile_view.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_professional_det.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_professional_det.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/shimmer_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/shimmer_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_aboutme.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_aboutme.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/dashboard_bottom_list.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/dashboard_bottom_list.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_sub_categories_list.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_sub_categories_list.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/directory__fragment.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/directory__fragment.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_chatact.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_chatact.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_awards_memberships.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_awards_memberships.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/report_spam_dialog.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/report_spam_dialog.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/account_delete_option_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/account_delete_option_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_me.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_me.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/place_row_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/place_row_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/shimmer_layout_channelstab.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/shimmer_layout_channelstab.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/fragment_explore.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/fragment_explore.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/knowledge_tab_medical_events.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/knowledge_tab_medical_events.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/listitem_membershipdapter.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/listitem_membershipdapter.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_edit_publications.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_edit_publications.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_category_distribution_tabs.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_category_distribution_tabs.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/date_picker_dialog.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/date_picker_dialog.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/dashboard_spam_report_bottom_list.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/dashboard_spam_report_bottom_list.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/drug_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/drug_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/multiple_images_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/multiple_images_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/resend_dialog.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/resend_dialog.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_mediaplayer.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_mediaplayer.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/pdf_view.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/pdf_view.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/actionbar_attachements.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/actionbar_attachements.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/drug_custom_tab.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/drug_custom_tab.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_otpconformation_screen.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_otpconformation_screen.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/categories_filter_item.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/categories_filter_item.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_mandatory_profile_info.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_mandatory_profile_info.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/drug_search_edt_layout.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/drug_search_edt_layout.xml"
+    },
+    {
+        "merged": "com.vam.whitecoats.app-mergeQaReleaseResources-6:/layout/activity_account_delete.xml",
+        "source": "com.vam.whitecoats.app-main-8:/layout/activity_account_delete.xml"
+    }
+]

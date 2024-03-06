@@ -1,0 +1,118 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.vam.whitecoats.ui.fragments.PrintPublicationsFragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:background="#80ffffff">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+     <com.google.android.material.textfield.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:hintTextAppearance="@style/FloatLableColor"
+         android:layout_marginTop="12dp">
+        <EditText
+            android:maxLength="100"
+            android:singleLine="true"
+            android:inputType="textCapSentences"
+            android:paddingLeft="6dp"
+            android:hint="@string/str_title"
+            android:id="@+id/onlinePub_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+     </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/FloatLableColor"
+            android:layout_marginTop="12dp">
+        <EditText
+            android:maxLength="150"
+            android:singleLine="true"
+            android:inputType="textCapSentences|textMultiLine|textNoSuggestions"
+            android:paddingLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/str_authors"
+            android:id="@+id/onlineauthors_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,. "/>
+       </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/FloatLableColor"
+            android:layout_marginTop="12dp">
+        <AutoCompleteTextView
+            android:maxLength="100"
+            style="@style/App_AutoCompleteTextViewStyle"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginTop="10dp"
+            android:hint="@string/str_journal"
+            android:id="@+id/onlinejournal_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ -:&amp;"/>
+      </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/FloatLableColor"
+            android:layout_marginTop="12dp">
+        <EditText
+            android:maxLength="100"
+            android:singleLine="true"
+            android:inputType="text|textNoSuggestions"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/str_webpage_link"
+            android:id="@+id/webpage_link"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            />
+      </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/online_add_btn"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/str_add_another_workplace"
+            android:background="@drawable/button_onselector"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

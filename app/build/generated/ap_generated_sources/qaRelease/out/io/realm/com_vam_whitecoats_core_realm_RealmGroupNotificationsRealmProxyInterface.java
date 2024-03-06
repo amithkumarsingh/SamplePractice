@@ -1,0 +1,57 @@
+package io.realm;
+
+
+public interface com_vam_whitecoats_core_realm_RealmGroupNotificationsRealmProxyInterface {
+    public String realmGet$group_notification_id();
+    public void realmSet$group_notification_id(String value);
+    public int realmGet$group_ackStatus();
+    public void realmSet$group_ackStatus(int value);
+    public int realmGet$group_readStatus();
+    public void realmSet$group_readStatus(int value);
+    public String realmGet$group_id();
+    public void realmSet$group_id(String value);
+    public String realmGet$group_name();
+    public void realmSet$group_name(String value);
+    public String realmGet$group_pic();
+    public void realmSet$group_pic(String value);
+    public String realmGet$group_pic_url();
+    public void realmSet$group_pic_url(String value);
+    public long realmGet$group_creation_time();
+    public void realmSet$group_creation_time(long value);
+    public String realmGet$group_admin_name();
+    public void realmSet$group_admin_name(String value);
+    public String realmGet$group_admin_pic();
+    public void realmSet$group_admin_pic(String value);
+    public int realmGet$group_admin_Doc_id();
+    public void realmSet$group_admin_Doc_id(int value);
+    public String realmGet$group_admin_specialty();
+    public void realmSet$group_admin_specialty(String value);
+    public String realmGet$group_admin_sub_specialty();
+    public void realmSet$group_admin_sub_specialty(String value);
+    public String realmGet$group_admin_workplace();
+    public void realmSet$group_admin_workplace(String value);
+    public String realmGet$group_admin_email();
+    public void realmSet$group_admin_email(String value);
+    public String realmGet$group_admin_phno();
+    public void realmSet$group_admin_phno(String value);
+    public String realmGet$group_admin_email_vis();
+    public void realmSet$group_admin_email_vis(String value);
+    public String realmGet$group_admin_phno_vis();
+    public void realmSet$group_admin_phno_vis(String value);
+    public String realmGet$group_admin_location();
+    public void realmSet$group_admin_location(String value);
+    public String realmGet$group_admin_qb_user_id();
+    public void realmSet$group_admin_qb_user_id(String value);
+    public String realmGet$group_notification_type();
+    public void realmSet$group_notification_type(String value);
+    public long realmGet$group_notification_time();
+    public void realmSet$group_notification_time(long value);
+    public int realmGet$count_status();
+    public void realmSet$count_status(int value);
+    public String realmGet$group_admin_pic_url();
+    public void realmSet$group_admin_pic_url(String value);
+    public int realmGet$user_type_id();
+    public void realmSet$user_type_id(int value);
+    public String realmGet$user_salutation();
+    public void realmSet$user_salutation(String value);
+}

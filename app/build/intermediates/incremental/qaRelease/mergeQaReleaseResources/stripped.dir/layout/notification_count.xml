@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    style="@android:style/Widget.ActionButton">
+
+    <ImageView
+        android:id="@+id/notification_img"
+        android:src="@drawable/ic_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:contentDescription="bell"
+        android:layout_gravity="center" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/notification_count_text"
+        android:layout_width="15dp"
+        android:minWidth="15sp"
+        android:textSize="10sp"
+        android:textColor="@color/app_green"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:layout_alignTop="@id/notification_img"
+        android:layout_alignRight="@id/notification_img"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/circle_bg"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="14dp"/>
+</FrameLayout>

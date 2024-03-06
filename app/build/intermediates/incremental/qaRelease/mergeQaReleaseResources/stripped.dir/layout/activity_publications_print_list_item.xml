@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="8dp"
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_weight="1.7"
+        android:padding="10dp"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/print_text"/>
+
+    <EditText
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/item_edit_text"
+        android:layout_weight="1.7"
+        android:padding="10dp"
+        android:imeOptions="actionDone"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/edit_layout"
+        android:gravity="top|right"
+        android:layout_weight="0.3"
+        android:layout_width="44dp"
+        android:layout_height="44dp">
+<!--
+    <ImageView
+        android:src="@drawable/ic_edit_pencil"
+        android:id="@+id/edit_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:visibility="gone"
+        android:src="@drawable/ic_grey_check"
+        android:id="@+id/ok_grey_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:visibility="gone"
+        android:src="@drawable/ic_green_check"
+        android:id="@+id/ok_green_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+    </LinearLayout>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/remove_layout"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/ic_delete"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/remove_publication_tx"
+            android:text="@string/str_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+       <!-- <TextView
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_cross_reject"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="Cancel Edit"
+            android:id="@+id/cancel_publication_edit_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+    </RelativeLayout>
+</LinearLayout>

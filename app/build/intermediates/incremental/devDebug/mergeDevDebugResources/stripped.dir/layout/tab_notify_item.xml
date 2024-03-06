@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/tab_indicator">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="@drawable/tab_text_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_title"
+            android:text="Dashboard"
+            android:textSize="10sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notify_connects_tab_count"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:textColor="#00A76D"
+            android:singleLine="true"
+            android:gravity="right"
+            android:layout_gravity="right|top"
+            />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false">
+
+    <include
+        android:id="@+id/main_push_header_layout"
+        layout="@layout/header_push_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <LinearLayout
+        android:id="@+id/push_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_push_header_layout"
+        android:layout_toLeftOf="@id/app_icon_image"
+        android:minHeight="@dimen/push_text_layout_minheight"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/text_content_border_less"
+            layout="@layout/push_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/text_content_border"
+            layout="@layout/push_content_layout_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/app_icon_image"
+        android:layout_width="@dimen/push_large_icon_size"
+        android:layout_height="@dimen/push_large_icon_size"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="3dp"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:id="@+id/bottom_icon_image"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/push_text_layout"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:src="@drawable/bk_push_expand_icon" />
+</RelativeLayout>

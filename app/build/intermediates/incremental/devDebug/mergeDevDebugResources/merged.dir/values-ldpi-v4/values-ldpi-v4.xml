@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="already_user_label_size">16sp</dimen>
+    <dimen name="login_button_lable_size">20sp</dimen>
+    <dimen name="login_layout_padding">12dp</dimen>
+    <dimen name="margin_bottom_new_account">8dp</dimen>
+    <dimen name="new_account_label_size">20sp</dimen>
+    <dimen name="register_button_lable_size">16sp</dimen>
+    <dimen name="register_layout_padding">10dp</dimen>
+    <dimen name="time_info_lable_size">14sp</dimen>
+    <dimen name="time_info_margin_bottom">8dp</dimen>
+</resources>

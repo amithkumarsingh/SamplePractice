@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/latest_commented_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/seperator_line"
+        android:background="#1A231f20" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seperator_line"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp">
+
+        <com.vam.whitecoats.ui.customviews.RoundedImageView
+            android:id="@+id/commented_doc_pic"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/default_profilepic" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/commented_doc_pic"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/commented_doc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Dr. some one "
+                android:textColor="#8A231f20"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/latest_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_below="@+id/commented_doc_name"
+                android:text="nice finding "
+                android:textColor="#DE231f20"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

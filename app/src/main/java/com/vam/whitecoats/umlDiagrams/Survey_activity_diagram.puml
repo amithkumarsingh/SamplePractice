@@ -1,0 +1,21 @@
+@startuml
+start
+  fork
+    :Dashboard;
+  fork again
+    :TimeLine;
+    floating note left: click survey feed
+  end fork
+
+:Survey FullView;
+:Submit Survey;
+ floating note right: send survey request
+if (success?) then (Yes)
+    :Process Survey Response;
+    :Update in DB (or)
+    Update TimeLine Response;
+    stop
+else (No)
+    : Display Error Msg;
+    stop
+@enduml

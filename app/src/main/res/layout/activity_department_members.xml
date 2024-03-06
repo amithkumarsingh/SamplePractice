@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/listviewlOut">
+
+    <com.vam.whitecoats.ui.customviews.ScrollInterfacedListView
+        android:scrollbars="none"
+        android:divider="@drawable/customlistview_divider"
+        android:dividerHeight="1dp"
+        android:id="@+id/membersListview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:footerDividersEnabled="false">
+    </com.vam.whitecoats.ui.customviews.ScrollInterfacedListView>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/emptyTxtview"
+        android:gravity="center"
+        android:text="@string/str_noresults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

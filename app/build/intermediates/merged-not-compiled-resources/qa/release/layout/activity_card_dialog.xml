@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+
+
+        <RelativeLayout
+            android:id="@+id/card_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/card_sub_specialty"
+            android:layout_toRightOf="@+id/card_sub_specialty"
+            android:background="@drawable/block">
+
+            <com.vam.whitecoats.ui.customviews.RoundedImageView
+                android:id="@+id/visit_card_pic_img"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/default_profilepic" />
+
+            <TextView
+                android:id="@+id/card_visit_other_name"
+                style="@style/MyTextViewHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/visit_card_pic_img"
+                android:text="Dr.Shruti Agarwal"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- <TextView
+                 android:id="@+id/card_visit_other_degree"
+                 android:layout_below="@+id/card_visit_other_name"
+                 style="@style/MyTextViewSmallItalic"
+                 android:layout_toRightOf="@+id/visit_card_pic_img"
+                 android:text="MBBS,MD"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />-->
+
+            <TextView
+                android:id="@+id/card_visit_others_specialty"
+                style="@style/MyTextViewBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_visit_other_name"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/visit_card_pic_img"
+                android:text="Orthopedist" />
+
+            <TextView
+                android:id="@+id/card_sub_specialty"
+                style="@style/MyTextViewBody3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_visit_others_specialty"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/visit_card_pic_img"
+                android:text="asdasdhgfjhfjhgfjhfhfhgfjhgfjhfjhgghjhgfhjghgfhgfhgfhgfhgfhfhg"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/card_visit_others_workplace"
+                style="@style/MyTextViewBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_sub_specialty"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/visit_card_pic_img"
+                android:maxLines="1"
+                android:text="Apollo Hospital" />
+
+            <TextView
+                android:id="@+id/card_visit_others_location"
+                style="@style/MyTextViewBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_visit_others_workplace"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/visit_card_pic_img"
+                android:singleLine="true"
+                android:text="Banjara Hills,Hyderabad" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/card_visit_others_location"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#1A231f20" />
+
+            <TextView
+                android:id="@+id/view_complete_profile_tv"
+                style="@style/MyTextViewTitleLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separator"
+                android:layout_centerHorizontal="true"
+                android:text="@string/view_complete"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/separator01"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/view_complete_profile_tv"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:background="#1A231f20" />
+
+            <LinearLayout
+                android:id="@+id/phone_linerLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separator01"
+                android:orientation="horizontal"
+                android:paddingRight="1dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/card_email_id"
+                    style="@style/MyTextViewBody1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/separator01"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="0.30"
+                    android:background="@drawable/bg_capsule"
+                    android:drawableLeft="@drawable/ic_user_email"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/ic_verified"
+                    android:ellipsize="middle"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="15dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/verify_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.70"
+                    android:maxLines="1"
+                    android:text="Verify email"
+                    android:textColor="@color/app_green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/email_linerLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_linerLay"
+                android:orientation="horizontal"
+                android:paddingRight="1dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/card_contact_id"
+                    style="@style/MyTextViewBody1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/separator01"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/bg_capsule"
+                    android:drawableLeft="@drawable/ic_user_phone"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/ic_verified"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="15dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/verify_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:maxLines="1"
+                    android:text="Verify phone"
+                    android:textColor="@color/app_green" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/message_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_message" />
+
+        <ImageView
+            android:id="@+id/share_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_share"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/add_req_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_invite"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,340 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        tools:context="com.vam.whitecoats.ui.fragments.AboutJobRoleFragment"
+        >
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:id="@+id/content_about_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_job_desc_top"
+                android:text="Job Description"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:orientation="vertical"
+                android:stretchColumns="*">
+
+                <TableRow android:id="@+id/tile_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Title/Position"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_job_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="valueTxt"
+                        android:textColor="#000000" />
+
+
+                </TableRow>
+                <TableRow android:id="@+id/org_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Organization"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_organization"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Org value"
+                        android:textColor="#000000" />
+
+
+                </TableRow>
+
+                <TableRow android:id="@+id/role_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Role"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_job_role"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Role value"
+                        android:textColor="#000000" />
+
+
+                </TableRow>
+
+                <TableRow android:id="@+id/location_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Location"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_job_location"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text=""
+                        android:textColor="#000000" />
+
+
+                </TableRow>
+
+                <TableRow android:id="@+id/compensation_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Compensation"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_compensation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Compensation value"
+                        android:textColor="#000000" />
+
+
+                </TableRow>
+
+                <TableRow android:id="@+id/deadline_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Application Deadline"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_deadline"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Deadline value"
+                        android:textColor="#000000" />
+
+
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginLeft="24dp"
+                android:text="@string/min_qualification"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:orientation="vertical"
+                android:stretchColumns="*">
+
+                <TableRow android:id="@+id/exp_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Experience"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_experience"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Exp value"
+                        android:textColor="#000000" />
+
+
+                </TableRow>
+
+                <TableRow android:id="@+id/specialization_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Specialization"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_specialization"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text=""
+                        android:textColor="#000000" />
+
+
+                </TableRow>
+
+                <TableRow android:id="@+id/qualification_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Qualifications"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_qualification"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Qualifications value"
+                        android:textColor="#000000" />
+
+
+                </TableRow>
+
+                <TableRow android:id="@+id/focus_area_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Focus Areas"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_focus_areas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Focus areas value"
+                        android:textColor="#000000" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+           <!--Added the id filed fro below text view other requirements -->
+            <TextView
+                android:id="@+id/tv_other_requirement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginLeft="24dp"
+                android:text="@string/other_requirements"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:textColor="@color/black"
+                android:text="Criteria 1"
+                android:id="@+id/tv_criteria_1">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="24dp"
+                android:text="Criteria 2"
+                android:id="@+id/tv_criteria_2">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="24dp"
+                android:text="Criteria 3"
+                android:id="@+id/tv_criteria_3">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <include layout="@layout/postcreator_and_latestcomment_layout">
+
+        </include>
+
+    </LinearLayout>
+</ScrollView>

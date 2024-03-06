@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="#ececec"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp">
+
+    <TextView
+        android:id="@+id/trending_categories_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:text="Trending categories"
+        android:textAllCaps="true"
+        android:textColor="#DE231f20"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trending_categories_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:requiresFadingEdge="horizontal"
+        android:fadingEdgeLength="25dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layoutAnimation="@anim/item_animation_from_right"
+        />
+
+</LinearLayout>

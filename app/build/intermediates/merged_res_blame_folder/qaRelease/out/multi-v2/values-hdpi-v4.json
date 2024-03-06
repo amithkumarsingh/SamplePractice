@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.vam.whitecoats.app-mergeQaReleaseResources-5:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\AmithKumarSingh\\.gradle\\caches\\transforms-3\\a28938a9c5f631fd93f94422ce5e866e\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "546",
+                        "endLines": "15",
+                        "endColumns": "13",
+                        "endOffsets": "818"
+                    }
+                },
+                {
+                    "source": "C:\\Projects\\whitecoats-android-native\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "from": {
+                        "startLines": "5,6,12,8,2,4,11,3,9",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "257,313,541,371,90,198,485,145,428",
+                        "endColumns": "54,54,51,55,53,57,54,51,53",
+                        "endOffsets": "307,363,588,422,139,251,535,192,477"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,110,165,217,273,327,385,440,492",
+                        "endColumns": "54,54,51,55,53,57,54,51,53",
+                        "endOffsets": "105,160,212,268,322,380,435,487,541"
+                    }
+                }
+            ]
+        }
+    ]
+}

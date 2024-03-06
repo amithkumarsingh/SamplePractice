@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="18dp"
+    android:orientation="horizontal"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <RelativeLayout
+        android:id="@+id/tile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/admin_profile_pic">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/admin_name_txt"
+                style="@style/MyTextViewBody2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/admin_designation_txt"
+                style="@style/MyTextViewBody3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Speciality" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/admin_chat_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_message"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/admin_connect_text"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/border_text"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="connect"
+            android:textAllCaps="true"
+            android:textColor="#00a76d"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- <TextView
+         android:id="@+id/createdby"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@id/imageurl"
+         android:layout_marginTop="1dp"
+         android:text="fgsdg" />-->
+
+    <com.vam.whitecoats.ui.customviews.RoundedImageView
+        android:id="@+id/admin_profile_pic"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/default_profilepic" />
+
+</RelativeLayout>
+

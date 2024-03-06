@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+  <CheckBox
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/selection_checkbox"
+      android:maxLines="1" />
+
+  <TextView
+      android:id="@+id/speciality_or_location_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:maxLines="1"
+      android:text="@string/speciality"
+      android:textColor="@color/black"
+      android:textSize="14sp"
+      android:layout_toRightOf="@+id/selection_checkbox"
+     />
+
+</LinearLayout>

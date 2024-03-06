@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ececec">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <RelativeLayout
+            android:id="@+id/tile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="3dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/imageurl">
+
+                <TextView
+                    android:id="@+id/name_txt"
+                    style="@style/MyTextViewBody1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/speciality_txt"
+                    style="@style/MyTextViewBody3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Speciality"
+                    android:layout_below="@+id/name_txt"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status_layout">
+            <ImageView
+                android:id="@+id/chat_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_message"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/connect_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/border_text"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="@string/str_connect"
+                android:textAllCaps="true"
+                android:textColor="@color/app_green"
+                android:textSize="10sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_onselector"
+                android:layout_centerVertical="true"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:text="Unfollow"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:id="@+id/followBtn"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/ic_follow"
+                />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.vam.whitecoats.ui.customviews.RoundedImageView
+            android:id="@+id/imageurl"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/default_profilepic" />
+    </RelativeLayout>
+</RelativeLayout>

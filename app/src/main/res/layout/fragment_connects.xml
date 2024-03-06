@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.vam.whitecoats.ui.fragments.NotifyConnectsFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/device_notification_on_cv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0.0px"
+        android:elevation="4dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <include
+            layout="@layout/notification_enable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </include>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notify_connects_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/device_notification_on_cv1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:visibility="visible">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/notify_textconnects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/connects_notify"
+        android:textColor="#8A231f20"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</RelativeLayout>

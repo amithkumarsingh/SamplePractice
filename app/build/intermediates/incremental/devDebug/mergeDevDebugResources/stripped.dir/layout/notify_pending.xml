@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="4"
+            android:id="@+id/nwre_layout">
+        <com.vam.whitecoats.ui.customviews.RoundedImageView
+            android:id="@+id/nwnotification_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/default_profilepic" />
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+        <TextView
+            android:id="@+id/nwnotify_item_name_txt"
+            style="@style/MyTextViewBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Dr.Rameshwara"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/nwnotify_item_splty_txt"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:text="Cardiologist"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inner_lout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1.5">
+
+            <ImageView
+                android:id="@+id/notify_reject_ig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cross_reject"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:id="@+id/notify_accept_ig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/ic_check_accept" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

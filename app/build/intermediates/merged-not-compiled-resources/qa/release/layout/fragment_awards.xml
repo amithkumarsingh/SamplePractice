@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vam.whitecoats.ui.fragments.Awards_fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:hintTextAppearance="@style/FloatLableColor">
+
+                <EditText
+                    android:id="@+id/awards_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/award_title"
+                    android:inputType="textCapSentences"
+                    android:maxLength="500"
+                    android:maxLines="1"
+                    android:paddingLeft="6dp" />
+
+                <TextView
+                    android:id="@+id/awards_title_error"
+                    style="@style/TextViewErrorStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please provide awards title" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:hintTextAppearance="@style/FloatLableColor">
+
+                <EditText
+                    android:id="@+id/presented_at"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/presented_at"
+                    android:inputType="textCapSentences"
+                    android:maxLength="500"
+                    android:maxLines="1"
+                    android:paddingLeft="6dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/FloatLableColor"
+            android:layout_marginTop="12dp">
+            <EditText
+                android:maxLength="500"
+                android:maxLines="1"
+                android:inputType="date"
+                android:paddingLeft="6dp"
+                android:hint="@string/year"
+                android:id="@+id/year_awards"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:focusable="false"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/add_award_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_onselector"
+                android:text="ADD ANOTHER AWARD"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</ScrollView>

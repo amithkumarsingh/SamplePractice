@@ -1,0 +1,46 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="82dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/explore_tile">
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/explore_item_layout"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/category_tile_border">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/default_channel_logo"
+            android:layout_centerInParent="true"
+            android:id="@+id/explore_item_icon"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/explore_item_count"
+        android:layout_alignRight="@+id/explore_item_layout"
+        android:background="@drawable/circular_badge"
+        android:textSize="8sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/explore_item_layout"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:id="@+id/explore_item_name"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:breakStrategy="simple"
+        android:text="clinical Discussion"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="center"/>
+</RelativeLayout>

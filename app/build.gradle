@@ -1,0 +1,286 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'kotlin-android'
+apply plugin: 'org.sonarqube'
+
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.vam.whitecoats"
+
+        minSdkVersion 21
+        targetSdkVersion 33
+        multiDexEnabled true
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        javaCompileOptions {
+            annotationProcessorOptions {
+              //  includeCompileClasspath true
+            }
+        }
+        ndk {
+            abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+    buildFeatures{
+        viewBinding true
+    }
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            ext.enableCrashlytics = true
+        }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    aaptOptions {
+        noCompress "pdf"
+    }
+
+    testOptions { // <-- You need this
+        unitTests {
+            returnDefaultValues = true
+        }
+    }
+
+    /**
+     * Solve the problem when using multiple free source libs
+     * NOTICE or LICENSE files cause duplicates
+     */
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES'
+        //exclude duplicate butterknife and parceler libs
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/rxjava.properties'
+
+    }
+    flavorDimensions("default")
+    productFlavors {
+        qa {
+            applicationId "com.vam.whitecoats.qa"
+            versionCode 96
+            versionName '1.11.61'
+            resValue("string", "app_name", "WC QA")
+        }
+        dev {
+            versionCode 96
+            versionName '1.11.61'
+            applicationId "com.vam.whitecoats.dev"
+            resValue("string", "app_name", "WC Dev")
+        }
+        stage {
+            versionCode 96
+            versionName '1.11.61'
+            applicationId "com.vam.whitecoats.stage"
+            resValue("string", "app_name", "WC Stage")
+        }
+        uat {
+            versionCode 96
+            versionName '1.11.61'
+            applicationId "com.vam.whitecoats.uat"
+            resValue("string", "app_name", "WC Uat")
+        }
+        prod {
+            versionCode 96
+            versionName '1.11.61'
+            applicationId "com.vam.whitecoats"
+            resValue("string", "app_name", "WhiteCoats")
+        }
+        qakb {
+            versionCode 96
+            versionName '1.11.61'
+            applicationId "com.vam.whitecoats.qakb"
+            resValue("string", "app_name", "WC QAKB")
+        }
+    }
+    ndkVersion '21.0.6113669'
+}
+
+/*
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+   */
+/* dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.0'
+    }*//*
+
+}
+*/
+/*
+repositories {
+    maven {
+        url 'https://maven.google.com/'
+        name 'Google'
+    }
+    */
+/*
+
+    mavenCentral()
+
+
+}
+*/
+
+sonarqube {
+    properties {
+        property "sonar.projectName", "whitecoats-android-native"
+        property "sonar.projectKey", "WhiteCoats_Network"
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.language", "java"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.sources", "src/main/java"
+        property "sonar.binaries", "build"
+        property "sonar.login", "admin"
+        property "sonar.password", "Passw0rd"
+
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':showcaseview')
+    implementation project(':awesomeimagepicker')
+    implementation project(':countrycodepicker')
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.guava:guava:21.0'
+    implementation 'com.google.android.material:material:1.9.0-alpha02'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.2'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+    implementation 'org.apache.commons:commons-lang3:3.4'
+
+    // Recommended to add Google Play Services
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+
+    // Required for Flurry Analytics integration
+    implementation 'com.flurry.android:analytics:14.0.0'
+
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    implementation 'com.soundcloud.android:android-crop:1.0.1@aar'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    //aws
+    implementation 'com.amazonaws:aws-android-sdk-core:2.16.13'
+    //implementation 'com.amazonaws:aws-android-sdk-cognito:2.16.+'
+    implementation 'com.amazonaws:aws-android-sdk-s3:2.16.13'
+    //implementation 'com.amazonaws:aws-android-sdk-ddb:2.16.+'
+
+
+    implementation 'es.voghdev.pdfviewpager:library:1.1.2'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0'
+    // Urban Airship - FCM
+    //implementation 'com.urbanairship.android:urbanairship-fcm:9.3.1'
+  //  apply plugin: 'com.google.gms.google-services'
+    implementation 'com.squareup.duktape:duktape-android:1.1.0'
+//    implementation files('libs/BrandKinesis-live-release-V1.6.0.aar')
+    implementation files('libs/BrandKinesis-androidx-live-release-V1.6.5.aar')
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation('androidx.work:work-runtime:2.8.0') {
+        exclude group: 'com.google.guava', module: 'listenablefuture'
+    }
+    implementation project(':imageeditengine')
+    implementation project(':mediapicker')
+    implementation project(':androidtagview')
+
+    // For Java
+    //implementation 'androidx.work:work-runtime:2.8.0'
+    // For Kotlin
+    implementation 'androidx.work:work-runtime-ktx:2.8.0'
+
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.7.2'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.2'
+
+    implementation 'com.google.android.libraries.places:places:3.0.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.github.AbedElazizShe:LightCompressor:0.7.4'
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
+    def arch_version = '2.6.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$arch_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$arch_version"
+
+    implementation 'org.greenrobot:eventbus:3.2.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    //implementation 'com.github.doceree:android-sdk:2.0.3'
+    implementation 'com.github.doceree:android-sdk:3.2.0'
+    //implementation 'com.github.doceree:android-sdk:3.1.2'
+
+    implementation 'io.sentry:sentry-android:5.1.0'
+    implementation 'com.google.android.play:core:1.10.3'
+    implementation 'com.gu.android:toolargetool:0.3.0'
+
+    // lifecycle
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.6.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-web:3.5.1'
+
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+
+    testImplementation 'androidx.test:core:1.5.0'
+
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+
+    implementation 'junit:junit:4.13.2'
+    testImplementation 'junit:junit:4.13.2'
+// App's dependencies, including test
+//testing dependencies
+    androidTestImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.annotation:annotation:1.6.0'
+    androidTestImplementation 'com.android.support:support-annotations:28.0.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    testImplementation "org.robolectric:robolectric:4.3"
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.5.1'
+
+    // App's dependencies, including test
+    //testing dependencies
+    testImplementation('com.squareup.assertj:assertj-android:1.0.0') {
+        exclude module: 'support-annotations'
+    }
+
+}
+
+// ADD THIS AT THE BOTTOM
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,63 @@
+a@startuml
+hide footbox
+actor User
+
+entity dashboard
+entity  NetworkSearchActivity
+entity  NetworkSearchAdapter
+entity globalSearchActivity
+entity globalSearchAdapter
+entity feedSearchActivity
+entity FilterSearchActivity
+entity RecommendationsRecyclerAdapter
+entity server
+
+note over  User, server
+   When user selects search magnifier option in dashboard
+  user should able to search doctors,feeds and cases.
+end note
+
+alt
+User-->dashboard :  User search from dashboard
+dashboard-->NetworkSearchActivity:when user taps on search magnifier \n Display's Doctor's search tab and feedsearch tab with search bar
+NetworkSearchActivity -->NetworkSearchActivity: No validation when user clicks on doctors tab
+NetworkSearchActivity --> server: when user taps on doctors tab with empty text input search.
+server --> NetworkSearchActivity: get Results of Non-Connected Users
+NetworkSearchActivity --> NetworkSearchAdapter: Results of Non-Connected Users sent to form list
+NetworkSearchAdapter --> NetworkSearchActivity: Display Results list of Non-Connected Users.
+NetworkSearchActivity --> FilterSearchActivity: when user selects based on filters
+FilterSearchActivity --> server:send filter details(location,workplace and speciality)
+server --> FilterSearchActivity:send filter based results
+FilterSearchActivity --> NetworkSearchActivity: display results of filter based search
+
+
+NetworkSearchActivity --> NetworkSearchActivity:enter min 2 characters to search
+NetworkSearchActivity -->  server  : when user enters min two characters and taps on search
+server --> NetworkSearchActivity  : get resonse when user enters min two characters and taps on Search
+NetworkSearchActivity --> globalSearchActivity: Results with combiation of feeds and doctors
+globalSearchActivity --> globalSearchAdapter:   Results with combiation of feeds and doctors sent to form list
+globalSearchAdapter --> globalSearchActivity:   Results with combiation of feeds and doctors list tobe displayed
+globalSearchActivity --> NetworkSearchActivity: Display combiation results
+
+NetworkSearchActivity-->NetworkSearchActivity: please provide search keyword
+NetworkSearchActivity --> server: when user enter input text and taps on feedSearchtab for search
+server --> NetworkSearchActivity: get response of data
+NetworkSearchActivity --> feedSearchActivity: results of response
+feedSearchActivity --> RecommendationsRecyclerAdapter:  send results to form list
+RecommendationsRecyclerAdapter --> feedSearchActivity: FeedSearch list results will be displayed
+feedSearchActivity --> NetworkSearchActivity: FeedSearch results will be displayed
+
+NetworkSearchActivity --> FilterSearchActivity: send filter details
+FilterSearchActivity --> server:send filter details(location,workplace and speciality)
+server --> FilterSearchActivity: display filter results(location,workplace and speciality)
+FilterSearchActivity --> NetworkSearchActivity: Display user search results based on location,speciality and workplace
+
+note over  NetworkSearchActivity, server
+   url: "v1/search"
+
+end note
+
+end
+
+
+@enduml

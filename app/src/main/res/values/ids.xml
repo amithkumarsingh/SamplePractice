@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layout1" type="id" />
+    <item name="removeId" type="id" />
+    <item name="modeId" type="id" />
+    <item name="saveID" type="id" />
+    <item name="clock_Wise" type="id" />
+    <item name="anti_clock_Wise" type="id" />
+    <item name="scrollId" type="id" />
+    <item type="id" name="home" />
+    <item name="feed_description_web" type="id"/>
+
+
+</resources>

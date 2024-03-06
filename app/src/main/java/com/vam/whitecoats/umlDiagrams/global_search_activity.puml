@@ -1,0 +1,42 @@
+@startuml
+(*)  --> "Login"
+"Login" --> "Dashboard"
+
+If "input is search text" then
+--> [Yes] "NetworkSearchActivity"
+Endif
+
+If "input is empty search text results should be \n with non connected users" then
+-left->[Yes] "NetworkSearchAdapter"
+else
+    if "input is search text results should be \n combination of feeds and doctors" then
+    -left-> [Yes] "globalResultsActivity"
+else
+    if"send results back to display"
+    -->[Yes] "NetworkSearchActivity"
+   "globalResultsActivity" --> "NetworkSearchActivity"
+
+Endif
+
+If "input is doctors View All button click" then
+--> [Yes]  "NetworkSearchAdapter"
+else
+    if "input is feeds View All button click"
+    --> [Yes] "feedsSearchActivity"
+Endif
+
+"NetworkSearchActivity" -left-> "filtersearchActivity"
+"filtersearchActivity" --> "NetworkSearchActivity"
+"NetworkSearchActivity" -->"globalResultsActivity"
+"globalResultsActivity" -left-> "globalResultsadapter"
+"globalResultsadapter" --> "globalResultsActivity"
+"NetworkSearchAdapter" --> "NetworkSearchActivity"
+
+
+"NetworkSearchActivity" -->"feedsSearchActivity"
+"feedsSearchActivity" --> "RecommendationsRecyclerAdapter"
+"RecommendationsRecyclerAdapter" --> "feedsSearchActivity"
+"feedsSearchActivity" --> "NetworkSearchActivity"
+
+-->(*)
+@enduml

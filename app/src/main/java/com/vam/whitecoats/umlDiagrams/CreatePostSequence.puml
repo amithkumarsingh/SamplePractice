@@ -1,0 +1,32 @@
+a@startuml
+hide footbox
+actor User
+
+entity createpost
+entity  specialities
+entity  departments
+entity server
+
+note over  User, server
+   When user selects create post option in dashboard
+   or timeline user should able to create post
+end note
+
+alt if(user enter into dashboard\nor channels Timeline)
+User-->createpost :  User creates post from dashboard
+createpost-->specialities:by default all specialities are\n checked when user selects\nand user allowed to select his own preference
+specialities-->server: get specialities list from server
+server--->specialities:specialities list will be displayed
+specialities-->createpost: user selected specialities will be\ndisplayed on create post screen
+createpost-->departments: get departments \n on create post screen for communityPost
+departments-->server: get departments list from server
+server--->departments:departments list will be displayed
+departments-->createpost: user selected departments will be\ndisplayed on create post screen for communityPost
+createpost-->server: once user enter's mandatory fields and user\nwill click on post button
+
+
+server-->server:
+end
+
+
+@enduml

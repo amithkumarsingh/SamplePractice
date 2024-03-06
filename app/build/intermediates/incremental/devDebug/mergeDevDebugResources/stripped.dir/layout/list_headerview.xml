@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:padding="4dp"
+    android:text="@string/str_load_more_messages"
+    android:id="@+id/load_more_messages"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+</TextView>

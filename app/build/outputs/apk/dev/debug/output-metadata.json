@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.vam.whitecoats.dev",
+  "variantName": "devDebug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 96,
+      "versionName": "1.11.61",
+      "outputFile": "app-dev-debug.apk"
+    }
+  ],
+  "elementType": "File"
+}

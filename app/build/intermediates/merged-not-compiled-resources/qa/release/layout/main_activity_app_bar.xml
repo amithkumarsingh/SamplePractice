@@ -1,0 +1,197 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/dashBoardAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginRight="16dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeToolbar">
+
+            <include
+                layout="@layout/profile_context_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"/>
+
+            <TextView
+                android:id="@+id/search_magifier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashboard_rounded"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/ic_search_icon_new"
+                android:ellipsize="end"
+                android:hint="Search doctors, cases or articles"
+                android:maxLines="1"
+                android:padding="5dip" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <LinearLayout
+            android:id="@+id/category_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:paddingLeft="8dp"
+            android:paddingTop="12dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/category_list_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/category_list_dummy_view"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:visibility="gone"
+            android:background="#ececec"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!---your RecyclerView/Fragment Container Layout-->
+
+
+    <!-- <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+    <!--<LinearLayout
+        android:id="@+id/category_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="8dp"
+        android:paddingTop="16dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/category_list_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>-->
+
+
+    <com.vam.whitecoats.utils.CustomViewPager
+        android:id="@+id/dash_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category_list_layout"
+        app:layout_behavior="com.vam.whitecoats.utils.ScrollViewWithBottomAppBar" />
+    <!--    </RelativeLayout>-->
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:elevation="8dp"
+        app:fabCradleMargin="0dp"
+        app:fabCradleRoundedCornerRadius="0dp"
+        app:fabCradleVerticalOffset="0dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#ececec"
+            app:labelVisibilityMode="selected"
+            app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+            app:itemTextAppearanceInactive="@style/BottomNavigationView"
+            app:itemIconTint="@drawable/tab_text_background"
+            app:itemTextColor="@drawable/tab_text_background"
+            app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+            app:menu="@menu/bottom_navigation_items" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/post_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/ic_post_fab_dashboard"
+        app:backgroundTint="@color/white"
+        app:fabCustomSize="44dp"
+        app:layout_anchor="@id/bottomAppBar"
+        app:layout_anchorGravity="center"
+        app:maxImageSize="24dp" />
+
+    <TextView
+        android:id="@+id/fab_post_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="Post"
+        android:textSize="11sp"
+        app:layout_anchor="@id/bottomAppBar"
+        app:layout_anchorGravity="center|bottom" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_button_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="65dp"
+        android:visibility="gone"
+        app:backgroundTint="@color/app_green" />
+
+    <!--<com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/post_fab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/app_green"
+        android:text="Post"
+        android:textColor="#FFFFFF"
+        app:icon="@drawable/post_fab"
+        app:iconTint="@android:color/white"
+        app:rippleColor="@android:color/black"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="65dp"
+        android:layout_marginRight="8dp"
+        android:visibility="gone"/>-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!---NavigationView-->

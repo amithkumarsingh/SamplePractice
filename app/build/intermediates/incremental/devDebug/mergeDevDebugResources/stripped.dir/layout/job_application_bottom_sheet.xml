@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sheet_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:paddingBottom="10dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/Preferred_location_speciality_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="38dp"
+        android:includeFontPadding="false"
+        android:text=""
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintWidth_percent="0.20"
+        android:textColor="@color/gray"/>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Preferred_location_speciality_text"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Preferred_location_speciality_text"/>
+
+
+    <ListView
+        android:id="@+id/job_speciality_location_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/done_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator"
+        tools:itemCount="20"
+        android:divider="@null"/>
+
+    <TextView
+        android:id="@+id/done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:gravity="center"
+        android:letterSpacing="0"
+        android:paddingTop="8dp"
+        android:paddingBottom="11dp"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textColor="@color/app_green"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/job_speciality_location_list"
+        app:layout_constraintStart_toStartOf="@+id/job_speciality_location_list"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_marginTop="500dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

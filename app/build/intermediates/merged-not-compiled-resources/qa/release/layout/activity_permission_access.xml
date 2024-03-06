@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vam.whitecoats.ui.activities.PermissionAccessActivity">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_permission"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:id="@+id/image"
+    android:layout_above="@+id/permission_required_text"
+    android:layout_marginTop="30dp"/>
+
+
+  <TextView
+      android:id="@+id/permission_required_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/permission_required"
+      android:layout_above="@+id/your_device_id_text"
+      android:layout_marginTop="30dp"
+      android:layout_centerHorizontal="true"
+      android:gravity="center"
+      android:textSize="20sp"
+      android:textColor="@color/app_green"
+      android:paddingTop="4dp"
+      android:paddingBottom="4dp"/>
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="xcccc"
+     android:id="@+id/your_device_id_text"
+     android:layout_above="@+id/standard_permission_text"
+     android:layout_centerHorizontal="true"
+     android:gravity="center"
+     android:paddingLeft="16dp"
+     android:paddingRight="16dp"
+     android:layout_marginTop="16dp"
+     android:textSize="14sp"
+     android:textColor="#707070"
+     android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ccxcxxcxc"
+        android:id="@+id/standard_permission_text"
+        android:layout_above="@+id/allow_text"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#707070"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+
+
+    <TextView
+        android:id="@+id/allow_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cxcxcx"
+        android:layout_above="@+id/ok_lay"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="#D3ECE3"
+        android:textSize="14sp"
+        android:textColor="#242424"
+        android:layout_marginTop="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ok_lay"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok_underline"
+        android:textColor="@color/app_green"
+        android:id="@+id/ok_action"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

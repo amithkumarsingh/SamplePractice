@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/channelsCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/communityLogoImgVw"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/default_communitypic" />
+
+            <RelativeLayout
+                android:id="@+id/communityNameTxtVw_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/communityLogoImgVw"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/communityNameTxtVw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingBottom="2dp"
+                    android:paddingRight="35dp"
+                    android:paddingTop="4dp"
+                    android:text="Diabetics qqqqqqqqqqq qq qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"
+                    android:textColor="@color/app_green"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/postCountTxtVw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="top|end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/communityNameTxtVw"
+                    android:background="@drawable/circle_green_bg"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="1000"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/communityMembersTxtVw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/communityNameTxtVw_lay"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/communityLogoImgVw"
+                android:gravity="center_vertical|top"
+                android:paddingTop="2dp"
+                android:text="4k members"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/follow_unFollow_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/communityMembersTxtVw"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/communityLogoImgVw"
+                android:background="@drawable/accept_button"
+                android:gravity="center"
+                android:text="FOLLOW"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/createPostLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/light_gray"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/createPostButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="16dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_create_post"
+                android:drawablePadding="8dp"
+                android:gravity="center|end"
+                android:text="@string/create_a_post"
+                android:textColor="@color/app_green"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

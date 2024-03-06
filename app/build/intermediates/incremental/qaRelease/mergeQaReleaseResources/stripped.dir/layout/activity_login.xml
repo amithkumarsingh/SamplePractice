@@ -1,0 +1,322 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="beforeDescendants"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_imageView"
+        android:src="@drawable/logo_login"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/block"
+        android:paddingRight="22dp"
+        android:paddingLeft="22dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp"
+        android:gravity="left"
+        android:layout_marginTop="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:hintTextAppearance="@style/FloatLableColor">
+
+
+    <EditText
+        android:inputType="textEmailAddress|textNoSuggestions"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/username_edit"
+        android:hint="User ID"
+        android:paddingLeft="6dp"
+        android:maxLength="150"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890._@"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:paddingLeft="6dp"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/user_id_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dlg_not_email_field_entered"
+            android:id="@+id/username_error_text"
+            android:layout_marginLeft="6dp"
+            style="@style/MyTextViewErrorStyle"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_password_lay">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:hintTextAppearance="@style/FloatLableColor">
+    <EditText
+        android:singleLine="true"
+        android:password="true"
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/password_edit"
+        android:paddingLeft="6dp"
+        android:layout_marginTop="2dp"
+        android:textSize="13sp"
+        android:maxLength="30"
+        android:textStyle="bold"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@$_"/>
+     </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/pswd_transformation_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@android:color/transparent"
+                android:textSize="10sp"
+                android:text="Show"
+                android:textColor="@color/app_green"
+                android:visibility="gone"
+                android:paddingLeft="40dp"/>
+        </FrameLayout>
+
+        <TextView
+            style="@style/MyTextViewErrorStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dlg_not_password_field_entered"
+            android:id="@+id/password_error_text"
+            android:layout_marginLeft="6dp"
+            />
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/stay_singedIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/staylogged_in"
+            android:checked="true"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="visible">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:text="+91"
+               android:layout_gravity="center_vertical"
+               android:gravity="center"
+               android:id="@+id/countrycode"
+               android:visibility="gone"/>
+
+
+           <LinearLayout
+               android:id="@+id/countrycode_mobilenum_lay"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="1"
+               android:visibility="visible">
+
+               <LinearLayout
+                   android:id="@+id/countrycode_lay"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight=".6"
+                   android:visibility="visible"
+                   android:orientation="vertical">
+
+                   <com.hbb20.CountryCodePicker
+                       android:id="@+id/ccp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="40dp"
+                       android:layout_marginTop="24dp"
+                       app:ccp_defaultNameCode="IN" />
+               </LinearLayout>
+               <LinearLayout
+                   android:id="@+id/mobilenum_lay"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight=".4"
+                   android:orientation="vertical">
+
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:id="@+id/phone_number_lay"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="12dp"
+                       app:hintTextAppearance="@style/FloatLableColor">
+
+                       <EditText
+                           android:id="@+id/phone_number_login"
+                           android:layout_width="fill_parent"
+                           android:layout_height="40dp"
+                           android:layout_marginTop="4dp"
+                           android:hint="Mobile number "
+                           android:inputType="number"
+                           android:maxLength="10"
+                           android:maxLines="1"
+                           android:paddingLeft="6dp" />
+                   </com.google.android.material.textfield.TextInputLayout>
+
+                   <TextView
+                       android:id="@+id/phoneNumber_error_text"
+                       style="@style/MyTextViewErrorStyle"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/phone_number_lay"
+                       android:layout_marginLeft="6dp"
+                       android:text="Please enter valid mobile number" />
+               </LinearLayout>
+           </LinearLayout>
+
+
+
+       </RelativeLayout>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/sign_in_with_otp"
+        android:id="@+id/button"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:onClick="onLoginButtonClick"
+        android:background="@drawable/button_onselector"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="8dp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
+
+  <!-- <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_on_whitecoats"
+        android:id="@+id/dash_text_phonum"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_marginTop="7dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_now"
+        android:id="@+id/register_txt"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/blue" />
+-->
+
+    <TextView
+        android:visibility="gone"
+        style="@style/MyTextViewBody2"
+        android:layout_marginTop="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/forgot_password"
+        android:id="@+id/forgot_password_txt"
+        android:clickable="true"
+        android:textColor="@color/app_green"/>
+
+        <!--<Button
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restore"
+            android:textSize="18sp"
+            android:id="@+id/restore_but"
+            android:background="#99cdcdcd"
+            android:textColor="@color/app_green"
+            android:onClick="onRestoreButtonClick"
+            android:layout_marginTop="4dp"
+            />-->
+     <!--   <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="18sp"
+            android:id="@+id/settings_but"
+            android:background="#99cdcdcd"
+            android:textColor="@color/header_blue"
+            android:onClick="onSettingsButtonClick"
+            android:layout_marginTop="12dp"/>-->
+
+
+
+    </LinearLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="New on WhiteCoats?"
+          android:layout_gravity="center_horizontal"
+          android:textSize="16sp"
+          android:textColor="#DE231f20"
+          android:id="@+id/newUser_tv"
+          android:visibility="gone"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="@string/register_now"
+        android:textSize="18sp"
+        android:id="@+id/register_now_but"
+        android:background="@drawable/button_onselector"
+        android:textColor="#FFFFFF"
+        android:onClick="onRegisterButtonClick"
+        android:visibility="gone"
+        android:layout_marginTop="14dp"/>
+</LinearLayout>
+
+</ScrollView>

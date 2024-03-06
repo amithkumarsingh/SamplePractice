@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/score_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@id/timer_layout"
+        android:background="@drawable/trivia_score_rectangle_bg"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="score 67"
+        android:textColor="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/timer_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <ProgressBar
+            android:id="@+id/timer_pb"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/trivia_timer_default_progress"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:progress="60"
+            android:progressDrawable="@drawable/trivia_timer_colored_progress" />
+
+
+        <TextView
+            android:id="@+id/timer_progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="500"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,902 @@
+<resources>
+    <!--<string name="app_name">WhiteCoats</string>-->
+    <string name="app_title">WhiteCoats</string>
+    <string name="str_next">Next</string>
+
+    <!--TAB Names-->
+    <string name="tab_updates">FEEDS</string>
+    <string name="tab_channels">CHANNELS</string>
+    <string name="tab_chats">CHATS</string>
+    <string name="tab_connects">CONNECTS</string>
+    <string name="tab_about">About</string>
+    <string name="tab_feeds">Feeds</string>
+    <string name="tab_members">Members</string>
+    <string name="tab_media">Media</string>
+    <string name="tab_network">NETWORK</string>
+
+    <!--Knowledge page tab name-->
+    <string name="tab_feed">Feed</string>
+    <string name="tab_drug_reference">Drug Reference</string>
+    <string name="tab_medical_events">Medical Events</string>
+
+    <!--Community page tab name-->
+    <string name="tab_spotlight">Spotlight</string>
+    <string name="tab_community_feed">Feed</string>
+    <string name="tab_doctor">Doctors</string>
+    <string name="tab_organizations">Organizations</string>
+
+    <string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue
+    cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian
+    bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber
+    cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese
+    the big cheese.</string>
+    <!--Sections Array-->
+    <string-array name="subscriptions_categories_array">
+        <item>@string/section_community</item>
+        <item>@string/section_conference</item>
+        <item>@string/section_subscription</item>
+    </string-array>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="section_community">My Communities</string>
+    <string name="section_conference">My Conferences</string>
+    <string name="section_subscription">My Subscriptions</string>
+    <string name="action_settings">Settings</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="str_invite_cnt">Invite participants</string>
+    <string name="str_group_info">Group info</string>
+    <string name="str_case_room_info">CaseRoom info</string>
+    <string name="str_delete_conversation">Delete conversation</string>
+    <string name="actionbar_save">SAVE</string>
+    <string name="actionbar_edit">EDIT</string>
+    <string name="actionbar_next">NEXT</string>
+    <string name="actionbar_done">DONE</string>
+    <string name="actionbar_create">CREATE</string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_invite">Invite</string>
+    <string name="terms_of_use">Terms of Use</string>
+
+    <string name="btn_submit">Submit</string>
+    <string name="btn_upgrade_now">Upgrade Now</string>
+    <string name="btn_view_offline">View Offline</string>
+
+    <!-- BaseActivity Strings!-->
+    <string name="dlg_wait_please">Loading. Please Wait....</string>
+    <string name="alert_transcoding">Loading...</string>
+    <!-- LoginActivity Strings!-->
+    <string name="user_id">User ID</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="new_on_whitecoats">New on Whitecoats?</string>
+    <string name="staylogged_in">Stay Signed In</string>
+    <string name="register_now">Register Now</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="dlg_not_username_field_entered">Please provide Username</string>
+    <string name="dlg_not_password_field_entered">Please enter your password</string>
+    <string name="dlg_not_group_title_entered">Please enter a group name</string>
+    <string name="dlg_not_all_fields_entered">Please provide Username and Password</string>
+    <string name="dlg_not_firstname_field_entered">Please enter your first name</string>
+    <string name="dlg_not_lastname_field_entered">Please enter your last name</string>
+    <string name="dlg_not_email_field_entered">Please enter a valid email id</string>
+    <string name="dlg_not_speciality_field_entered">Please enter your speciality</string>
+    <string name="dlg_not_workplace_field_entered">Please enter your workplace</string>
+    <string name="dlg_not_title_field_entered">Please provide event title</string>
+    <string name="dlg_not_startdate_field_entered">Please provide start date</string>
+    <string name="dlg_not_enddate_field_entered">Please provide end date</string>
+    <string name="dlg_not_city_field_entered">Please enter your city of residence</string>
+    <string name="no_internet">Device is not connected with internet. Please check your internet connection.</string>
+    <string name="no_internet_small">No internet connection!</string>
+    <string name="sorry_title">Sorry</string>
+    <string name="alert_attachments_being_uploaded">Your attachments in this conversation are being uploaded. Please try again later.</string>
+    <string name="alert_login_failed">Login Failed! Please try again later.</string>
+    <string name="location_validation_msg">Please select relevant location</string>
+
+    <string name="dlg_not_network_name">Please enter your name</string>
+    <string name="dlg_not_speciality_name">Please enter your speciality</string>
+    <string name="dlg_not_city_name">Please enter your city</string>
+    <string name="dlg_not_clinic_name">Please enter your clinic/hospital</string>
+
+    <!--ChangePasswordActivity Strings!-->
+    <string name="main_text">Create a new password for your\naccount</string>
+    <string name="newpassword">New Password</string>
+    <string name="label_old_password">Enter old password</string>
+    <string name="label_new_password">Enter new password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="save_new_password">Save New Password</string>
+    <string name="changepassword">Change Password</string>
+    <string name="create_newpassword">Create new password</string>
+    <string name="str_passwordmimimum">Minimum 8 characters. Case sensitive.</string>
+
+
+    <!--ValidationUtils Strings !-->
+    <string name="dlg_not_all_pass_fields_entered">New password and Confirm password required!!</string>
+    <string name="dlg_not_reg_field_entered">First name,Last name and Email Id are required!!</string>
+    <string name="action_search">Search</string>
+    <string name="action_network_search">SEARCH</string>
+    <string name="action_notification">Notifications</string>
+    <string name="action_profile">Profile</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="discard">Discard</string>
+
+
+    <!-- RegistrationActivity Strings !-->
+    <string name="str_heading">Whitecoats Registration</string>
+    <string name="str_first">WhiteCoats is a network of verified practitioners only.\n Help us in validating your profile.</string>
+    <string name="str_edtfirst">First Name</string>
+    <string name="str_edtsecond">Last Name</string>
+    <string name="str_second">Upload your State Medical Council Registration Certificate or a photo id to verify your credentials.</string>
+    <string name="str_browsegallery_btn">Browse Gallery</string>
+    <string name="str_takepicture_btn">Take a Photo</string>
+    <string name="str_email">Email ID</string>
+    <string name="str_agree">I agree to WhiteCoats </string>
+    <string name="str_terms">Terms of Use</string>
+    <string name="str_policies">Privacy Policy</string>
+    <string name="str_and"> and </string>
+    <string name="str_register">Register</string>
+    <string name="title_activity_registration">Whitecoats Registration</string>
+    <string name="str_phnuminfo">OTP will be sent</string>
+    <string name="receive_all_article_info">You will receive articles from all specialities</string>
+
+
+    <!-- Almost Done Strings !-->
+    <string name="str_resendvalidation">Resend verification link</string>
+    <string name="str_didntrecieve">Didn\'t receive the email yet?</string>
+    <string name="str_pleaseverify">Please verify your email ID to receive \nyour account password.</string>
+    <string name="str_verifyemail">Verify Email</string>
+    <string name="str_toverifyemail">To verify your email, click on the link sent to</string>
+
+    <!-- SelectContacts Strings !-->
+    <string name="str_select_contacts">Select Contacts</string>
+    <string name="str_done">Done</string>
+    <string name="str_phcontacts_btn">Phone Contacts</string>
+    <string name="str_emailcontacts_btn">Contacts via Email</string>
+    <string name="str_search_edt">Search</string>
+    <string name="str_select_all">Select All</string>
+    <string name="title_activity_selectcontacts">Select contacts</string>
+
+    <!-- SelectContacts mail Strings !-->
+    <string name="str_gmail">Gmail</string>
+    <string name="str_yahoomail">Yahoo Mail</string>
+    <string name="str_other_email">Other Email ID</string>
+
+
+    <!-- Messages or Email Strings !-->
+    <string name="str_msgOremail"><i>Messages/Email has been sent to selected contacts</i></string>
+    <string name="str_tell_more">Tell more contacts about WhiteCoats</string>
+    <string name="str_msg_done">Done</string>
+    <string name="load_more_post">Loading more...</string>
+    <string name="loading">Loading...</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+
+    <string name="conversation_history">Conversation History</string>
+    <string name="my_bookmarks">My Bookmarks</string>
+    <string name="invite_contacts">Invite Contacts</string>
+    <string name="logout">Logout</string>
+    <string name="contacts">Contacts</string>
+    <string name="caserooms">Caserooms</string>
+    <string name="groups">Groups</string>
+    <string name="my_caseromms">My CaseRooms</string>
+
+
+    <!-- Congrats Activity Strings!-->
+    <string name="str_emailidvalid">We are in the process of verifying your profile.</string>
+    <string name="str_working">You will receive an email with your WhiteCoats login details within the next 12 hours.</string>
+    <string name="str_tellothers">Tell others about Whitecoats</string>
+    <string name="str_isnowverified">is now verified.</string>
+    <string name="str_emailverified">Email Verified</string>
+
+
+    <!-- Forgotpassword Activity!-->
+    <string name="str_forgot_pw_heading">Forgot Password</string>
+    <string name="str_passwordreset">Get your new password at your registerd email ID.</string>
+    <string name="title_activity_overlay">OverlayActivity</string>
+    <string name="title_activity_profile_list">Profile</string>
+
+
+    <!-- EditBasicInfo Strings !-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="specialty">I am a (eg.cardiologist)</string>
+    <string name="hint_specialty">Speciality</string>
+    <string name="search_specialist">Search by specialist</string>
+    <string name="search_speciality">Search by speciality</string>
+    <string name="title_activity_location_status">LocationStatus</string>
+    <string name="title_activity_basic_profile">BasicProfileActivity</string>
+    <string name="title_activity_professional_det">ProfessionalDetActivity</string>
+    <string name="title_Profile_fullView">ProfilefullView</string>
+    <string name="contactno_edit">+91</string>
+    <string name="contactno">Contact number</string>
+    <string name="emailid">Email Id</string>
+    <string name="sharecontact">Share your contact number to get referrals from your contacts.</string>
+    <string name="contact_no">Mobile No:</string>
+
+    <!-- Professional Strings !-->
+    <string name="add_workplace_actionbar_title">Add Experience</string>
+    <string name="edit_workplace_actionbar_title">Edit Experience</string>
+    <string name="workplace">Practicing at (eg.ACME Hospital/Clinic/Medical College)</string>
+    <string name="clinic">Search by clinic/hospital</string>
+    <string name="sub_speciality">Sub-speciality</string>
+    <string name="one_line_usp">One line USP</string>
+    <string name="specific_ask">Specific Ask</string>
+    <string name="designation">Designation</string>
+    <string name="str_check">Presently working here</string>
+    <string name="started_on">Started on</string>
+    <string name="worked_till">Worked Till</string>
+    <string name="till_now">- till now</string>
+    <string name="location">Location</string>
+    <string name="title_activity_associations_det">AssociationsDetActivity</string>
+    <string name="association">Association name</string>
+    <string name="title_activity_academic">AcademicActivity</string>
+    <string name="str_Add_qualification">Add Qualifications</string>
+    <string name="str_Edit_qualification">Edit Qualifications</string>
+    <string name="degree">Degree</string>
+    <string name="university">University</string>
+    <string name="college">College</string>
+    <string name="passing_year">Year of graduation</string>
+    <string name="str_currently_pursuing">Currently pursuing</string>
+    <string name="str_Add_another_qualification">ADD ANOTHER QUALIFICATION</string>
+    <string name="str_remove_this_qualification">Remove this qualification</string>
+    <string name="title_activity_personal">PersonalActivity</string>
+    <string name="about_me">About Me</string>
+    <string name="about">Tell us a bit about yourself</string>
+    <string name="brief_about_error">Only 256 characters allowed</string>
+    <string name="your_website">Your Website</string>
+    <string name="dlg_year_error">Please enter your year of graduation</string>
+    <string name="dlg_current_year_error">Your year of graduation cannot be greater than current year</string>
+    <string name="dlg_degree_error">Please enter your degree</string>
+    <string name="dlg_year_yyyy_format_error">Please provide your date of graduation in YYYY format</string>
+    <string name="blog_page">Blog Page</string>
+    <string name="facebook_page">Facebook Page</string>
+    <string name="linkedIn_page">LinkedIn Page</string>
+    <string name="twitter_page">Twitter Page</string>
+    <string name="insta_page">Instagram Page</string>
+    <string name="title_activity_publications">PublicationsActivity</string>
+    <string name="title_activity_print">PrintActivity</string>
+    <string name="print">Printed </string>
+    <string name="online_publications">Online Publications</string>
+    <string name="print_publications">Print Publications</string>
+    <string name="action_done">DONE</string>
+    <string name="action_account_settings">AccountSettings</string>
+    <string name="action_call">Call</string>
+    <string name="action_caseroomsummary">Caseroom Summary</string>
+    <string name="action_mail">email</string>
+    <string name="publications">Publications</string>
+    <string name="str_edt_publications">Edit Publications</string>
+    <string name="str_toggle">Show on my card</string>
+    <string name="dlg_not_incorrect_text_case">Please provide valid details</string>
+    <string name="dlg_corrently_working_case">Please select Checkbox</string>
+    <string name="str_add_another_workplace">+ Add one more</string>
+    <string name="str_add_another_event">+ Add one more</string>
+    <string name="str_remove_this_workplace">Remove this workplace</string>
+    <string name="str_remove_this_event">Remove this event</string>
+    <string name="str_todate_error">To Date Should be grater than From Date</string>
+    <string name="str_fromdate_error">Please Select From Date</string>
+    <string name="str_title">Title</string>
+    <string name="str_authors">Authors names separated by comma</string>
+    <string name="str_journal">Name of journal</string>
+    <string name="str_webpage_link">Webpage link</string>
+    <string name="str_add_another_publications">ADD ANOTHER PUBLICATIONS</string>
+    <string name="str_remove_publications">Remove this publication</string>
+    <string name="aboutme_error_toast">Please enter a short description about yourself</string>
+    <string name="profile_updated">Profile Updated</string>
+    <string name="qualification_saved">Qualification saved</string>
+    <string name="profile_workplacedeletion">WhiteCoats requires at least one workplace to be displayed on your profile.
+Please add your current workplace before deleting this information.</string>
+    <string name="professional_togglebutton_alert">WhiteCoats requires at least one workplace to be displayed on your card.
+Please choose at least one workplace information before modifying this information.</string>
+
+
+    <!--Event Strings!-->
+    <string name="add_event_actionbar_title">Add Event</string>
+    <string name="edit_event_actionbar_title">Edit Event</string>
+
+    <!--ProfileListActivity Strings!-->
+    <string name="profilelist_activity_name">Profile</string>
+    <string name="title_activity_main_publications">MainPublicationsActivity</string>
+    <string name="title_activity_online_publications">OnlinePublicationsActivity</string>
+    <string name="profile_back_button">Do you want to save the changes?</string>
+
+    <string-array name="number_visibility_arrays">
+        <item>No One</item>
+        <item>Everyone</item>
+        <item>My Contacts</item>
+    </string-array>
+    <string-array name="number_visibility_arrays_for_srever">
+        <item>HIDE_FROM_ALL</item>
+        <item>SHOW_ALL</item>
+        <item>ONLY_MY_CONTACTS</item>
+    </string-array>
+
+    <string name="timeoutException">We regret the inconvenience caused. Please try again after sometime.</string>
+    <string name="unabletosave">We are unable to save the data at this time</string>
+    <string name="trylater">Please try later</string>
+
+    <string name="sNetworkError">No internet connection. Make sure your device is connected to a Wi-Fi or mobile network and try again</string>
+    <string name="str_gotologin">Go to Login</string>
+    <string name="required_minimum">Password has to be minimum 8 characters long.</string>
+    <string name="valid_email">Please enter valid email id</string>
+    <string name="cmcrcertificate">Please upload your State Medical Council Registration Certificate, or corporate ID card to validate your credentials.</string>
+    <string name="same_password">Passwords do not match! Please try again.</string>
+    <string name="old_new_password_same">Old and New Password can not be same.</string>
+
+    <string name="email_exists">Email id already exists. Please provide a different email id.</string>
+    <string name="str_contactno_error">Please Provide valid contact number</string>
+
+    <string name="agree_terms">Please indicate that you have read and agree to the Terms and Conditions, and our Privacy Policy.</string>
+    <string name="notsame">New password should be different from the older one.</string>
+    <string name="incorrect_email_pass">The email id or password you entered is incorrect. Please try again.</string>
+    <string name="not_be_same_as_userid">Password should not be same as your user id.</string>
+    <string name="str_personalinfo_heading">Personal Info</string>
+    <string name="str_please_provide">Please provide details</string>
+    <string name="add_contact_no">Add contact number</string>
+    <string name="title_activity_mandatory_profile_info">MandatoryProfileInfo</string>
+    <string name="city">In city (eg.Hyderabad)</string>
+    <string name="filter_location">Enter Location</string>
+    <string name="search_city">Search by city</string>
+    <string name="add_about">Share your interests and digital presence</string>
+    <string name="professional">Professional</string>
+    <string name="experience">Experiences</string>
+    <string name="area_of_interest">Areas Of Interests</string>
+    <string name="event_calendar">Event Calendar</string>
+    <string name="available_at">Available at</string>
+    <string name="label_opd">OPD</string>
+    <string name="label_ot">OT</string>
+    <string name="qualifications">Qualifications</string>
+    <string name="publication">Publications</string>
+    <string name="awards_memberships">Awards and Memberships</string>
+    <string name="add_awards_memberships">Add your awards and professional memberships</string>
+    <string name="academic">Academic</string>
+    <string name="membership">Awards and Memberships</string>
+    <string name="workplace_presently">WhiteCoats requires at least one workplace to be displayed on your card.
+Please choose at least one workplace information before modifying this </string>
+
+
+    <!--VisitProfile Strings!-->
+    <string name="str_btn_left">SHARE</string>
+    <string name="str_btn_right">CONNECT</string>
+    <string name="str_connects">Connects</string>
+    <string name="str_caserooms">Caserooms</string>
+    <string name="str_notificationSettings">Notification Settings</string>
+    <string name="str_caseroom">CaseRooms</string>
+    <string name="str_groups">Groups</string>
+    <string name="str_common_connects">COMMON CONNECTS</string>
+    <string name="str_connects_more">+3more</string>
+    <string name="str_common_caserooms">COMMON CASEROOMS</string>
+    <string name="str_common_groups">COMMON GROUPS</string>
+    <string name="str_about_visitor">ABOUT</string>
+    <string name="add_academic">Share your academic qualifications with others and be discovered</string>
+    <string name="add_experience">Share your work experience with others</string>
+    <string name="add_publications">Add your publications to show your accomplishments</string>
+    <string name="add_events">Let others know about the events you are attending</string>
+    <string name="view_complete">View Complete Profile</string>
+    <string name="str_inv_accept">Accept</string>
+    <string name="str_inv_deny">Deny</string>
+    <string name="str_inv_reject">Reject</string>
+    <string name="str_inv_now">Invite Now</string>
+    <string name="str_inv_later">Invite Later</string>
+    <string name="str_load_more_messages">Load More Messages</string>
+    <string name="str_awaiting">Invitation request awaiting</string>
+
+
+    <!-- ProfessionalMem Strings !-->
+    <string name="str_add_associations">Add your professional affiliations to find other members</string>
+    <string name="str_add_another_mem">ADD ANOTHER MEMBERSHIP</string>
+    <string name="str_remove_mem">Remove this membership</string>
+    <string name="str_remove_award">Remove this award</string>
+    <string name="action_bar_mem">Add Membership</string>
+    <string name="action_bar_edit_mem">Edit Membership</string>
+    <string name="online">Online</string>
+    <string name="title_activity_publication">PublicationActivity</string>
+    <string name="action_help">Help</string>
+    <string name="action_share">Share</string>
+
+
+    <!-- Add Request Strings !-->
+    <string name="str_connect">Connect</string>
+    <string name="str_invited">Invited</string>
+    <string name="str_pending">Pending</string>
+    <string name="str_noresults">Sorry, no results containing your search term were found</string>
+
+
+    <!-- Invite Custom Message Strings!-->
+    <string name="str_invite_heading">Edit the note below to send a personalised message:</string>
+    <string name="str_invite_customtext"></string>
+    <string name="str_custom_message">Dear Dr. Rashmi, \n\nI would like to invite you to join my network on WhiteCoats.\n\n\nRegards,\nDr.Anil</string>
+    <string name="title_activity_notifications">NotificationsActivity</string>
+
+
+    <!--Connects Notification Strings !-->
+    <string name="str_notification_heading">Notifications</string>
+    <string name="str_notification_settings_heading">Notification Settings</string>
+
+    <string name="str_new_group">New Group</string>
+    <string name="str_invite">Invite</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="str_edit_group">Edit Group</string>
+
+
+    <!-- CaseRoom Notification Strings !-->
+    <string name="str_caseroom_heading">CaseRoom Title</string>
+    <string name="str_caseroom_time">2hr</string>
+    <string name="str_caseroom_specialities">Pediatrics,Cardiology</string>
+    <string name="str_caseroom_summary">View CaseRoom Summary</string>
+    <string name="str_created_by">Created by:</string>
+    <string name="str_caseroom_adminName">Dr.Suresh Bhatia</string>
+    <string name="str_admin_speciality">Pediatrician</string>
+    <string name="action_attach">Attach</string>
+
+    <!-- CaseRoom String !-->
+    <string name="title_activity_addpatient_info">AddpatientInfoActivity</string>
+    <string name="title_caseroomcreate">CREATE</string>
+    <string name="title_activity_systematic_examination">Systematic Examination</string>
+    <string name="title_vitals">Vitals and Anthropometry</string>
+    <string name="title_general_examination">General Examination</string>
+    <string name="title_symptoms">Symptoms</string>
+    <string name="title_systemic_findinds">Systemic Examinations</string>
+    <string name="title_patient_history">Patient History</string>
+
+    <string-array name="caseroom_age_array">
+        <item>Years</item>
+        <item>Months</item>
+        <item>Weeks</item>
+        <item>Days</item>
+        <item>Hours</item>
+    </string-array>
+
+    <!-- notification request accepted -->
+
+
+    <!--
+    group members alerts
+-->
+    <string name="groupparticipants_required">No participants in the group</string>
+    <string name="caseroomparticipants_reqiured">No participants in the caseroom</string>
+
+
+    <!--Vitals String !-->
+    <string name="str_hr_pr">HR/PR</string>
+    <string name="str_rest_rate">Resp.Rate</string>
+    <string name="str_bp">BP</string>
+    <string name="str_temp">Temp.</string>
+    <string name="str_spo">SpO&#x2082;</string>
+    <string name="str_weight">Weight</string>
+    <string name="str_height">Height</string>
+    <string name="str_bmi">BMI    :   </string>
+    <string name="str_mm">/Min</string>
+    <string name="str_min">/Min</string>
+    <string name="str_mmhg">mm Hg</string>
+    <string name="str_farenheat">&#xb0;F</string>
+    <string name="str_percentage">%</string>
+    <string name="str_kg">Kg</string>
+    <string name="str_cms">cms</string>
+    <string name="str_slash">/</string>
+    <string name="profile_delete">Are you sure you want to delete this?</string>
+    <string name="profile_delete_other">This information will no longer be visible on your profile</string>
+    <string name="warning_empty_membership_title">Please add your membership to save to your profile</string>
+    <string name="warning_empty_award_title">Please add your Award to save to your profile</string>
+    <string name="publication_emptysave">Please add a publication to save to your profile</string>
+
+
+    <!-- Create Group Strings !-->
+
+    <string name="str_selected_contacts">SELECTED CONNECTS</string>
+    <string name="str_invite_connects">INVITE CONNECTS</string>
+    <string name="participants">Participants</string>
+
+
+    <!--GCM -->
+    <string name="gcm_sender_id">252981997001</string>
+   <!-- search results-->
+    <string name="search_result">No more results found</string>
+
+    <!-- server error message-->
+    <string name="unable_to_connect_server">Unable to connect server</string>
+
+    <!-- swipe right to view pdf message-->
+    <string name="swipe_right_toread">Swipe right to read pdf</string>
+
+    <!-- invite text-->
+    <string name="invite_message">Please enter the message to be included in your connect request</string>
+    <!--Chat Constants-->
+    <string name="label_today">Today</string>
+    <string name="label_yesterday">Yesterday</string>
+
+    <!--
+Caseroom validation
+-->
+    <string name="caseroom_title">Please enter a caseroom title</string>
+    <string name="caseroom_specialty">Please enter a speciality </string>
+    <string name="caseroom_age">Please enter a valid age</string>
+
+
+    <string name="caseroomerror_vitals">Please enter a valid value</string>
+    <!--Systemic validation-->
+    <string name="caseroomerror_heent">Please provide heent details</string>
+    <string name="caseroomerror_respiratory">Please provide respiratory details</string>
+    <string name="caseroomerror_cvs">Please provide CVS details</string>
+    <string name="caseroomerror_abdominal">Please provide abdominal and genital details</string>
+    <string name="caseroomerror_cns">Please provide CNS details</string>
+    <string name="caseroomerror_musculo">Please provide Musculo-skeletal details</string>
+    <string name="caseroom_systematic">Please enter the details of your examination findings</string>
+    <string name="mca_not_uploaded">This is an access restricted feature available to verified users only. Please verify your WhiteCoats profile to access the same</string>
+    <string name="mca_uploaded_but_not_verified">Your WhiteCoats profile verification is in progress. You will be notified as soon as your profile is verified</string>
+    <string name="mca_verified">Your verification is already approved.</string>
+
+    <!--patienr validation-->
+    <string name="caseroomstr_pasthistory">Please provide past history</string>
+    <string name="caseroomstr_birthhistory">Please provide birth history</string>
+    <string name="caseroomstr_developmentalhistory">Please provide developmental history</string>
+    <string name="caseroomstr_diethistory">Please provide diet history</string>
+    <string name="caseroomstr_immunizationhistory">Please provide immunization history</string>
+    <string name="caseroomstr_familyhistory">Please provide family history</string>
+    <string name="caseroomstr_personalsocialhistory">Please provide personal and social history</string>
+    <string name="caseroomstr_obstetricmenstrualhistory">Please provide obstetric and menstrual history</string>
+    <string name="caseroomstr_other">Please provide other details</string>
+    <string name="caseroom_patient">Please enter the history details that are relevant to your case</string>
+    <string name="string_bmi">BMI</string>
+
+    <string name="generalexamination_pallor">Pallor</string>
+    <string name="generalexamination_icterus">Icterus</string>
+    <string name="generalexamination_cyanosis">Cyanosis</string>
+    <string name="generalexamination_clubbing">Clubbing</string>
+    <string name="generalexamination_lymphadenopathy">Lymphadenopathy</string>
+    <string name="generalexamination_edema">Edema</string>
+    <string name="title_activity_crash">CrashActivity</string>
+    <!--Life Cycle method string constants-->
+    <string name="_onCreate">onCreate()</string>
+    <string name="_onStart">onStart()</string>
+    <string name="_onResume">onResume()</string>
+    <string name="_onPause">onPause()</string>
+    <string name="_onStop">onStop()</string>
+    <string name="_onRestart">onRestart()</string>
+    <string name="_onDestroy">onDestroy()</string>
+    <string name="_onAttach">onAttach()</string>
+    <string name="_onCreateView">onCreateView()</string>
+    <string name="_onActivityCreated">onActivityCreated()</string>
+    <string name="_onActivityResult">onActivityResult()</string>
+    <string name="_onDestroyView">onDestroyView()</string>
+    <string name="_onDetach">onDetach()</string>
+    <string name="_onCreateOptionsMenu">onCreateOptionsMenu()</string>
+    <string name="_onOptionsItemSelected">onOptionsItemSelected()</string>
+    <string name="inviate_to_whiteCoats">Hi Dr, I am now using WhiteCoats, a digital collaboration and knowledge platform for medical practitioners like us. Join me, Be Dr.Effective.\n</string>
+
+
+    <!-- ShareWithContacts -->
+    <string name="title_Add_to_Connects">Add to Connects</string>
+    <string name="str_invite_physicians">Invite physicians to WhiteCoats</string>
+    <string name="str_invite_default">Physicians you may know</string>
+
+    <string name="caseroom_emptysave_symptom">Please enter a symptom</string>
+    <string name="caseroom_empty_symptomduration">Please enter the duration of the symptom</string>
+    <string name="symptom_deletion">Are you sure you want to delete the symptom?</string>
+    <string name="vitals_emptysave">Please enter the details that are relevant to your case</string>
+    <string name="specialty_deletion">Are you sure you want to delete the speciality?</string>
+    <string name="specialty_required">At least one speciality is required</string>
+
+    //community
+    <string name="Community_about">About</string>
+    <string name="feeds">Feeds</string>
+    <string name="directory">Directory</string>
+    <string name="college_name">About Community</string>
+    <string name="phone">Phone:</string>
+    <string name="email">Email:</string>
+    <string name="admin">Admin</string>
+    <string name="url">www.osmaniamedicalcollege.org</string>
+    <string name="makeapost">Make a Post</string>
+    <string name="create_a_post">Create a post</string>
+    <string name="community_admin">Community Admins</string>
+    <string name="label_you">You</string>
+    <string name="label_select">Select</string>
+    <string name="label_all_department">All Members</string>
+    <string name="key_inactive_member">inactive_member</string>
+
+
+    <string name="membersonwhitecoats">Association members who are on WhiteCoats can only become community admin</string>
+    <string name="communitybreif">Breif about the community</string>
+    <string name="communityconwebsite">Website</string>
+    <string name="communityfacebook">Facebook page</string>
+    <string name="communitycontact">Contact number</string>
+    <string name="communityemail">Email</string>
+    <string name="entermemname">Enter Member Name</string>
+    <string name="about_contactdet">Contact details</string>
+    <string name="comm_contactprovidefull">Provide phone,email,website and facebook link</string>
+    <string name="comm_contactprovideothersdetails">Provide phone,email and facebook link</string>
+
+
+    <string name="communititile">Community</string>
+    <string name="comm_ChooseCommunitytoPost">Choose Community To post</string>
+    <string name="comm_postscreentitle">Title</string>
+    <string name="comm_postscreendescription">Description</string>
+    <string name="attach">Attach Image/PDF/Video/Audio </string>
+    <string name="maxattachments">Max. 5 attachments  </string>
+    <string name="attachment_limit_exceeded">Can select a maximum of %d images </string>
+    <string name="post_screenactionbartitle">Make a post</string>
+    <string name="post_screenactionbarnext">POST</string>
+    <string name="action_me"></string>
+    <string name="posttitle_error">Please provide the post title</string>
+    <string name="select_atLeast_one_community">Please select at least one community</string>
+    <string name="community_about_emptyDesc_participants">No information about community added</string>
+    <string name="community_about_emptyContact_participants">No information Shared</string>
+    <string name="empty_department">has no members.</string>
+    <string name="community_about_emptyDesc_admin">Provide brief about the community</string>
+
+    <string name="mobile_xiaomi">Xiaomi</string>
+    <string name="alert_enable_Notifications">Enable Notifications</string>
+    <string name="alert_verification_pending">Verification is still pending</string>
+    <string name="alert_comment_ll_be_discarded">Your comment will be discarded.</string>
+    <string name="alert_post_ll_be_discarded">Are you sure you want to discard this post ?</string>
+    <string name="alert_existing_time">Please select different work timings!</string>
+    <string name="alert_invalid_time">Invalid Timings!</string>
+    <string name="enable_notification_path">To enable notifications, go to <b>Settings->Battery->Manage apps battery usage-Choose apps->WhiteCoats->Select No restrictions</b></string>
+    <string name="typeComment">Type your comment</string>
+    <string name="first_comment">Be the first one to comment</string>
+    <string name="first_like">Be the first person to like</string>
+    <string name="verify_mci_details">Provide a valid professional ID proof \nto verify as a doctor and access \ncomplete WhiteCoats features</string>    <string name="title_activity_sample_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_login_activityshow">Sign in</string>
+    <string name="prompt_for_valid_phoneNumber">Enter valid mobile number</string>
+
+    <string name="how_reset">How would you like to reset your password?</string>
+    <string name="get_email">Get e-mail</string>
+    <string name="get_sms">Get SMS</string>
+    <string name="enter_emailid">Enter your registered email ID to receive OTP </string>
+    <string name="enter_phno">Enter your registered mobile number  to receive OTP </string>
+    <string name="send_otp">We will send you an OTP on </string>
+    <string name="getin_touch">Get in touch </string>
+    <string name="loginwith_text">Login with the OTP sent on your registered email id</string>
+    <string name="loginwith_text_mobile">Login with the OTP sent on your registered mobile number</string>
+    <string name="request_call">or request a call back</string>
+    <string name="verfication_mca_text">To get unrestricted access to WhiteCoats, verify your profile.</string>
+
+
+    <string name="verify_email">Verify email</string>
+    <string name="verify_phone">Verify phone</string>
+
+    <string name="educational_message">WhiteCoats Would Like To Send You Push Notifications. Notifications may include alerts, sounds and icon badges. These can be configured in Settings.</string>
+    <string name="storage_deny_message">Without this permission, we are unable to choose from photo library. Please go to the Permissions section inside the application settings and toggle the Storage permissions switch.</string>
+    <string name="contacts_deny_message">Without this permission, we are unable to continue with the registration. Please go to the Permissions section inside the application settings and toggle the Contacts permissions switch.</string>
+    <string name="camera_deny_message">Without this permission, we are unable to take a photo. Please go to the Permissions section inside the application settings and toggle the Camera permissions switch.</string>
+    <string name="phone_deny_message">Without this permission, we are unable to continue with the registration. Please go to the Permissions section inside the application settings and toggle the Phone permissions switch.</string>
+    <string name="we_unable_to_save">We are unable to save the data at this time.Please try later</string>
+    <string name="profile_update">Profile Updated</string>
+    <string name="device_not_support_crop">This device doesn\'t support the crop action!</string>
+    <string name="somenthing_went_wrong">Something went wrong,please try again</string>
+    <string name="drag_the_shape">Drag the shape to highlight or mask the relevant area of the image</string>
+    <string name="session_timedout">Your session has timed out. Please login again</string>
+    <string name="unknown_server_error">Unknown Server Error</string>
+    <string name="password_updated_successfully">Your password has been reset successfully</string>
+    <string name="unable_to_create_session">Unable to create session, please try again</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="no_survey_options_selected">Please select at least one option</string>
+    <string name="please_verify_whitecoats">This is an access restricted feature available to verified users only. Please verify your WhiteCoats profile to get unrestricted access to all WhiteCoats capabilities</string>
+    <string name="exception_creating_qb">Exception while creating session</string>
+    <string name="cant_add_more_items">Can\'t add more than 5 items !</string>
+    <string name="vaild_phone_number">Please enter valid mobile number</string>
+
+    <string name="post_update_text">Ask a question, share an update or share an interesting case</string>
+    <string name="invite_to_whitecoats">Invite to WhiteCoats</string>
+    <string name="max_five_images">Attach images \nMax. 5 attachments</string>
+
+    <string name="contact_support">Contact Support</string>
+    <string name="label_wc_network">WhiteCoats Network</string>
+    <string name="label_network">Network</string>
+    <string name="label_post_type">Post type</string>
+    <string name="label_title">Title</string>
+    <string name="label_desc_optional">Description (optional)</string>
+    <string name="label_post_to">Post to</string>
+    <string name="label_default_department">All Members</string>
+    <string name="label_default_specialty">All Specialities</string>
+    <string name="label_update">Update</string>
+    <string name="label_case">Post A Case</string>
+    <string name="label_ask_question">Ask A Question</string>
+    <string name="label_applies_to">Applies to</string>
+    <string name="label_update_help_text">Share latest/useful developments in medicine or your work</string>
+    <string name="label_case_help_text">Share and discuss interesting medical cases</string>
+    <string name="label_ask_question_help_text">Get answers/tips from your peers from the medical community</string>
+    <string name="label_usp_help_text">Introduce yourself! We all would like to know you better</string>
+    <string name="label_specific_ask_help_text">Let others know what you exactly need</string>
+    <string name="label_area_of_interest_help_text">Please specify your area of interests clearly for the audience to know you better</string>
+    <string name="label_available_at_help_text">Keep others informed about your availability</string>
+    <string name="post_title_update">Please provide a title for this update</string>
+    <string name="post_title_case"> Please provide a title for this case</string>
+    <string name="label_no_speciality_selected">Select at least one speciality</string>
+    <string name="label_no_memeber_group_selected">Select at least one member group</string>
+    <string name="label_select_all_specialities">Select all specialities</string>
+    <string name="label_take_photo">Take Photo</string>
+    <string name="label_choose_library">Choose from Photo Library</string>
+    <string name="label_add_attachment">Add Attachment</string>
+    <string name="label_camera">Camera</string>
+    <string name="label_storage">Storage</string>
+    <string name="label_files">Files</string>
+    <string name="label_set_preferences">Set Speciality Preferences</string>
+    <string name="my_home_preferences">My Home Preferences</string>
+    <string name="my_preferences">My Speciality Preferences</string>
+    <string name="label_no_bookmarks">Your bookmarks will be displayed here</string>
+    <string name="label_bookmark_added">Added to your bookmarks</string>
+    <string name="label_bookmark_removed">Removed from your bookmarks</string>
+
+    <string name="updates_warning">Unable to load the feeds, pull to refresh</string>
+
+    <string name="delete_message">This post has been deleted \n by the author.</string>
+    <string name="delete_button">Go to Dashboard</string>
+
+    <string name="permission_msg_in_registration">Without this permission, we are unable to continue with the registration. Please go to the Permissions section inside the application settings and toggle the </string>
+    <string name="permission_msg_in_deny_scenario">WhiteCoats needs appropriate app permissions to function. Within <b>Settings</b>, please go to the <b>Permissions</b> section for <b>WhiteCoats</b> app, and toggle the switch for <b>Phone</b> and <b>Storage</b> permission.</string>
+
+    <string name="copyright">Copyright © 2016. HealthDay. All rights reserved. </string>
+
+
+    <string name="caseroom_notify">No New Case Invites Received</string>
+    <string name="connects_notify">No New Connect Requests Received</string>
+    <string name="requests_notify">No New Requests Received</string>
+    <string name="group_notify">No New Group Invites Received</string>
+    <string name="tap_to_view">Tap to view</string>
+    <string name="tap_to_play">Tap to play</string>
+    <string name="tap_to_zoom">Tap to zoom</string>
+
+    <string name="tap_to_coach_mark_channel">Tap to view all updates from a channel</string>
+    <string name="tap_to_coach_mark_caseRoomAttachment">Tap here to highlight or mask areas of the image</string>
+    <string name="tap_to_coach_mark_caseRoomDialogFragment">Create a private case discussion.</string>
+    <string name="tap_to_coach_mark_caseRoomSummary_edit">Edit your case details.</string>
+    <string name="tap_to_coach_mark_caseRoomSummary">Invite your friends for a private discussion.</string>
+    <string name="tap_to_coach_mark_ChatDialogFragment">Send a message or create a private group.</string>
+    <string name="tap_to_coach_mark_contentFullView">Tap and share your opinion</string>
+    <string name="tap_to_coach_mark_createCaseRoom">Tap here to enter additional details.</string>
+    <string name="tap_to_coach_mark_notification_settings">Tap here for changing your notification settings</string>
+    <string name="tap_to_coach_mark_dashboard_message_group">Send a message or create a private group.</string>
+    <string name="tap_to_coach_mark_dashboard_connects_private_message">Add connects for private messages and cases.</string>
+    <string name="tap_to_coach_mark_dashboard_discover_doctor">Tap here to discover and connect with other doctors.</string>
+    <string name="tap_to_coach_mark_dashboard_update_case_query">Share an update, case or query.</string>
+    <string name="tap_to_coach_mark_dashboard_your_subscriptions">Tap here to view your subscriptions.</string>
+    <string name="tap_to_coach_mark_dashboard_your_invitations_here">You have new invitations.</string>
+    <string name="tap_to_coach_mark_start_reading">Tap on a story to start reading</string>
+    <string name="tap_to_coach_mark_share_your_opinion">If you find this interesting! Like, Comment and Share.</string>
+    <string name="tap_to_coach_mark_update_case_query_community">Share an update, case or query with your community</string>
+    <string name="tap_to_coach_mark_create_case">Create a private case discussion.</string>
+    <string name="tap_to_coach_mark_liked_app">Like the app?! Tell your friends here.</string>
+    <string name="tap_to_coach_mark_search">See a quick profile by tapping here.</string>
+    <string name="tap_to_coach_mark_context_menu">You can find your Bookmarks here.</string>
+    <string name="tap_to_coach_mark_share">Share to your extended network via social apps</string>
+    <string name="tap_to_coach_mark_bookmark">Tap here to Bookmark</string>
+    <string name="tap_to_coach_mark_patient_timeline">Share health tips and medical news with your patients</string>
+
+    <string name="search_by_doctors">Search by one or more set of information</string>
+    <string name="search_by_feeds">Search across articles and post</string>
+    <string name="connects_requests">Connects Requests</string>
+    <string name="contacts_list">Doctors you may like to connect with</string>
+    <string name="users_list">VIEW ALL</string>
+    <string name="search_name">Search by name</string>
+    <string name="search_network_name">Please enter name</string>
+    <string name="share_url_dev">https://dev.whitecoats.com/feeds/</string>
+    <string name="share_url_qa">https://qa.whitecoats.com/feeds/</string>
+    <string name="share_url_stage">https://stage.whitecoats.com/feeds/</string>
+    <!--<string name="share_url_prod">https://whitecoats.com/feeds/</string>-->
+    <string name="share_url_prod">https://feeds.whitecoats.com/</string>
+    <string name="feed_provide_subtype_patients">Patients</string>Presented at
+    <string name="search_doctors">users</string>
+    <string name="search_feeds">feeds</string>
+    <string name="search_last_feed_id">last_feed_id</string>
+
+    <string name="award_title">Award Title</string>
+    <string name="presented_at">Presented at</string>
+    <string name="year">Year</string>
+
+    <string name="connect_to_text">Connect to view contact details</string>
+
+    <string name="str_nofeedresults">No results found.</string>
+
+    <string name="share_des_text">%1$s has shared an interesting %2$s from WhiteCoats. %3$s</string>
+
+    <string name="action_verify">Verify</string>
+
+    <string name="no_feeds_info">There are no posts created</string>
+
+    <string name="no_feeds_created">Posts created by you will be listed here</string>
+    <string name="no_feeds">No feeds available.</string>
+
+    <string name="no_connects">No Connects \n \n Search or invite doctors \n you want to connect with</string>
+
+    <string name="default_notification_channel_id">my_channel_01</string>
+
+    <string name="empty_search_keyword">Please provide a search keyword </string>
+    <string name="min_characters_search_keyword">Please enter minimum 3 characters for search </string>
+    <string name="speciality">Speciality</string>
+    <string name="workPlace">Workplace</string>
+    <string name="hospital_clinic">Enter hospital or clinic</string>
+    <string name="Enter_workplace">Please enter the Hospital or Clinic name </string>
+    <string name="Enter_location">Please enter the Location </string>
+
+    <string name="final_survey_result_msg">Survey results are as per final responses</string>
+    <string name="results_msg_for_immediate_survey">Survey results are as per current responses</string>
+    <string name="final_result_short_msg">Final Results</string>
+
+    <string name="area_of_interest_ed_text"> Enter your area of interest</string>
+    <string name="str_remove">Remove</string>
+
+    <string name="str_area_interest_exist">Area of Interest already exist</string>
+    <string name="start_date">Start date should be greater than or equal to current date </string>
+    <string name="end_date">End date should be greater than or equal to start date </string>
+    <!--<string name="end_date">End date should be greater than or equal to current date </string>-->
+
+    <string name="action_download">Download</string>
+    //feed edit menu
+    <string name="feedEdit">Edit Post</string>
+    <string name="feedDelete">Delete Post</string>
+
+    <string name="size_exceed_msg">Attachment size exceeded more than 50 MB</string>
+    <string name="update"><u>Update</u></string>
+    <string name="cancel_text"><u>Cancel</u></string>
+
+    <string name="overAll_experience"><u>Overall experience</u></string>
+
+    <!--<string name="api_key">AIzaSyDm41-qGGc_gjm0T_jSUFSwvGWA-Bp3puM</string>-->
+
+    <string name="enhanced_whitecoats_text">We have enhanced WhiteCoats to provide feeds that are relevant per your locations and experience</string>
+
+    <string name="enter_text">Please enter the following information to serve you better</string>
+
+    <string name="skip_underline"><u>SKIP</u></string>
+
+    <string name="ok_underline"><u>Okay</u></string>
+
+
+    <string name="permission_required">PERMISSION REQUIRED</string>
+
+    <string name="home_page_set_text">Set Your Default Homepage</string>
+
+    <string name="change_default_setting_text">You can always change your default preference anytime from the home page setting</string>
+
+    <string name="suggested_feeds_text">Suggested Feeds</string>
+
+    <string name="see_more_text">See more</string>
+
+    <string name="recorded_video_text_webinar">The recorded video will be updated soon</string>
+
+    <string name="webinar_registration_thanks_text">Thank you for registering for %1$s. You will receive an email about the details shortly </string>
+
+    <string name="webinar_date_time_text">Webinar Date and Time</string>
+    <string name="eoi_if_interested_text">I am Interested</string>
+    <string name="select_valid_experience">Please select valid overall experience</string>
+
+    <string name="player_error">Error initializing YouTube player: %s</string>
+
+    <string name="no_data_available">No data available</string>
+
+    <string name="min_qualification"><u>Minimum Qualifications</u></string>
+    <string name="other_requirements"><u>Other Requirements</u></string>
+
+    <string name="contact_details_with_underline"><u>Contact Details:</u></string>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="sign_in_with_otp">Sign In With OTP</string>
+
+    <string name="ask_question_example">Example:\nI have started a new hospital in Jaipur 2 years ago. Does anyone have reference for accreditation consultants?\n\nI am pediatrician with 3 years of experience. Which college/hospital is the best pediatric cardiac surgery in india?\n\nI have a new practice in Pune. What is best way to get patients online without commissions?\n\nHow to manage postpartum hemorrhage in a primi with RHD?</string>
+    <string name="post_a_case_example">Example:\nA 72-year old female presented with acute mental status changes and one week h/o periorbital eye and neck swelling. She"'"s a known case of stage 3 multiple myeloma post stem cell transplant. On admission, she had bilateral optic disc edema,UTI. I am attaching how I managed this case and how the patient responded. Hope this helps the community.</string>
+    <string name="news_example">Example:\nCheck out the latest advisory from WHO on how to tackle long COVID in diabetic patients.\n\nBangalore Ophthalmic Society advises doctors against tie-ups with online platforms that charges commissions for patients.\n\nI am looking to hire 3 medical officers for my new hospital in indore.\n\nPlease reach out if interested.</string>
+
+    <string name="notification_on_header_text">Did you miss out on updates?</string>
+    <string name="notification_on_desc_text">Notifications keeps you up to date on job openings,live talks and more</string>
+</resources>
+
+

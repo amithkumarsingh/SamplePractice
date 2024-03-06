@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.vam.whitecoats.app-mergeDevDebugResources-5:/values-w600dp-v13/values-w600dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\AmithKumarSingh\\.gradle\\caches\\transforms-3\\0335fcb3ed576dbc26452c9d88c03855\\transformed\\jetified-android-sdk-3.2.0\\res\\values-w600dp-v13\\values-w600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,93",
+                        "endLines": "2,6",
+                        "endColumns": "37,24",
+                        "endOffsets": "88,246"
+                    }
+                }
+            ]
+        }
+    ]
+}

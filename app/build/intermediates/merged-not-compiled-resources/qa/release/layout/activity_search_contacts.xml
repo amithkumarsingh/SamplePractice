@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeContainer">
+
+
+        <!-- <com.handmark.pulltorefresh.library.PullToRefreshListView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/searcb_listView"
+             android:cacheColorHint="#00000000"
+             android:divider="#19000000"
+             android:dividerHeight="4dp"
+             android:fadingEdge="none"
+             android:fastScrollEnabled="false"
+             android:footerDividersEnabled="false"
+             android:headerDividersEnabled="false"
+             android:smoothScrollbar="true" />-->
+
+
+        <ListView
+            android:scrollbars="none"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searcb_listView"
+            android:layout_gravity="left|top" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/noResults_txt"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/str_noresults"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

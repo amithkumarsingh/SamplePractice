@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:paddingBottom="8dp"
+    android:background="@color/app_green">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/wcName"
+            android:src="@drawable/ic_mandatory_logo"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"/>
+
+    <RelativeLayout
+        android:id="@+id/whiteCoatsLabelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:id="@+id/welcomeToWhiteCoats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Welcome To WhiteCoats"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/new_account_label_size"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/whiteCoatsSubLabelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/whiteCoatsLabelLayout"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/welcomeToWhiteCoatsSubText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="India's leading professional success platform for doctors"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/toGetStartedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/whiteCoatsSubLabelLayout"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/toGetStartedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:text="To get started, please fill in the information below to help us personalize your experience"
+            android:textColor="#ffffff" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/experienceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toGetStartedLayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overall Experience"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:id="@+id/over_all_experience_text"/>
+
+
+        <AutoCompleteTextView
+            android:layout_below="@+id/over_all_experience_text"
+            android:id="@+id/experience_autocomplete_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:background="@drawable/mandatory_edit_text_bg"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/experience_error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select the overall experience"
+            style="@style/MyTextViewErrorStyle"
+            android:layout_below="@+id/experience_autocomplete_view"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/cityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/experienceLayout"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Town / City"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:id="@+id/city_edit_lay_text"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/city_edit_lay"
+            android:layout_below="@+id/city_edit_lay_text"
+            android:background="@drawable/mandatory_edit_text_bg"
+            android:padding="8dp"
+            android:layout_marginTop="8dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/city_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="50"
+                android:background="@color/transparent"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/clear_text"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/ic_clear_black_24dp"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/city_error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter your city of residence"
+            style="@style/MyTextViewErrorStyle"
+            android:layout_below="@+id/city_edit_lay"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cityLayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/speciality_lay">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speciality"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:id="@+id/speciality_edit_lay"/>
+
+
+
+
+        <AutoCompleteTextView
+            android:layout_below="@+id/speciality_edit_lay"
+            android:id="@+id/speciality_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLength="80"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:textSize="15sp"
+            android:background="@drawable/mandatory_edit_text_bg"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/speciality_error_text"
+            style="@style/MyTextViewErrorStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/speciality_edit"
+            android:layout_marginLeft="6dp"
+            android:text="@string/dlg_not_speciality_field_entered" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/getStartedButtonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/mandatory_getstarted_bg"
+        android:visibility="visible"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/speciality_lay">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Get Started"
+            android:textColor="#ffffff"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

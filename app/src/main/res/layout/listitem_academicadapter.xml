@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Degree"
+        android:id="@+id/degree_text"
+        style="@style/MyTextViewBody1"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:layout_marginBottom="2dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="University"
+        android:id="@+id/university_text"
+        android:layout_marginBottom="10dp"
+        style="@style/MyTextViewBody1"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="College"
+        android:id="@+id/college_text"
+        style="@style/MyTextViewBody1"
+        android:layout_marginBottom="2dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:textStyle="italic"
+        android:id="@+id/date_text"
+        style="@style/MyTextViewBody2"
+        android:textColor="#8A231f20"
+        android:layout_marginBottom="4dp"
+
+
+        />
+</LinearLayout>

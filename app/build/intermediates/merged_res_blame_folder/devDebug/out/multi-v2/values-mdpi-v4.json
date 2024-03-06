@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.vam.whitecoats.app-mergeDevDebugResources-5:/values-mdpi-v4/values-mdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Projects\\whitecoats-android-native\\app\\src\\main\\res\\values-mdpi\\dimens.xml",
+                    "from": {
+                        "startLines": "5,6,11,8,2,4,10,3,9",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "257,313,539,371,90,198,483,145,428",
+                        "endColumns": "54,54,51,55,53,57,54,51,53",
+                        "endOffsets": "307,363,586,422,139,251,533,192,477"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,110,165,217,273,327,385,440,492",
+                        "endColumns": "54,54,51,55,53,57,54,51,53",
+                        "endOffsets": "105,160,212,268,322,380,435,487,541"
+                    }
+                }
+            ]
+        }
+    ]
+}

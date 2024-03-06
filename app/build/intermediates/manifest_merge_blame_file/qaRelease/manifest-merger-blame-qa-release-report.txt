@@ -1,0 +1,2014 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.vam.whitecoats.qa"
+4    android:versionCode="96"
+5    android:versionName="1.11.61" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+11-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:8:5-67
+11-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:8:22-64
+12<!--         <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:12:5-65
+13-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:12:22-62
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:13:5-80
+14-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:13:22-77
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:14:5-79
+15-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:14:22-76
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:15:5-16:40
+16-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:15:22-78
+17    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+17-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:17:5-75
+17-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:17:22-72
+18    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- This app has permission to register and receive data message. -->
+18-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:18:5-69
+18-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:18:22-66
+19    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+19-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:19:5-82
+19-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:19:22-79
+20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+20-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:20:5-79
+20-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:20:22-76
+21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- this are the permission need so that application can read sms -->
+21-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:21:5-81
+21-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:21:22-78
+22
+23    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+23-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:23:5-77
+23-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:23:22-74
+24    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+24-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:24:5-76
+24-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:24:22-73
+25    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+25-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:25:5-75
+25-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:25:22-72
+26    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+26-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:26:5-75
+26-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:26:22-72
+27    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+27-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:26:5-75
+27-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:26:22-72
+28
+29    <!--
+30    <permission
+31        android:name="com.vam.whitecoats.permission.C2D_MESSAGE"
+32        android:protectionLevel="signature" />
+33
+34    <uses-permission android:name="com.vam.whitecoats.permission.C2D_MESSAGE" />
+35    -->
+36    <uses-configuration android:reqTouchScreen="finger" />
+36-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:36:5-59
+36-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:36:25-56
+37
+38    <supports-screens
+38-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:38:5-43:40
+39        android:anyDensity="true"
+39-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:39:9-34
+40        android:largeScreens="true"
+40-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:40:9-36
+41        android:normalScreens="true"
+41-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:41:9-37
+42        android:smallScreens="true"
+42-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:42:9-36
+43        android:xlargeScreens="true" />
+43-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:43:9-37
+44
+45    <uses-feature
+45-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:45:5-47:35
+46        android:name="android.hardware.touchscreen"
+46-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:46:9-52
+47        android:required="true" />
+47-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:47:9-32
+48    <uses-feature
+48-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:48:5-50:35
+49        android:name="android.hardware.touchscreen.multitouch"
+49-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:49:9-63
+50        android:required="true" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+50-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:50:9-32
+51    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+51-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:51:5-71
+51-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:51:22-68
+52
+53    <queries>
+53-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:659:5-663:15
+54        <intent>
+54-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:660:9-662:18
+55            <action android:name="com.google.android.youtube.api.service.START" />
+55-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:661:13-83
+55-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:661:21-80
+56        </intent>
+57    </queries>
+58    <!--
+59    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+60    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+61    -->
+62    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+62-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:20:5-76
+62-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:20:22-73
+63    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE"/> -->
+63-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:21:5-68
+63-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:21:22-65
+64    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+64-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:23:5-77
+64-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:23:22-74
+65
+66    <uses-feature
+66-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:25:5-27:36
+67        android:name="android.hardware.telephony"
+67-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:26:9-50
+68        android:required="false" />
+68-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:27:9-33
+69
+70    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+70-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:26:5-110
+70-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:26:22-107
+71    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+71-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:25:5-81
+71-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:25:22-78
+72
+73    <uses-feature
+73-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\7fbfa42df4647ae2b8b7cd24464ecdcd\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+74        android:glEsVersion="0x00020000"
+74-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\7fbfa42df4647ae2b8b7cd24464ecdcd\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+75        android:required="true" />
+75-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\7fbfa42df4647ae2b8b7cd24464ecdcd\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+76
+77    <permission
+77-->[androidx.core:core:1.9.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\fdfe43b102c81201c139e358221fc235\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+78        android:name="com.vam.whitecoats.qa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+78-->[androidx.core:core:1.9.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\fdfe43b102c81201c139e358221fc235\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+79        android:protectionLevel="signature" />
+79-->[androidx.core:core:1.9.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\fdfe43b102c81201c139e358221fc235\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+80
+81    <uses-permission android:name="com.vam.whitecoats.qa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+81-->[androidx.core:core:1.9.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\fdfe43b102c81201c139e358221fc235\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+81-->[androidx.core:core:1.9.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\fdfe43b102c81201c139e358221fc235\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+82
+83    <application
+83-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:53:5-657:19
+84        android:name="com.vam.whitecoats.App_Application"
+84-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:54:9-40
+85        android:allowBackup="false"
+85-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:55:9-36
+86        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+86-->[androidx.core:core:1.9.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\fdfe43b102c81201c139e358221fc235\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+87        android:fullBackupContent="false"
+87-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:56:9-42
+88        android:icon="@mipmap/ic_appicon"
+88-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:57:9-42
+89        android:label="@string/app_name"
+89-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:58:9-41
+90        android:largeHeap="true"
+90-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:59:9-33
+91        android:manageSpaceActivity=".ui.activities.SplashScreenActivity"
+91-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:60:9-74
+92        android:requestLegacyExternalStorage="true"
+92-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:61:9-52
+93        android:resizeableActivity="true"
+93-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:62:9-42
+94        android:supportsRtl="true"
+94-->[:awesomeimagepicker] C:\Projects\whitecoats-android-native\awesomeimagepicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:9-35
+95        android:theme="@style/CustomTheme"
+95-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:63:9-43
+96        android:usesCleartextTraffic="true" >
+96-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:64:9-44
+97        <receiver
+97-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:67:9-73:20
+98            android:name="com.vam.whitecoats.ui.activities.OTP_Receiver"
+98-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:68:13-55
+99            android:exported="false" >
+99-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:69:13-37
+100            <intent-filter>
+100-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:70:13-72:29
+101                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+101-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:71:17-82
+101-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:71:25-79
+102            </intent-filter>
+103        </receiver>
+104
+105        <provider
+106            android:name="androidx.core.content.FileProvider"
+106-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:76:13-62
+107            android:authorities="com.vam.whitecoats.qa.provider"
+107-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:77:13-60
+108            android:exported="false"
+108-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:78:13-37
+109            android:grantUriPermissions="true" >
+109-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:79:13-47
+110            <meta-data
+110-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:80:13-82:58
+111                android:name="android.support.FILE_PROVIDER_PATHS"
+111-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:81:17-67
+112                android:resource="@xml/provider_paths" />
+112-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:82:17-55
+113        </provider>
+114        <!-- Autopilot calls takeOff without the need to override the Application -->
+115        <!-- Autopilot calls takeOff without the need to override the Application -->
+116        <!--
+117        <meta-data
+118            android:name="com.urbanairship.autopilot"
+119            android:value="com.vam.whitecoats.utils.SampleAutopilot" />
+120        <meta-data
+121            android:name="com.urbanairship.job.PREFER_ANDROID_JOB_SCHEDULER"
+122            android:value="true" /> &lt;!&ndash; Optional: Receives push and registration events from the Urban Airship SDK. &ndash;&gt;
+123        <receiver
+124            android:name=".receiver.MyAirshipReceiver"
+125            android:exported="false">
+126            <intent-filter>
+127                <action android:name="com.urbanairship.push.CHANNEL_UPDATED" />
+128                <action android:name="com.urbanairship.push.OPENED" />
+129                <action android:name="com.urbanairship.push.DISMISSED" />
+130                <action android:name="com.urbanairship.push.RECEIVED" />
+131
+132                <category android:name="${applicationId}" />
+133            </intent-filter>
+134        </receiver>
+135        -->
+136
+137        <activity
+137-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:105:9-146:20
+138            android:name="com.vam.whitecoats.ui.activities.SplashScreenActivity"
+138-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:106:13-63
+139            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+139-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:107:13-122
+140            android:exported="true"
+140-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:108:13-36
+141            android:label="@string/app_title"
+141-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:109:13-46
+142            android:launchMode="singleTask"
+142-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:110:13-44
+143            android:screenOrientation="portrait"
+143-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:111:13-49
+144            android:theme="@style/SplashScreenTheme" >
+144-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:112:13-53
+145            <intent-filter>
+145-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:113:13-117:29
+146                <action android:name="android.intent.action.MAIN" />
+146-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:114:17-69
+146-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:114:25-66
+147
+148                <category android:name="android.intent.category.LAUNCHER" />
+148-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:116:17-77
+148-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:116:27-74
+149            </intent-filter>
+150            <intent-filter android:autoVerify="true" >
+150-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:118:13-145:29
+150-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:118:28-53
+151                <action android:name="android.intent.action.VIEW" />
+151-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:119:17-69
+151-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:119:25-66
+152
+153                <category android:name="android.intent.category.DEFAULT" />
+153-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:121:17-76
+153-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:121:27-73
+154                <category android:name="android.intent.category.BROWSABLE" />
+154-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:122:17-78
+154-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:122:27-75
+155
+156                <data
+156-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:124:17-126:45
+157                    android:host="dev.whitecoats.com"
+157-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:125:21-54
+158                    android:scheme="http" />
+158-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:126:21-42
+159                <data
+159-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:124:17-126:45
+160                    android:host="qa.whitecoats.com"
+160-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:125:21-54
+161                    android:scheme="http" />
+161-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:126:21-42
+162                <data
+162-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:124:17-126:45
+163                    android:host="stage.whitecoats.com"
+163-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:125:21-54
+164                    android:scheme="http" />
+164-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:126:21-42
+165                <data
+165-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:124:17-126:45
+166                    android:host="whitecoats.com"
+166-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:125:21-54
+167                    android:scheme="http" />
+167-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:126:21-42
+168                <data
+168-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:124:17-126:45
+169                    android:host="wcts.app"
+169-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:125:21-54
+170                    android:scheme="http" />
+170-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:126:21-42
+171                <!--
+172                    <data
+173                    android:host="wcts.in"
+174                    android:scheme="http" />
+175                -->
+176                <data android:scheme="https" />
+176-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:124:17-126:45
+176-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:126:21-42
+177            </intent-filter>
+178        </activity>
+179        <activity
+179-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:147:9-151:52
+180            android:name="com.vam.whitecoats.ui.activities.LoginActivity"
+180-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:148:13-56
+181            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+181-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:149:13-122
+182            android:label="@string/app_title"
+182-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:150:13-46
+183            android:screenOrientation="portrait" />
+183-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:151:13-49
+184        <activity
+184-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:152:9-156:52
+185            android:name="com.vam.whitecoats.ui.activities.ChangePasswordActivity"
+185-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:153:13-65
+186            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+186-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:154:13-122
+187            android:label="@string/app_title"
+187-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:155:13-46
+188            android:screenOrientation="portrait" />
+188-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:156:13-49
+189        <!-- ENGG-3376 Added the windowSoftInputMode to avoid the keyboard issue -->
+190        <activity
+190-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:158:9-165:57
+191            android:name="com.vam.whitecoats.ui.activities.DashboardActivity"
+191-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:159:13-60
+192            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+192-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:160:13-122
+193            android:label="@string/app_title"
+193-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:161:13-46
+194            android:launchMode="singleTask"
+194-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:162:13-44
+195            android:screenOrientation="portrait"
+195-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:163:13-49
+196            android:theme="@style/AppTheme.NoActionBar"
+196-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:164:13-56
+197            android:windowSoftInputMode="stateHidden" />
+197-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:165:13-54
+198        <activity
+198-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:166:9-169:58
+199            android:name="com.vam.whitecoats.ui.activities.CustomPhotoGalleryActivity"
+199-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:167:13-69
+200            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+200-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:168:13-122
+201            android:screenOrientation="sensorPortrait" />
+201-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:169:13-55
+202        <activity
+202-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:170:9-175:59
+203            android:name="com.vam.whitecoats.ui.activities.ProfileViewActivity"
+203-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:171:13-62
+204            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+204-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:172:13-122
+205            android:label="@string/profilelist_activity_name"
+205-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:173:13-62
+206            android:screenOrientation="portrait"
+206-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:174:13-49
+207            android:theme="@style/AppTheme.NoActionBar" />
+207-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:175:13-56
+208        <!--
+209         <receiver android:name=".receiver.NetWorkReceiver" >
+210             <intent-filter>
+211                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+212             </intent-filter>
+213         </receiver>
+214        -->
+215        <receiver android:name="com.vam.whitecoats.receiver.SchedulerEventReceiver" />
+215-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:183:9-69
+215-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:183:19-66
+216        <receiver
+216-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:184:9-190:20
+217            android:name="com.vam.whitecoats.receiver.SchedulerSetupReceiver"
+217-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:185:13-60
+218            android:exported="false" >
+218-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:186:13-37
+219            <intent-filter>
+219-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:187:13-189:29
+220                <action android:name="android.intent.action.USER_PRESENT" />
+220-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:188:17-77
+220-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:188:25-74
+221            </intent-filter>
+222        </receiver>
+223
+224        <service android:name="com.vam.whitecoats.receiver.SchedulerEventService" />
+224-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:192:9-67
+224-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:192:18-64
+225
+226        <activity
+226-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:194:9-200:71
+227            android:name="com.vam.whitecoats.ui.activities.BasicProfileActivity"
+227-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:195:13-63
+228            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+228-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:196:13-122
+229            android:label="@string/title_activity_basic_profile"
+229-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:197:13-65
+230            android:parentActivityName="com.vam.whitecoats.ui.activities.ProfileViewActivity"
+230-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:198:13-76
+231            android:screenOrientation="portrait"
+231-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:199:13-49
+232            android:windowSoftInputMode="stateVisible|adjustResize" />
+232-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:200:13-68
+233        <activity
+233-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:201:9-204:52
+234            android:name="com.vam.whitecoats.ui.activities.ProfessionalDetActivity"
+234-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:202:13-66
+235            android:label="@string/title_activity_professional_det"
+235-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:203:13-68
+236            android:screenOrientation="portrait" />
+236-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:204:13-49
+237        <activity
+237-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:205:9-208:52
+238            android:name="com.vam.whitecoats.ui.activities.Profile_fullView"
+238-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:206:13-59
+239            android:label="@string/title_Profile_fullView"
+239-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:207:13-59
+240            android:screenOrientation="portrait" />
+240-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:208:13-49
+241        <activity
+241-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:209:9-212:52
+242            android:name="com.vam.whitecoats.ui.activities.AcademicActivity"
+242-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:210:13-59
+243            android:label="@string/title_activity_academic"
+243-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:211:13-60
+244            android:screenOrientation="portrait" />
+244-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:212:13-49
+245        <activity
+245-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:213:9-216:52
+246            android:name="com.vam.whitecoats.ui.activities.IntroSlidesActivity"
+246-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:214:13-62
+247            android:label="IntroSlidesActivity"
+247-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:215:13-48
+248            android:screenOrientation="portrait" />
+248-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:216:13-49
+249        <activity
+249-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:217:9-221:52
+250            android:name="com.vam.whitecoats.ui.activities.PublicationsActivity"
+250-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:218:13-63
+251            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+251-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:219:13-122
+252            android:label="@string/title_activity_publications"
+252-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:220:13-64
+253            android:screenOrientation="portrait" />
+253-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:221:13-49
+254        <activity
+254-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:222:9-226:52
+255            android:name="com.vam.whitecoats.ui.activities.InviteRequestActivity"
+255-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:223:13-64
+256            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+256-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:224:13-122
+257            android:label="@string/app_title"
+257-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:225:13-46
+258            android:screenOrientation="portrait" />
+258-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:226:13-49
+259        <activity
+259-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:227:9-238:20
+260            android:name="com.vam.whitecoats.ui.activities.SearchContactsActivity"
+260-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:228:13-65
+261            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+261-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:229:13-122
+262            android:exported="false"
+262-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:230:13-37
+263            android:label="@string/app_title"
+263-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:231:13-46
+264            android:screenOrientation="portrait" >
+264-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:232:13-49
+265            <intent-filter>
+265-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:233:13-237:29
+266                <action android:name="android.intent.action.MAIN" />
+266-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:114:17-69
+266-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:114:25-66
+267
+268                <category android:name="android.intent.category.DEFAULT" />
+268-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:121:17-76
+268-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:121:27-73
+269            </intent-filter>
+270        </activity>
+271        <activity
+271-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:239:9-243:52
+272            android:name="com.vam.whitecoats.ui.activities.AboutMeActivity"
+272-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:240:13-58
+273            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+273-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:241:13-122
+274            android:label="@string/app_title"
+274-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:242:13-46
+275            android:screenOrientation="portrait" />
+275-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:243:13-49
+276        <activity
+276-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:244:9-255:20
+277            android:name="com.vam.whitecoats.ui.activities.MandatoryProfileInfo"
+277-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:245:13-63
+278            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+278-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:246:13-122
+279            android:exported="false"
+279-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:247:13-37
+280            android:label="@string/app_title"
+280-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:248:13-46
+281            android:screenOrientation="portrait" >
+281-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:249:13-49
+282            <intent-filter>
+282-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:233:13-237:29
+283                <action android:name="android.intent.action.MAIN" />
+283-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:114:17-69
+283-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:114:25-66
+284
+285                <category android:name="android.intent.category.DEFAULT" />
+285-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:121:17-76
+285-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:121:27-73
+286            </intent-filter>
+287        </activity>
+288        <activity
+288-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:256:9-261:59
+289            android:name="com.vam.whitecoats.ui.activities.VisitProfileActivity"
+289-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:257:13-63
+290            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+290-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:258:13-122
+291            android:label="@string/app_title"
+291-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:259:13-46
+292            android:screenOrientation="portrait"
+292-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:260:13-49
+293            android:theme="@style/AppTheme.NoActionBar" />
+293-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:261:13-56
+294        <activity
+294-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:262:9-266:52
+295            android:name="com.vam.whitecoats.ui.activities.ProfessionalMemActivity"
+295-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:263:13-66
+296            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+296-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:264:13-122
+297            android:label="@string/app_title"
+297-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:265:13-46
+298            android:screenOrientation="portrait" />
+298-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:266:13-49
+299        <activity
+299-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:267:9-271:52
+300            android:name="com.vam.whitecoats.ui.activities.EditPublicationsActivity"
+300-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:268:13-67
+301            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+301-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:269:13-122
+302            android:label="@string/app_title"
+302-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:270:13-46
+303            android:screenOrientation="portrait" />
+303-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:271:13-49
+304        <activity
+304-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:272:9-277:59
+305            android:name="com.vam.whitecoats.ui.activities.NotificationsActivity"
+305-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:273:13-64
+306            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+306-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:274:13-122
+307            android:label="@string/app_title"
+307-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:275:13-46
+308            android:screenOrientation="portrait"
+308-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:276:13-49
+309            android:theme="@style/AppTheme.NoActionBar" />
+309-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:277:13-56
+310        <activity
+310-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:278:9-282:52
+311            android:name="com.vam.whitecoats.ui.activities.ViewContactsActivity"
+311-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:279:13-63
+312            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+312-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:280:13-122
+313            android:label="@string/app_title"
+313-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:281:13-46
+314            android:screenOrientation="portrait" />
+314-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:282:13-49
+315        <activity
+315-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:283:9-287:52
+316            android:name="com.vam.whitecoats.ui.activities.CaseRoomEditAttachmentActivity"
+316-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:284:13-73
+317            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+317-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:285:13-122
+318            android:label="@string/app_title"
+318-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:286:13-46
+319            android:screenOrientation="portrait" />
+319-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:287:13-49
+320        <activity
+320-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:288:9-291:52
+321            android:name="com.vam.whitecoats.ui.activities.ImageViewer"
+321-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:289:13-54
+322            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+322-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:290:13-122
+323            android:screenOrientation="portrait" />
+323-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:291:13-49
+324        <activity
+324-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:292:9-295:52
+325            android:name="com.vam.whitecoats.ui.activities.TermsOfServiceActivity"
+325-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:293:13-65
+326            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+326-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:294:13-122
+327            android:screenOrientation="portrait" />
+327-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:295:13-49
+328        <activity
+328-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:296:9-299:52
+329            android:name="com.vam.whitecoats.ui.activities.Network_MyConnects"
+329-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:297:13-61
+330            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+330-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:298:13-122
+331            android:screenOrientation="portrait" />
+331-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:299:13-49
+332        <activity
+332-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:300:9-303:52
+333            android:name="com.vam.whitecoats.ui.activities.NetworkSearchActivity"
+333-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:301:13-64
+334            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+334-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:302:13-122
+335            android:screenOrientation="portrait" />
+335-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:303:13-49
+336        <!-- GCM (Push Notifications) setup: http://developer.android.com/google/gcm/gs.html#android-app -->
+337        <!-- 1.With FCM, receiver added in library. So removing it. -->
+338        <!--
+339        <receiver
+340            android:name="com.google.android.gms.gcm.GcmReceiver"
+341            android:exported="true"
+342            android:permission="com.google.android.c2dm.permission.SEND">
+343            <intent-filter>
+344                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+345                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+346
+347                <category android:name="com.vam.whitecoats" />
+348            </intent-filter>
+349        </receiver>
+350        -->
+351        <!-- 2. Add the following intent service: -->
+352        <service
+352-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:320:9-326:19
+353            android:name="com.vam.whitecoats.core.gcm.MyFcmListenerService"
+353-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:321:13-58
+354            android:exported="false" >
+354-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:322:13-37
+355            <intent-filter>
+355-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:323:13-325:29
+356                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+356-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:324:17-78
+356-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:324:25-75
+357            </intent-filter>
+358        </service>
+359        <!--
+360            <service
+361            android:name=".core.gcm.RegistrationIntentService"
+362            android:exported="false"></service>
+363        -->
+364        <meta-data
+364-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:332:9-334:35
+365            android:name="com.quickblox.messages.TYPE"
+365-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:333:13-55
+366            android:value="FCM" />
+366-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:334:13-32
+367        <meta-data
+367-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:335:9-337:53
+368            android:name="com.quickblox.messages.SENDER_ID"
+368-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:336:13-60
+369            android:value="@string/gcm_sender_id" />
+369-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:337:13-50
+370        <meta-data
+370-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:338:9-340:42
+371            android:name="com.quickblox.messages.QB_ENVIRONMENT"
+371-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:339:13-65
+372            android:value="PRODUCTION" /> <!-- <service android:name="com.vam.whitecoats.utils.OnClearFromRecentService" android:stopWithTask="false" /> -->
+372-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:340:13-39
+373        <activity
+373-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:341:9-343:61
+374            android:name="com.vam.whitecoats.ui.activities.ShareWithContacts"
+374-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:342:13-60
+375            android:label="@string/title_Add_to_Connects" />
+375-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:343:13-58
+376        <activity
+376-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:344:9-348:59
+377            android:name="com.vam.whitecoats.ui.activities.TimeLine"
+377-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:345:13-51
+378            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+378-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:346:13-122
+379            android:screenOrientation="portrait"
+379-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:347:13-49
+380            android:theme="@style/AppTheme.NoActionBar" />
+380-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:348:13-56
+381        <activity
+381-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:349:9-352:52
+382            android:name="com.vam.whitecoats.ui.activities.FeedsSummary"
+382-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:350:13-55
+383            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+383-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:351:13-122
+384            android:screenOrientation="portrait" />
+384-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:352:13-49
+385        <activity
+385-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:353:9-373:20
+386            android:name="com.vam.whitecoats.ui.activities.CreatePostActivity"
+386-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:354:13-61
+387            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+387-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:355:13-122
+388            android:screenOrientation="portrait" >
+388-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:356:13-49
+389
+390            <!--
+391            <intent-filter>
+392                <action android:name="android.intent.action.SEND"/>
+393                <category android:name="android.intent.category.DEFAULT"/>
+394                <data android:mimeType="text/plain"/>
+395            </intent-filter>
+396            &lt;!&ndash; This activity also handles "SEND" and "SEND_MULTIPLE" with media data &ndash;&gt;
+397            <intent-filter>
+398                <action android:name="android.intent.action.SEND"/>
+399                &lt;!&ndash;<action android:name="android.intent.action.SEND_MULTIPLE"/>&ndash;&gt;
+400                <category android:name="android.intent.category.DEFAULT"/>
+401                &lt;!&ndash;<data android:mimeType="application/vnd.google.panorama360+jpg"/>&ndash;&gt;
+402                <data android:mimeType="image/*"/>
+403            </intent-filter>
+404            -->
+405        </activity>
+406        <activity
+406-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:374:9-377:52
+407            android:name="com.vam.whitecoats.ui.activities.DepartmentMembersActivity"
+407-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:375:13-68
+408            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+408-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:376:13-122
+409            android:screenOrientation="portrait" />
+409-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:377:13-49
+410        <!--
+411        <receiver android:name=".ui.broadCasts.NetworkChangeReceiver">
+412            <intent-filter>
+413                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+414                <action android:name="android.net.ConnectivityManager.CONNECTIVITY_ACTION" />
+415            </intent-filter>
+416        </receiver>
+417        -->
+418        <activity
+418-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:386:9-389:52
+419            android:name="com.vam.whitecoats.ui.activities.InactiveMembersCard"
+419-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:387:13-62
+420            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+420-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:388:13-122
+421            android:screenOrientation="portrait" />
+421-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:389:13-49
+422        <activity
+422-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:390:9-393:52
+423            android:name="com.vam.whitecoats.ui.activities.ContentFullView"
+423-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:391:13-58
+424            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+424-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:392:13-122
+425            android:screenOrientation="portrait" />
+425-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:393:13-49
+426        <activity
+426-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:394:9-397:52
+427            android:name="com.vam.whitecoats.ui.activities.PreferencesActivity"
+427-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:395:13-62
+428            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+428-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:396:13-122
+429            android:screenOrientation="portrait" />
+429-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:397:13-49
+430        <activity
+430-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:398:9-401:52
+431            android:name="com.vam.whitecoats.ui.activities.PdfViewerActivity"
+431-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:399:13-60
+432            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+432-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:400:13-122
+433            android:screenOrientation="portrait" />
+433-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:401:13-49
+434        <activity
+434-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:402:9-406:58
+435            android:name="com.vam.whitecoats.ui.activities.CommentsActivity"
+435-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:403:13-59
+436            android:configChanges="orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+436-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:404:13-98
+437            android:screenOrientation="portrait"
+437-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:405:13-49
+438            android:windowSoftInputMode="adjustResize" />
+438-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:406:13-55
+439        <activity
+439-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:407:9-410:52
+440            android:name="com.vam.whitecoats.ui.activities.GetStartedActivity"
+440-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:408:13-61
+441            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+441-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:409:13-122
+442            android:screenOrientation="portrait" />
+442-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:410:13-49
+443        <activity
+443-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:411:9-414:52
+444            android:name="com.vam.whitecoats.ui.activities.RegistrationDetailsActivity"
+444-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:412:13-70
+445            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+445-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:413:13-122
+446            android:screenOrientation="portrait" />
+446-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:414:13-49
+447        <activity
+447-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:415:9-418:52
+448            android:name="com.vam.whitecoats.ui.activities.MCACardUploadActivity"
+448-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:416:13-64
+449            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+449-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:417:13-122
+450            android:screenOrientation="portrait" />
+450-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:418:13-49
+451        <activity
+451-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:419:9-422:52
+452            android:name="com.vam.whitecoats.ui.activities.MediaFilesActivity"
+452-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:420:13-61
+453            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+453-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:421:13-122
+454            android:screenOrientation="portrait" />
+454-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:422:13-49
+455        <activity
+455-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:423:9-426:52
+456            android:name="com.vam.whitecoats.ui.activities.ForgotPassword"
+456-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:424:13-57
+457            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+457-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:425:13-122
+458            android:screenOrientation="portrait" />
+458-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:426:13-49
+459        <activity
+459-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:427:9-430:52
+460            android:name="com.vam.whitecoats.ui.activities.ContactSupport"
+460-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:428:13-57
+461            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+461-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:429:13-122
+462            android:screenOrientation="portrait" />
+462-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:430:13-49
+463        <activity
+463-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:431:9-434:52
+464            android:name="com.vam.whitecoats.ui.activities.OTPConformationScreen"
+464-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:432:13-64
+465            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+465-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:433:13-122
+466            android:screenOrientation="portrait" />
+466-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:434:13-49
+467        <activity
+467-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:435:9-438:52
+468            android:name="com.vam.whitecoats.ui.activities.InviteContactsActivity"
+468-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:436:13-65
+469            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+469-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:437:13-122
+470            android:screenOrientation="portrait" />
+470-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:438:13-49
+471        <activity
+471-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:439:9-442:52
+472            android:name="com.soundcloud.android.crop.CropImageActivity"
+472-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:440:13-73
+473            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+473-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:441:13-122
+474            android:screenOrientation="portrait" />
+474-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:442:13-49
+475        <activity
+475-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:443:9-447:60
+476            android:name="com.vam.whitecoats.ui.activities.SpecialityDialogActivity"
+476-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:444:13-67
+477            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+477-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:445:13-122
+478            android:screenOrientation="unspecified"
+478-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:446:13-52
+479            android:theme="@style/NoTitleActivityDialog" />
+479-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:447:13-57
+480        <activity
+480-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:448:9-451:52
+481            android:name="com.vam.whitecoats.ui.activities.EmptyActivity"
+481-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:449:13-56
+482            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+482-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:450:13-122
+483            android:screenOrientation="portrait" />
+483-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:451:13-49
+484
+485        <!--
+486              <meta-data
+487              android:name="io.fabric.ApiKey"
+488              android:value="5877054a4d20766c036ceefb84ffbf2b7d39a44f" />
+489        -->
+490
+491        <activity
+491-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:457:9-460:52
+492            android:name="com.vam.whitecoats.ui.activities.MyBookmarksActivity"
+492-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:458:13-62
+493            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+493-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:459:13-122
+494            android:screenOrientation="portrait" />
+494-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:460:13-49
+495        <activity
+495-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:461:9-464:52
+496            android:name="com.vam.whitecoats.ui.activities.FeedSearchActivity"
+496-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:462:13-61
+497            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+497-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:463:13-122
+498            android:screenOrientation="portrait" />
+498-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:464:13-49
+499        <!--
+500        <activity android:name=".ui.activities.AwardsAndMemberships"
+501            android:screenOrientation="portrait" />
+502        -->
+503        <activity
+503-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:469:9-472:52
+504            android:name="com.vam.whitecoats.ui.activities.AwardsAndMemberships"
+504-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:470:13-63
+505            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+505-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:471:13-122
+506            android:screenOrientation="portrait" />
+506-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:472:13-49
+507        <activity
+507-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:473:9-476:59
+508            android:name="com.vam.whitecoats.ui.activities.VisitOtherProfile"
+508-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:474:13-60
+509            android:screenOrientation="portrait"
+509-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:475:13-49
+510            android:theme="@style/AppTheme.NoActionBar" />
+510-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:476:13-56
+511        <activity
+511-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:477:9-480:52
+512            android:name="com.vam.whitecoats.ui.activities.UserSearchResultsActivity"
+512-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:478:13-68
+513            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+513-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:479:13-122
+514            android:screenOrientation="portrait" />
+514-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:480:13-49
+515        <activity
+515-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:481:9-485:57
+516            android:name="com.vam.whitecoats.ui.activities.FilterSearchActivity"
+516-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:482:13-63
+517            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+517-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:483:13-122
+518            android:screenOrientation="portrait"
+518-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:484:13-49
+519            android:windowSoftInputMode="stateHidden" />
+519-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:485:13-54
+520        <activity
+520-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:486:9-489:52
+521            android:name="com.vam.whitecoats.ui.activities.GlobalSearchActivity"
+521-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:487:13-63
+522            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+522-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:488:13-122
+523            android:screenOrientation="portrait" />
+523-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:489:13-49
+524        <activity
+524-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:490:9-494:58
+525            android:name="com.vam.whitecoats.ui.activities.CommentsPreviewActivity"
+525-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:491:13-66
+526            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+526-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:492:13-122
+527            android:screenOrientation="portrait"
+527-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:493:13-49
+528            android:windowSoftInputMode="adjustResize" />
+528-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:494:13-55
+529        <activity
+529-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:495:9-498:52
+530            android:name="com.vam.whitecoats.ui.activities.ErrorResponseActivity"
+530-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:496:13-64
+531            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+531-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:497:13-122
+532            android:screenOrientation="portrait" />
+532-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:498:13-49
+533        <activity
+533-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:499:9-502:52
+534            android:name="com.vam.whitecoats.ui.activities.MandatoryPageActivity"
+534-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:500:13-64
+535            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+535-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:501:13-122
+536            android:screenOrientation="portrait" />
+536-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:502:13-49
+537        <activity
+537-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:503:9-527:20
+538            android:name="com.vam.whitecoats.ui.activities.ChannelSelectionActivity"
+538-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:504:13-67
+539            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+539-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:506:13-122
+540            android:exported="false"
+540-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:505:13-37
+541            android:screenOrientation="portrait" >
+541-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:507:13-49
+542            <intent-filter>
+542-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:508:13-515:29
+543                <action android:name="android.intent.action.SEND" />
+543-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:509:17-69
+543-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:509:25-66
+544
+545                <category android:name="android.intent.category.DEFAULT" />
+545-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:121:17-76
+545-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:121:27-73
+546
+547                <data android:mimeType="text/plain" />
+547-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:124:17-126:45
+547-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:513:23-52
+548                <data android:mimeType="video/mp4" />
+548-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:124:17-126:45
+548-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:513:23-52
+549            </intent-filter>
+550            <!-- This activity also handles "SEND" and "SEND_MULTIPLE" with media data -->
+551            <intent-filter>
+551-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:517:13-526:29
+552                <action android:name="android.intent.action.SEND" />
+552-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:509:17-69
+552-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:509:25-66
+553                <action android:name="android.intent.action.SEND_MULTIPLE" />
+553-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:519:17-78
+553-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:519:25-75
+554
+555                <category android:name="android.intent.category.DEFAULT" />
+555-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:121:17-76
+555-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:121:27-73
+556                <!-- <data android:mimeType="application/vnd.google.panorama360+jpg"/> -->
+557                <data android:mimeType="image/*" />
+557-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:124:17-126:45
+557-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:513:23-52
+558                <data android:mimeType="audio/*" />
+558-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:124:17-126:45
+558-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:513:23-52
+559                <data android:mimeType="application/pdf" />
+559-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:124:17-126:45
+559-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:513:23-52
+560            </intent-filter>
+561        </activity>
+562        <activity
+562-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:528:9-531:52
+563            android:name="com.vam.whitecoats.ui.activities.AddEventsActivity"
+563-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:529:13-60
+564            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+564-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:530:13-122
+565            android:screenOrientation="portrait" />
+565-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:531:13-49
+566        <activity
+566-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:532:9-535:52
+567            android:name="com.vam.whitecoats.ui.activities.AreaOfInterest"
+567-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:533:13-57
+568            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+568-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:534:13-122
+569            android:screenOrientation="portrait" />
+569-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:535:13-49
+570        <activity
+570-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:536:9-539:52
+571            android:name="com.vam.whitecoats.ui.activities.ListAllFilesActivity"
+571-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:537:13-63
+572            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+572-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:538:13-122
+573            android:screenOrientation="portrait" />
+573-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:539:13-49
+574        <activity
+574-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:540:9-543:53
+575            android:name="com.vam.whitecoats.ui.activities.VideoStreamActivity"
+575-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:541:13-62
+576            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+576-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:542:13-122
+577            android:theme="@style/VideoViewStyle" />
+577-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:543:13-50
+578        <activity
+578-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:544:9-548:59
+579            android:name="com.vam.whitecoats.ui.activities.DefaultHomePageActivity"
+579-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:545:13-66
+580            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+580-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:546:13-122
+581            android:screenOrientation="portrait"
+581-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:547:13-49
+582            android:theme="@style/AppTheme.NoActionBar" />
+582-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:548:13-56
+583        <!-- ENGG-3376 Added the windowSoftInputMode to avoid the keyboard issue -->
+584        <activity
+584-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:550:9-555:57
+585            android:name="com.vam.whitecoats.ui.activities.PermissionAccessActivity"
+585-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:551:13-67
+586            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+586-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:552:13-122
+587            android:screenOrientation="portrait"
+587-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:553:13-49
+588            android:theme="@style/AppTheme.NoActionBar"
+588-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:554:13-56
+589            android:windowSoftInputMode="stateHidden" />
+589-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:555:13-54
+590        <activity
+590-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:556:9-562:57
+591            android:name="com.vam.whitecoats.ui.activities.LocationAndExperienceActivity"
+591-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:557:13-72
+592            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+592-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:558:13-122
+593            android:excludeFromRecents="true"
+593-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:559:13-46
+594            android:screenOrientation="unspecified"
+594-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:560:13-52
+595            android:theme="@style/Theme.AppCompat.Dialog"
+595-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:561:13-58
+596            android:windowSoftInputMode="stateHidden" />
+596-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:562:13-54
+597        <activity
+597-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:563:9-573:20
+598            android:name="com.vam.whitecoats.ui.activities.NotificationSettingsActivity"
+598-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:564:13-71
+599            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+599-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:566:13-122
+600            android:exported="false"
+600-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:565:13-37
+601            android:screenOrientation="portrait" >
+601-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:567:13-49
+602            <intent-filter>
+602-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:568:13-572:29
+603                <action android:name="android.intent.action.MAIN" />
+603-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:114:17-69
+603-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:114:25-66
+604
+605                <category android:name="android.intent.category.NOTIFICATION_PREFERENCES" />
+605-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:571:17-93
+605-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:571:27-90
+606            </intent-filter>
+607        </activity>
+608        <activity
+608-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:574:9-577:52
+609            android:name="com.vam.whitecoats.ui.activities.WebViewActivity"
+609-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:575:13-58
+610            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+610-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:576:13-122
+611            android:screenOrientation="portrait" />
+611-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:577:13-49
+612        <activity
+612-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:578:9-581:52
+613            android:name="com.vam.whitecoats.ui.activities.SuggestedListActivity"
+613-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:579:13-64
+614            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+614-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:580:13-122
+615            android:screenOrientation="portrait" />
+615-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:581:13-49
+616        <activity
+616-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:582:9-585:53
+617            android:name="com.vam.whitecoats.ui.activities.YoutubeVideoViewActivity"
+617-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:583:13-67
+618            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+618-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:584:13-122
+619            android:screenOrientation="landscape" />
+619-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:585:13-50
+620        <activity
+620-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:586:9-589:52
+621            android:name="com.vam.whitecoats.ui.activities.CategoryDistributionTabsActivity"
+621-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:587:13-75
+622            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+622-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:588:13-122
+623            android:screenOrientation="portrait" />
+623-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:589:13-49
+624        <activity
+624-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:590:9-593:52
+625            android:name="com.vam.whitecoats.ui.activities.FeedCategoryDistributionActivity"
+625-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:591:13-75
+626            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+626-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:592:13-122
+627            android:screenOrientation="portrait" />
+627-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:593:13-49
+628        <activity
+628-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:594:9-597:52
+629            android:name="com.vam.whitecoats.ui.activities.SubCategoriesListActivity"
+629-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:595:13-68
+630            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+630-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:596:13-122
+631            android:screenOrientation="portrait" />
+631-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:597:13-49
+632        <activity
+632-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:598:9-601:61
+633            android:name="com.vam.whitecoats.ui.activities.CategoryLoadingActivity"
+633-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:599:13-66
+634            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+634-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:600:13-122
+635            android:screenOrientation="portrait" />
+635-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:601:13-49
+636        <activity
+636-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:602:9-606:52
+637            android:name="com.vam.whitecoats.ui.activities.DrugSearchActivity"
+637-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:603:13-61
+638            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+638-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:604:13-122
+639            android:launchMode="singleTask"
+639-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:605:13-44
+640            android:screenOrientation="portrait" />
+640-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:606:13-49
+641        <activity
+641-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:607:9-610:61
+642            android:name="com.vam.whitecoats.ui.activities.DrugDetailsActivity"
+642-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:608:13-62
+643            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+643-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:609:13-122
+644            android:screenOrientation="portrait" />
+644-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:610:13-49
+645        <activity
+645-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:611:9-614:61
+646            android:name="com.vam.whitecoats.ui.activities.DrugsActivity"
+646-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:612:13-56
+647            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+647-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:613:13-122
+648            android:screenOrientation="portrait" />
+648-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:614:13-49
+649        <activity
+649-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:615:9-618:61
+650            android:name="com.vam.whitecoats.ui.activities.DrugSubClassActivity"
+650-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:616:13-63
+651            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+651-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:617:13-122
+652            android:screenOrientation="portrait" />
+652-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:618:13-49
+653        <activity
+653-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:619:9-622:61
+654            android:name="com.vam.whitecoats.ui.activities.DrugClassActivity"
+654-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:620:13-60
+655            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+655-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:621:13-122
+656            android:screenOrientation="portrait" />
+656-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:622:13-49
+657        <activity
+657-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:623:9-626:52
+658            android:name="com.vam.whitecoats.ui.activities.CategorySearchActivity"
+658-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:624:13-65
+659            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+659-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:625:13-122
+660            android:screenOrientation="portrait" />
+660-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:626:13-49
+661        <activity
+661-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:627:9-630:52
+662            android:name="com.vam.whitecoats.ui.activities.JobFeedCompleteView"
+662-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:628:13-62
+663            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+663-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:629:13-122
+664            android:screenOrientation="portrait" />
+664-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:630:13-49
+665        <activity
+665-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:631:9-633:51
+666            android:name="com.vam.whitecoats.ui.activities.AccountDeleteActivity"
+666-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:631:19-70
+667            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+667-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:632:13-122
+668            android:screenOrientation="portrait" />
+668-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:633:13-49
+669        <activity
+669-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:634:9-637:58
+670            android:name="com.vam.whitecoats.ui.activities.AccountDeleteAckActivity"
+670-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:634:19-73
+671            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+671-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:635:13-122
+672            android:screenOrientation="portrait"
+672-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:636:13-49
+673            android:theme="@style/AppTheme.NoActionBar" />
+673-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:637:13-56
+674        <!--
+675<service
+676            android:enabled="true"
+677            android:name=".utils.AppKillIdentifyService"
+678            android:exported="false"
+679            android:stopWithTask="false" />
+680        -->
+681        <service
+681-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:645:9-647:38
+682            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+682-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:646:13-93
+683            android:enabled="true" />
+683-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:647:13-35
+684
+685        <!--
+686            <meta-data
+687            android:name="com.doceree.androidadslibrary.ads.APPLICATION_ID"
+688            android:value="3d7e35f8-99d7-4716-9604-77d410d15d97" />
+689        -->
+690        <meta-data
+690-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:653:9-655:37
+691            android:name="io.sentry.auto-init"
+691-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:654:13-47
+692            android:value="false" />
+692-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:655:13-34
+693        <meta-data
+693-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:30:9-32:37
+694            android:name="unityplayer.SkipPermissionsDialog"
+694-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:31:13-61
+695            android:value="false" />
+695-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:32:13-34
+696
+697        <activity
+697-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:34:9-36:39
+698            android:name="com.brandkinesis.push.BKPushRedirectionActivity"
+698-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:35:13-75
+699            android:exported="true" />
+699-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:36:13-36
+700        <activity
+700-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:37:9-41:70
+701            android:name="com.brandkinesis.activitymanager.BKActivity"
+701-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:38:13-71
+702            android:exported="false"
+702-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:39:13-37
+703            android:theme="@style/Theme.Transparent"
+703-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:40:13-53
+704            android:windowSoftInputMode="adjustResize|stateHidden" />
+704-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:41:13-67
+705        <activity
+705-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:42:9-47:57
+706            android:name="com.brandkinesis.activitymanager.BkScreenTipActivity"
+706-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:43:13-80
+707            android:configChanges="orientation|keyboardHidden|screenSize"
+707-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:44:13-74
+708            android:exported="false"
+708-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:45:13-37
+709            android:theme="@style/Theme.Transparent"
+709-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:46:13-53
+710            android:windowSoftInputMode="stateHidden" />
+710-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:47:13-54
+711        <activity
+711-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:48:9-52:70
+712            android:name="com.brandkinesis.activitymanager.BKSurveyActivity"
+712-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:49:13-77
+713            android:exported="false"
+713-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:50:13-37
+714            android:theme="@style/Theme.Transparent"
+714-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:51:13-53
+715            android:windowSoftInputMode="adjustResize|stateHidden" />
+715-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:52:13-67
+716        <activity
+716-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:53:9-57:63
+717            android:name="com.brandkinesis.inbox.BKInboxActivity"
+717-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:54:13-66
+718            android:exported="false"
+718-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:55:13-37
+719            android:screenOrientation="portrait"
+719-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:56:13-49
+720            android:theme="@android:style/Theme.NoTitleBar" />
+720-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:57:13-60
+721
+722        <meta-data
+722-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:59:9-61:69
+723            android:name="com.google.android.gms.version"
+723-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:60:13-58
+724            android:value="@integer/google_play_services_version" />
+724-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:61:13-66
+725
+726        <activity
+726-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:63:9-66:63
+727            android:name="com.brandkinesis.activity.ads.BKAdsWebActivity"
+727-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:64:13-74
+728            android:exported="false"
+728-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:65:13-37
+729            android:theme="@android:style/Theme.NoTitleBar" />
+729-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:66:13-60
+730        <activity
+730-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:67:9-70:63
+731            android:name="com.brandkinesis.activity.inappmessage.BKIAMWebActivity"
+731-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:68:13-83
+732            android:exported="false"
+732-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:69:13-37
+733            android:theme="@android:style/Theme.NoTitleBar" />
+733-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:70:13-60
+734        <activity
+734-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:71:9-74:54
+735            android:name="com.brandkinesis.activity.inappmessage.BKIAMShareActivity"
+735-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:72:13-85
+736            android:exported="true"
+736-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:73:13-36
+737            android:theme="@style/DialogSlideAnim" />
+737-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:74:13-51
+738        <activity
+738-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:75:9-78:63
+739            android:name="com.brandkinesis.activity.customactivity.BKCustomWebActivity"
+739-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:76:13-88
+740            android:exported="true"
+740-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:77:13-36
+741            android:theme="@android:style/Theme.NoTitleBar" />
+741-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:78:13-60
+742        <activity
+742-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:79:9-82:63
+743            android:name="com.brandkinesis.activity.minigames.BKMiniGamesWebActivity"
+743-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:80:13-86
+744            android:exported="true"
+744-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:81:13-36
+745            android:theme="@android:style/Theme.NoTitleBar" />
+745-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:82:13-60
+746        <activity
+746-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:83:9-87:86
+747            android:name="com.brandkinesis.activity.ads.BKInterstitialAdActivity"
+747-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:84:13-82
+748            android:configChanges="orientation|screenSize"
+748-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:85:13-59
+749            android:exported="true"
+749-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:86:13-36
+750            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+750-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:87:13-83
+751        <activity
+751-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:88:9-92:86
+752            android:name="com.brandkinesis.activitymanager.BKTriviaActivity"
+752-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:89:13-77
+753            android:configChanges="orientation|screenSize"
+753-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:90:13-59
+754            android:exported="false"
+754-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:91:13-37
+755            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+755-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:92:13-83
+756        <activity
+756-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:93:9-96:86
+757            android:name="com.brandkinesis.activity.tutorials.interactivetutorials.BKTutorialActivity"
+757-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:94:13-103
+758            android:exported="false"
+758-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:95:13-37
+759            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+759-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:96:13-83
+760
+761        <receiver
+761-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:98:9-100:39
+762            android:name="com.brandkinesis.push.internal.BKNotificationBuilder$DeleteReceiver"
+762-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:99:13-95
+763            android:exported="true" />
+763-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:100:13-36
+764        <receiver
+764-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:101:9-107:20
+765            android:name="com.brandkinesis.push.internal.BKNotificationBuilder$ActionButtonListener"
+765-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:102:13-101
+766            android:exported="true" >
+766-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:103:13-36
+767            <intent-filter>
+767-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:104:13-106:29
+768                <action android:name="BK_ACTION" />
+768-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:105:17-52
+768-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:105:25-49
+769            </intent-filter>
+770        </receiver>
+771        <receiver
+771-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:108:9-110:39
+772            android:name="com.brandkinesis.push.internal.GifNotificationDeleteReceiver"
+772-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:109:13-88
+773            android:exported="true" />
+773-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:110:13-36
+774        <receiver
+774-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:111:9-113:39
+775            android:name="com.brandkinesis.push.internal.AnimatedLayoutListener"
+775-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:112:13-81
+776            android:exported="true" />
+776-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:113:13-36
+777        <receiver
+777-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:114:9-116:39
+778            android:name="com.brandkinesis.push.internal.DeleteReceiver"
+778-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:115:13-73
+779            android:exported="true" />
+779-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:116:13-36
+780        <receiver
+780-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:117:9-123:20
+781            android:name="com.brandkinesis.push.internal.EnhancedPushListener"
+781-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:118:13-79
+782            android:exported="true" >
+782-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:119:13-36
+783            <intent-filter>
+783-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:104:13-106:29
+784                <action android:name="BK_ACTION" />
+784-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:105:17-52
+784-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:105:25-49
+785            </intent-filter>
+786        </receiver>
+787        <receiver
+787-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:124:9-131:20
+788            android:name="com.brandkinesis.utils.BKConnectivityStatusReceiver"
+788-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:125:13-79
+789            android:enabled="true"
+789-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:126:13-35
+790            android:exported="true" >
+790-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:127:13-36
+791            <intent-filter>
+791-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:128:13-130:29
+792                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+792-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:129:17-79
+792-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:129:25-76
+793            </intent-filter>
+794        </receiver> <!-- Used for install referrer tracking -->
+795        <receiver
+795-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:134:9-142:20
+796            android:name="com.brandkinesis.ReferrerReceiver"
+796-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:135:13-61
+797            android:exported="true" >
+797-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:136:13-36
+798            <intent-filter>
+798-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:137:13-141:29
+799                <action android:name="com.android.vending.INSTALL_REFERRER" />
+799-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:138:17-79
+799-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:138:25-76
+800
+801                <category android:name="android.intent.category.DEFAULT" />
+801-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:121:17-76
+801-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:121:27-73
+802            </intent-filter>
+803        </receiver>
+804
+805        <activity
+805-->[:awesomeimagepicker] C:\Projects\whitecoats-android-native\awesomeimagepicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-18:52
+806            android:name="in.myinnos.awesomeimagepicker.activities.AlbumSelectActivity"
+806-->[:awesomeimagepicker] C:\Projects\whitecoats-android-native\awesomeimagepicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-88
+807            android:hardwareAccelerated="true"
+807-->[:awesomeimagepicker] C:\Projects\whitecoats-android-native\awesomeimagepicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-47
+808            android:screenOrientation="portrait" />
+808-->[:awesomeimagepicker] C:\Projects\whitecoats-android-native\awesomeimagepicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-49
+809        <activity
+809-->[:awesomeimagepicker] C:\Projects\whitecoats-android-native\awesomeimagepicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-22:52
+810            android:name="in.myinnos.awesomeimagepicker.activities.ImageSelectActivity"
+810-->[:awesomeimagepicker] C:\Projects\whitecoats-android-native\awesomeimagepicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-88
+811            android:hardwareAccelerated="true"
+811-->[:awesomeimagepicker] C:\Projects\whitecoats-android-native\awesomeimagepicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-47
+812            android:screenOrientation="portrait" />
+812-->[:awesomeimagepicker] C:\Projects\whitecoats-android-native\awesomeimagepicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-49
+813        <activity
+813-->[:imageeditengine] C:\Projects\whitecoats-android-native\imageeditengine\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-15:20
+814            android:name="com.droidninja.imageeditengine.ImageEditActivity"
+814-->[:imageeditengine] C:\Projects\whitecoats-android-native\imageeditengine\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-76
+815            android:theme="@style/LibAppTheme"
+815-->[:imageeditengine] C:\Projects\whitecoats-android-native\imageeditengine\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-47
+816            android:windowSoftInputMode="adjustNothing" >
+816-->[:imageeditengine] C:\Projects\whitecoats-android-native\imageeditengine\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-56
+817        </activity>
+818        <activity
+818-->[com.google.android.libraries.places:places:3.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\62c7aa28b1aee1efd039ef0d57a34901\transformed\jetified-places-3.0.0\AndroidManifest.xml:15:9-21:20
+819            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+819-->[com.google.android.libraries.places:places:3.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\62c7aa28b1aee1efd039ef0d57a34901\transformed\jetified-places-3.0.0\AndroidManifest.xml:16:13-91
+820            android:exported="false"
+820-->[com.google.android.libraries.places:places:3.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\62c7aa28b1aee1efd039ef0d57a34901\transformed\jetified-places-3.0.0\AndroidManifest.xml:17:13-37
+821            android:label="@string/places_autocomplete_label"
+821-->[com.google.android.libraries.places:places:3.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\62c7aa28b1aee1efd039ef0d57a34901\transformed\jetified-places-3.0.0\AndroidManifest.xml:18:13-62
+822            android:theme="@style/PlacesAutocompleteOverlay"
+822-->[com.google.android.libraries.places:places:3.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\62c7aa28b1aee1efd039ef0d57a34901\transformed\jetified-places-3.0.0\AndroidManifest.xml:19:13-61
+823            android:windowSoftInputMode="adjustResize" >
+823-->[com.google.android.libraries.places:places:3.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\62c7aa28b1aee1efd039ef0d57a34901\transformed\jetified-places-3.0.0\AndroidManifest.xml:20:13-55
+824        </activity>
+825        <activity
+825-->[:mediapicker] C:\Projects\whitecoats-android-native\mediapicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-13:66
+826            android:name="net.alhazmy13.mediapicker.Image.ImageActivity"
+826-->[:mediapicker] C:\Projects\whitecoats-android-native\mediapicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-73
+827            android:theme="@style/Theme.AppCompat.Translucent" />
+827-->[:mediapicker] C:\Projects\whitecoats-android-native\mediapicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-63
+828        <activity
+828-->[:mediapicker] C:\Projects\whitecoats-android-native\mediapicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:9-16:66
+829            android:name="net.alhazmy13.mediapicker.Video.VideoActivity"
+829-->[:mediapicker] C:\Projects\whitecoats-android-native\mediapicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-73
+830            android:theme="@style/Theme.AppCompat.Translucent" />
+830-->[:mediapicker] C:\Projects\whitecoats-android-native\mediapicker\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-63
+831
+832        <receiver
+832-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:31:9-38:20
+833            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+833-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:32:13-78
+834            android:exported="true"
+834-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:33:13-36
+835            android:permission="com.google.android.c2dm.permission.SEND" >
+835-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:34:13-73
+836            <intent-filter>
+836-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:35:13-37:29
+837                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+837-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:36:17-81
+837-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:36:25-78
+838            </intent-filter>
+839        </receiver>
+840        <!--
+841             FirebaseMessagingService performs security checks at runtime,
+842             but set to not exported to explicitly avoid allowing another app to call it.
+843        -->
+844        <service
+844-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:44:9-51:19
+845            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+845-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:45:13-82
+846            android:directBootAware="true"
+846-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:46:13-43
+847            android:exported="false" >
+847-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:47:13-37
+848            <intent-filter android:priority="-500" >
+848-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:323:13-325:29
+849                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+849-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:324:17-78
+849-->C:\Projects\whitecoats-android-native\app\src\main\AndroidManifest.xml:324:25-75
+850            </intent-filter>
+851        </service>
+852        <service
+852-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:52:9-58:19
+853            android:name="com.google.firebase.components.ComponentDiscoveryService"
+853-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:53:13-84
+854            android:directBootAware="true"
+854-->[com.google.firebase:firebase-common:20.3.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\bfd58d74860514673a14a4adda8f531f\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:34:13-43
+855            android:exported="false" >
+855-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:54:13-37
+856            <meta-data
+856-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:55:13-57:85
+857                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+857-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:56:17-119
+858                android:value="com.google.firebase.components.ComponentRegistrar" />
+858-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ac07a4d03c0c67816be2507b19e0fb5c\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:57:17-82
+859            <meta-data
+859-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b86ae6f4b570816895bb87d796ef2bbf\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:31:13-33:85
+860                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+860-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b86ae6f4b570816895bb87d796ef2bbf\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:32:17-139
+861                android:value="com.google.firebase.components.ComponentRegistrar" />
+861-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b86ae6f4b570816895bb87d796ef2bbf\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:33:17-82
+862            <meta-data
+862-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\bf719f96b38ba44068ac428f46247db9\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+863                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+863-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\bf719f96b38ba44068ac428f46247db9\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+864                android:value="com.google.firebase.components.ComponentRegistrar" />
+864-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\bf719f96b38ba44068ac428f46247db9\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+865            <meta-data
+865-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\87282b43d82a7fc98c3ad9b5095df34e\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+866                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+866-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\87282b43d82a7fc98c3ad9b5095df34e\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+867                android:value="com.google.firebase.components.ComponentRegistrar" />
+867-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\87282b43d82a7fc98c3ad9b5095df34e\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+868        </service>
+869
+870        <receiver
+870-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:29:9-33:20
+871            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+871-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:30:13-85
+872            android:enabled="true"
+872-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:31:13-35
+873            android:exported="false" >
+873-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:32:13-37
+874        </receiver>
+875
+876        <service
+876-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:35:9-38:40
+877            android:name="com.google.android.gms.measurement.AppMeasurementService"
+877-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:36:13-84
+878            android:enabled="true"
+878-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:37:13-35
+879            android:exported="false" />
+879-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:38:13-37
+880        <service
+880-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:39:9-43:72
+881            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+881-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:40:13-87
+882            android:enabled="true"
+882-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:41:13-35
+883            android:exported="false"
+883-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:42:13-37
+884            android:permission="android.permission.BIND_JOB_SERVICE" />
+884-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ba9b3e73886baa68f97f55fcc34b5672\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:43:13-69
+885
+886        <provider
+886-->[com.flurry.android:analytics:14.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\4d22bfd0f06b205a5abe92504388a96a\transformed\jetified-analytics-14.0.0\AndroidManifest.xml:13:9-16:40
+887            android:name="com.flurry.android.agent.FlurryContentProvider"
+887-->[com.flurry.android:analytics:14.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\4d22bfd0f06b205a5abe92504388a96a\transformed\jetified-analytics-14.0.0\AndroidManifest.xml:14:13-74
+888            android:authorities="com.vam.whitecoats.qa.FlurryContentProvider"
+888-->[com.flurry.android:analytics:14.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\4d22bfd0f06b205a5abe92504388a96a\transformed\jetified-analytics-14.0.0\AndroidManifest.xml:15:13-73
+889            android:exported="false" />
+889-->[com.flurry.android:analytics:14.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\4d22bfd0f06b205a5abe92504388a96a\transformed\jetified-analytics-14.0.0\AndroidManifest.xml:16:13-37
+890
+891        <service
+891-->[es.voghdev.pdfviewpager:library:1.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\3ebf9c740408de288c8dfe52e8f488a3\transformed\jetified-library-1.1.2\AndroidManifest.xml:12:9-15:19
+892            android:name="es.voghdev.pdfviewpager.library.service.CopyAssetService"
+892-->[es.voghdev.pdfviewpager:library:1.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\3ebf9c740408de288c8dfe52e8f488a3\transformed\jetified-library-1.1.2\AndroidManifest.xml:13:13-84
+893            android:exported="false" >
+893-->[es.voghdev.pdfviewpager:library:1.1.2] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\3ebf9c740408de288c8dfe52e8f488a3\transformed\jetified-library-1.1.2\AndroidManifest.xml:14:13-37
+894        </service>
+895
+896        <provider
+896-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:29:9-37:20
+897            android:name="androidx.startup.InitializationProvider"
+897-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:30:13-67
+898            android:authorities="com.vam.whitecoats.qa.androidx-startup"
+898-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:31:13-68
+899            android:exported="false" >
+899-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:32:13-37
+900            <meta-data
+900-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:34:13-36:52
+901                android:name="androidx.work.WorkManagerInitializer"
+901-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:35:17-68
+902                android:value="androidx.startup" />
+902-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:36:17-49
+903            <meta-data
+903-->[androidx.emoji2:emoji2:1.2.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ee6b252178c8cd488c5cf2123ecaf1ae\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+904                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+904-->[androidx.emoji2:emoji2:1.2.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ee6b252178c8cd488c5cf2123ecaf1ae\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+905                android:value="androidx.startup" />
+905-->[androidx.emoji2:emoji2:1.2.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\ee6b252178c8cd488c5cf2123ecaf1ae\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+906            <meta-data
+906-->[androidx.lifecycle:lifecycle-process:2.6.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\44d8e2891d73c4d9121ed28408630d16\transformed\jetified-lifecycle-process-2.6.0\AndroidManifest.xml:29:13-31:52
+907                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+907-->[androidx.lifecycle:lifecycle-process:2.6.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\44d8e2891d73c4d9121ed28408630d16\transformed\jetified-lifecycle-process-2.6.0\AndroidManifest.xml:30:17-78
+908                android:value="androidx.startup" />
+908-->[androidx.lifecycle:lifecycle-process:2.6.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\44d8e2891d73c4d9121ed28408630d16\transformed\jetified-lifecycle-process-2.6.0\AndroidManifest.xml:31:17-49
+909            <meta-data
+909-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:30:13-32:52
+910                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+910-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:31:17-85
+911                android:value="androidx.startup" />
+911-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:32:17-49
+912        </provider>
+913
+914        <service
+914-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:39:9-45:35
+915            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+915-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:40:13-88
+916            android:directBootAware="false"
+916-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:41:13-44
+917            android:enabled="@bool/enable_system_alarm_service_default"
+917-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:42:13-72
+918            android:exported="false" />
+918-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:43:13-37
+919        <service
+919-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:46:9-52:35
+920            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+920-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:47:13-84
+921            android:directBootAware="false"
+921-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:48:13-44
+922            android:enabled="@bool/enable_system_job_service_default"
+922-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:49:13-70
+923            android:exported="true"
+923-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:50:13-36
+924            android:permission="android.permission.BIND_JOB_SERVICE" />
+924-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:51:13-69
+925        <service
+925-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:53:9-59:35
+926            android:name="androidx.work.impl.foreground.SystemForegroundService"
+926-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:54:13-81
+927            android:directBootAware="false"
+927-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:55:13-44
+928            android:enabled="@bool/enable_system_foreground_service_default"
+928-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:56:13-77
+929            android:exported="false" />
+929-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:57:13-37
+930
+931        <receiver
+931-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:61:9-66:35
+932            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+932-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:62:13-88
+933            android:directBootAware="false"
+933-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:63:13-44
+934            android:enabled="true"
+934-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:64:13-35
+935            android:exported="false" />
+935-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:65:13-37
+936        <receiver
+936-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:67:9-77:20
+937            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+937-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:68:13-106
+938            android:directBootAware="false"
+938-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:69:13-44
+939            android:enabled="false"
+939-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:70:13-36
+940            android:exported="false" >
+940-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:71:13-37
+941            <intent-filter>
+941-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:73:13-76:29
+942                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+942-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:74:17-87
+942-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:74:25-84
+943                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+943-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:75:17-90
+943-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:75:25-87
+944            </intent-filter>
+945        </receiver>
+946        <receiver
+946-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:78:9-88:20
+947            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+947-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:79:13-104
+948            android:directBootAware="false"
+948-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:80:13-44
+949            android:enabled="false"
+949-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:81:13-36
+950            android:exported="false" >
+950-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:82:13-37
+951            <intent-filter>
+951-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:84:13-87:29
+952                <action android:name="android.intent.action.BATTERY_OKAY" />
+952-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:85:17-77
+952-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:85:25-74
+953                <action android:name="android.intent.action.BATTERY_LOW" />
+953-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:86:17-76
+953-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:86:25-73
+954            </intent-filter>
+955        </receiver>
+956        <receiver
+956-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:89:9-99:20
+957            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+957-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:90:13-104
+958            android:directBootAware="false"
+958-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:91:13-44
+959            android:enabled="false"
+959-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:92:13-36
+960            android:exported="false" >
+960-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:93:13-37
+961            <intent-filter>
+961-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:95:13-98:29
+962                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+962-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:96:17-83
+962-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:96:25-80
+963                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+963-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:97:17-82
+963-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:97:25-79
+964            </intent-filter>
+965        </receiver>
+966        <receiver
+966-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:100:9-109:20
+967            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+967-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:101:13-103
+968            android:directBootAware="false"
+968-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:102:13-44
+969            android:enabled="false"
+969-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:103:13-36
+970            android:exported="false" >
+970-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:104:13-37
+971            <intent-filter>
+971-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:128:13-130:29
+972                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+972-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:129:17-79
+972-->[BrandKinesis-androidx-live-release-V1.6.5.aar] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\c778450157b5bad788ef8317bc785ba0\transformed\jetified-BrandKinesis-androidx-live-release-V1.6.5\AndroidManifest.xml:129:25-76
+973            </intent-filter>
+974        </receiver>
+975        <receiver
+975-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:110:9-121:20
+976            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+976-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:111:13-88
+977            android:directBootAware="false"
+977-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:112:13-44
+978            android:enabled="false"
+978-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:113:13-36
+979            android:exported="false" >
+979-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:114:13-37
+980            <intent-filter>
+980-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:116:13-120:29
+981                <action android:name="android.intent.action.BOOT_COMPLETED" />
+981-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:117:17-79
+981-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:117:25-76
+982                <action android:name="android.intent.action.TIME_SET" />
+982-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:118:17-73
+982-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:118:25-70
+983                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+983-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:119:17-81
+983-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:119:25-78
+984            </intent-filter>
+985        </receiver>
+986        <receiver
+986-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:122:9-131:20
+987            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+987-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:123:13-99
+988            android:directBootAware="false"
+988-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:124:13-44
+989            android:enabled="@bool/enable_system_alarm_service_default"
+989-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:125:13-72
+990            android:exported="false" >
+990-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:126:13-37
+991            <intent-filter>
+991-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:128:13-130:29
+992                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+992-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:129:17-98
+992-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:129:25-95
+993            </intent-filter>
+994        </receiver>
+995        <receiver
+995-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:132:9-142:20
+996            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+996-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:133:13-78
+997            android:directBootAware="false"
+997-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:134:13-44
+998            android:enabled="true"
+998-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:135:13-35
+999            android:exported="true"
+999-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:136:13-36
+1000            android:permission="android.permission.DUMP" >
+1000-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:137:13-57
+1001            <intent-filter>
+1001-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:139:13-141:29
+1002                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+1002-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:140:17-88
+1002-->[androidx.work:work-runtime:2.8.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\0de1bc3d984d0e61de8a4b525f6adfed\transformed\work-runtime-2.8.0\AndroidManifest.xml:140:25-85
+1003            </intent-filter>
+1004        </receiver>
+1005
+1006        <provider
+1006-->[com.google.firebase:firebase-common:20.3.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\bfd58d74860514673a14a4adda8f531f\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:25:9-30:39
+1007            android:name="com.google.firebase.provider.FirebaseInitProvider"
+1007-->[com.google.firebase:firebase-common:20.3.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\bfd58d74860514673a14a4adda8f531f\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:26:13-77
+1008            android:authorities="com.vam.whitecoats.qa.firebaseinitprovider"
+1008-->[com.google.firebase:firebase-common:20.3.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\bfd58d74860514673a14a4adda8f531f\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:27:13-72
+1009            android:directBootAware="true"
+1009-->[com.google.firebase:firebase-common:20.3.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\bfd58d74860514673a14a4adda8f531f\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:28:13-43
+1010            android:exported="false"
+1010-->[com.google.firebase:firebase-common:20.3.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\bfd58d74860514673a14a4adda8f531f\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:29:13-37
+1011            android:initOrder="100" /> <!-- Needs to be explicitly declared on P+ -->
+1011-->[com.google.firebase:firebase-common:20.3.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\bfd58d74860514673a14a4adda8f531f\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:30:13-36
+1012        <uses-library
+1012-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\7fbfa42df4647ae2b8b7cd24464ecdcd\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+1013            android:name="org.apache.http.legacy"
+1013-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\7fbfa42df4647ae2b8b7cd24464ecdcd\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+1014            android:required="false" />
+1014-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\7fbfa42df4647ae2b8b7cd24464ecdcd\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+1015
+1016        <activity
+1016-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\f3569b1f7d093ee10724a0a5b35f6df1\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+1017            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+1017-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\f3569b1f7d093ee10724a0a5b35f6df1\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+1018            android:exported="false"
+1018-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\f3569b1f7d093ee10724a0a5b35f6df1\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+1019            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 'android:authorities' must be unique in the device, across all apps -->
+1019-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\f3569b1f7d093ee10724a0a5b35f6df1\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+1020        <provider
+1020-->[io.sentry:sentry-android-core:5.1.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\4c5f029ae6aaca4237d35ec3cc103633\transformed\jetified-sentry-android-core-5.1.0\AndroidManifest.xml:14:9-17:40
+1021            android:name="io.sentry.android.core.SentryInitProvider"
+1021-->[io.sentry:sentry-android-core:5.1.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\4c5f029ae6aaca4237d35ec3cc103633\transformed\jetified-sentry-android-core-5.1.0\AndroidManifest.xml:15:13-69
+1022            android:authorities="com.vam.whitecoats.qa.SentryInitProvider"
+1022-->[io.sentry:sentry-android-core:5.1.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\4c5f029ae6aaca4237d35ec3cc103633\transformed\jetified-sentry-android-core-5.1.0\AndroidManifest.xml:16:13-70
+1023            android:exported="false" />
+1023-->[io.sentry:sentry-android-core:5.1.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\4c5f029ae6aaca4237d35ec3cc103633\transformed\jetified-sentry-android-core-5.1.0\AndroidManifest.xml:17:13-37
+1024        <provider
+1024-->[io.sentry:sentry-android-core:5.1.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\4c5f029ae6aaca4237d35ec3cc103633\transformed\jetified-sentry-android-core-5.1.0\AndroidManifest.xml:18:9-22:39
+1025            android:name="io.sentry.android.core.SentryPerformanceProvider"
+1025-->[io.sentry:sentry-android-core:5.1.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\4c5f029ae6aaca4237d35ec3cc103633\transformed\jetified-sentry-android-core-5.1.0\AndroidManifest.xml:19:13-76
+1026            android:authorities="com.vam.whitecoats.qa.SentryPerformanceProvider"
+1026-->[io.sentry:sentry-android-core:5.1.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\4c5f029ae6aaca4237d35ec3cc103633\transformed\jetified-sentry-android-core-5.1.0\AndroidManifest.xml:20:13-77
+1027            android:exported="false"
+1027-->[io.sentry:sentry-android-core:5.1.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\4c5f029ae6aaca4237d35ec3cc103633\transformed\jetified-sentry-android-core-5.1.0\AndroidManifest.xml:21:13-37
+1028            android:initOrder="200" />
+1028-->[io.sentry:sentry-android-core:5.1.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\4c5f029ae6aaca4237d35ec3cc103633\transformed\jetified-sentry-android-core-5.1.0\AndroidManifest.xml:22:13-36
+1029
+1030        <service
+1030-->[androidx.room:room-runtime:2.5.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b45f84f94642a065472cbd4914712181\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
+1031            android:name="androidx.room.MultiInstanceInvalidationService"
+1031-->[androidx.room:room-runtime:2.5.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b45f84f94642a065472cbd4914712181\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
+1032            android:directBootAware="true"
+1032-->[androidx.room:room-runtime:2.5.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b45f84f94642a065472cbd4914712181\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
+1033            android:exported="false" />
+1033-->[androidx.room:room-runtime:2.5.0] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b45f84f94642a065472cbd4914712181\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
+1034        <service
+1034-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\f132f46fb64c6c5b2d1e67eed600366e\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+1035            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+1035-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\f132f46fb64c6c5b2d1e67eed600366e\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+1036            android:exported="false" >
+1036-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\f132f46fb64c6c5b2d1e67eed600366e\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+1037            <meta-data
+1037-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\f132f46fb64c6c5b2d1e67eed600366e\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+1038                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+1038-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\f132f46fb64c6c5b2d1e67eed600366e\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+1039                android:value="cct" />
+1039-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\f132f46fb64c6c5b2d1e67eed600366e\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+1040        </service>
+1041        <service
+1041-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b46e75d90f0606214a73388afd9d56c3\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+1042            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+1042-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b46e75d90f0606214a73388afd9d56c3\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+1043            android:exported="false"
+1043-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b46e75d90f0606214a73388afd9d56c3\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+1044            android:permission="android.permission.BIND_JOB_SERVICE" >
+1044-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b46e75d90f0606214a73388afd9d56c3\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+1045        </service>
+1046
+1047        <receiver
+1047-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b46e75d90f0606214a73388afd9d56c3\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+1048            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+1048-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b46e75d90f0606214a73388afd9d56c3\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+1049            android:exported="false" />
+1049-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\b46e75d90f0606214a73388afd9d56c3\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+1050        <receiver
+1050-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:35:9-47:20
+1051            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+1051-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:36:13-76
+1052            android:directBootAware="false"
+1052-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:37:13-44
+1053            android:enabled="true"
+1053-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:38:13-35
+1054            android:exported="true"
+1054-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:39:13-36
+1055            android:permission="android.permission.DUMP" >
+1055-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:40:13-57
+1056            <intent-filter>
+1056-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:41:13-43:29
+1057                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+1057-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:42:17-91
+1057-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:42:25-88
+1058            </intent-filter>
+1059            <intent-filter>
+1059-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:44:13-46:29
+1060                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+1060-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:45:17-85
+1060-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\d99f221484812b3f3f5f6a38e6807edf\transformed\jetified-profileinstaller-1.2.1\AndroidManifest.xml:45:25-82
+1061            </intent-filter>
+1062        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
+1063        <activity
+1063-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:18:9-24:45
+1064            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+1064-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:19:13-100
+1065            android:enabled="false"
+1065-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:20:13-36
+1066            android:exported="false"
+1066-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:21:13-37
+1067            android:launchMode="singleInstance"
+1067-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:22:13-48
+1068            android:process=":playcore_missing_splits_activity"
+1068-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:23:13-64
+1069            android:stateNotNeeded="true" />
+1069-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:24:13-42
+1070        <activity
+1070-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:25:9-29:65
+1071            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+1071-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:26:13-93
+1072            android:exported="false"
+1072-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:27:13-37
+1073            android:stateNotNeeded="true"
+1073-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:28:13-42
+1074            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+1074-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:29:13-62
+1075        <service
+1075-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:32:9-39:19
+1076            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+1076-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:33:13-94
+1077            android:enabled="false"
+1077-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:34:13-36
+1078            android:exported="true" >
+1078-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:35:13-36
+1079            <meta-data
+1079-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:36:13-38:41
+1080                android:name="com.google.android.play.core.assetpacks.versionCode"
+1080-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:37:17-83
+1081                android:value="11003" />
+1081-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:38:17-38
+1082        </service>
+1083        <service
+1083-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:40:9-43:40
+1084            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+1084-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:41:13-95
+1085            android:enabled="false"
+1085-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:42:13-36
+1086            android:exported="false" />
+1086-->[com.google.android.play:core:1.10.3] C:\Users\AmithKumarSingh\.gradle\caches\transforms-3\23e52732dd48bccdd11c5ac35032e578\transformed\jetified-core-1.10.3\AndroidManifest.xml:43:13-37
+1087    </application>
+1088
+1089</manifest>

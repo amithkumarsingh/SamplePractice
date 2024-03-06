@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/single_list_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sdsdssd"
+        android:layout_toLeftOf="@+id/single_list_item_check_button"
+        android:gravity="left"
+        android:textColor="#231f20"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"/>
+
+    <RadioButton
+        android:id="@+id/single_list_item_check_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"/>
+
+</RelativeLayout>
+</RelativeLayout>

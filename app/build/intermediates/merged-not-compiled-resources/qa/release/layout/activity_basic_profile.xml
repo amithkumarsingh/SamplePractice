@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp">
+
+        <FrameLayout
+            android:id="@+id/image_lay"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp">
+
+            <com.vam.whitecoats.ui.customviews.RoundedImageView
+                android:id="@+id/profile_pic_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/default_profilepic" />
+
+            <ImageView
+                android:id="@+id/green_over_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imageview_overlay" />
+
+            <TextView
+                android:id="@+id/add_photo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="70dp"
+                android:text="Add your photo"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/camera_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_camera_whitebg" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/main_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_lay"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/salutation_spinner_profile_edit"
+                    style="@style/spinner_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:hintTextAppearance="@style/FloatLableColor">
+
+                        <EditText
+                            android:id="@+id/firstname_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                            android:hint="@string/first_name"
+                            android:inputType="textCapSentences|textMultiLine|textNoSuggestions"
+                            android:maxLength="30"
+                            android:singleLine="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/firstname_error_text"
+                        style="@style/MyTextViewErrorStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="6dp"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:text="@string/dlg_not_firstname_field_entered" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:hintTextAppearance="@style/FloatLableColor">
+
+                        <EditText
+                            android:id="@+id/last_name_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="4dp"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:hint="@string/last_name"
+                            android:inputType="text|textNoSuggestions"
+                            android:maxLength="30"
+                            android:singleLine="true" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/last_name_error_text"
+                        style="@style/MyTextViewErrorStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="6dp"
+                        android:text="@string/dlg_not_lastname_field_entered" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:hintTextAppearance="@style/FloatLableColor">
+
+<!--                <EditText-->
+<!--                    android:id="@+id/specialityTextView"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="false"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:hint="@string/hint_specialty"-->
+<!--                    android:imeOptions="actionNext"-->
+<!--                    android:maxLength="50" />-->
+                <AutoCompleteTextView
+                    android:id="@+id/specialityAutoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_specialty"
+                    android:textSize="14sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/speciality_error_text"
+                style="@style/MyTextViewErrorStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="6dp"
+                android:text="@string/dlg_not_speciality_field_entered" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/subSpeciality_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/speciality_error_text"
+                android:layout_marginTop="12dp"
+                app:hintTextAppearance="@style/FloatLableColor">
+
+                <EditText
+                    android:id="@+id/subSpecialityEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789' "
+                    android:hint="@string/sub_speciality"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:paddingLeft="6dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/experience_autocomplete_view_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subSpeciality_lay"
+                android:layout_marginTop="12dp"
+                app:hintTextAppearance="@style/FloatLableColor">
+
+                <AutoCompleteTextView
+                    android:id="@+id/experience_autocomplete_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Overall Experience"
+                    android:inputType="number"
+                    android:textSize="15sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/experience_error_text"
+                style="@style/MyTextViewErrorStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="6dp"
+                android:text="Please enter experience"
+               />
+
+            <TextView
+                android:id="@+id/usp_lay"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/experience_error_text"
+                android:layout_marginTop="12dp"
+                android:text="@string/one_line_usp"
+                android:paddingLeft="6dp"/>
+
+            <EditText
+                android:id="@+id/uspEditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' "
+                android:hint="@string/label_usp_help_text"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="256"
+                android:maxLines="2"
+                android:paddingLeft="6dp" />
+
+            <TextView
+                android:id="@+id/specific_ask_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usp_lay"
+                android:layout_marginTop="12dp"
+                android:text="@string/specific_ask"
+                android:paddingLeft="6dp"/>
+
+            <EditText
+                android:id="@+id/specificAskEditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' "
+                android:hint="@string/label_specific_ask_help_text"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="160"
+                android:maxLines="2"
+                android:paddingLeft="6dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

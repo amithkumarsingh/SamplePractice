@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/tab_dashboard"
+        android:title="Home"/>
+<!--    <item-->
+<!--        android:id="@+id/action_doctors"-->
+<!--        android:icon="@drawable/tab_connects"-->
+<!--        android:title="Doctors"/>-->
+    <item
+        android:id="@+id/action_knowledge"
+        android:icon="@drawable/tab_channels"
+        android:title="Knowledge"/>
+
+    <item android:id="@+id/placeHolder"
+        android:title=""/>
+
+<!--    <item-->
+<!--        android:id="@+id/action_pages"-->
+<!--        android:icon="@drawable/tab_channels"-->
+<!--        android:title="Pages"-->
+<!--        />-->
+
+    <item
+        android:id="@+id/action_community"
+        android:icon="@drawable/tab_connects"
+        android:title="Community"
+        />
+    <item
+        android:id="@+id/action_explore"
+        android:icon="@drawable/tab_chat"
+        android:title="Professional"/>
+</menu>

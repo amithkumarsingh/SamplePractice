@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_background"
+    android:paddingTop="14dp"
+    android:paddingBottom="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/imageIconLayout"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="15dp">-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/community_icon"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="32dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="32dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_centerInParent="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:backgroundTint="@color/app_green"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/ic_create_post" />&ndash;&gt;-->
+
+<!--        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/buttonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Click to report spam"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/community_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/gray"
+                android:src="@drawable/ic_arrow_forword" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

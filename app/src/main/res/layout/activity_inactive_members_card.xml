@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    >
+
+    <TextView
+        android:id="@+id/inactiveText"
+        style="@style/MyTextViewBody2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:text="Inactive on WhiteCoats" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/block"
+        android:padding="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/doctor_name"
+            style="@style/MyTextViewHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:text="DoctorName"
+            android:textColor="@color/app_green" />
+
+        <TextView
+            android:id="@+id/designation"
+            style="@style/MyTextViewBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:text="tittle/designation/membertype" />
+
+        <TextView
+            android:id="@+id/department"
+            style="@style/MyTextViewBody2"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="15dp"
+            android:text="DepartmentName/Committee" />
+
+        <TextView
+            android:id="@+id/community_name"
+            style="@style/MyTextViewBody2"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="15dp"
+            android:text="Community Name" />
+
+        <TextView
+            android:id="@+id/speciality"
+            style="@style/MyTextViewBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="28dp"
+            android:text="Speciality" />
+
+        <TextView
+            android:id="@+id/workplace"
+            style="@style/MyTextViewBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:text="Workplace" />
+
+        <TextView
+            android:id="@+id/location"
+            style="@style/MyTextViewBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:text="Location" />
+
+
+        <TextView
+            android:id="@+id/card_email_id"
+            style="@style/MyTextViewBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator01"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_capsule"
+            android:drawableLeft="@drawable/ic_user_email"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="1dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/card_contact_id"
+            style="@style/MyTextViewBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_email_id"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/bg_capsule"
+            android:drawableLeft="@drawable/ic_user_phone"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="1dp"
+            android:paddingRight="15dp"
+            android:text="" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

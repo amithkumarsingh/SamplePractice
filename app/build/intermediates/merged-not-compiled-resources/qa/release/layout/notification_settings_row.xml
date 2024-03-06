@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="12dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".20"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/channel_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cases and discussions"
+            android:layout_marginBottom="2dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/channel_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="Cases and updates from doctors in the whiteCoats network " />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".80">
+
+        <ProgressBar
+            android:id="@+id/category_item_progress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+
+        </ProgressBar>
+
+        <ToggleButton
+            android:id="@+id/channel_toggle_button"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/toggle_selector"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:visibility="visible" />
+    </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/about_me_border2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#1A231f20"
+        android:layout_marginTop="12dp"
+        android:visibility="visible" />
+</LinearLayout>

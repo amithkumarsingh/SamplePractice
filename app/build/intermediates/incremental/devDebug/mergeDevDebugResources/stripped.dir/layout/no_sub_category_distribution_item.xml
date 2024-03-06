@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+         
+    
+                 
+                           
+                                       
+                 
+                            
+                                                                              
+                                          
+                                                                                    
+           
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp"
+        android:id="@+id/feeds_lay" android:tag="layout/no_sub_category_distribution_item_0">
+        <FrameLayout
+            android:id="@+id/card_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="60dp"
+                android:id="@+id/category_feed_image"
+                android:scaleType="fitXY"
+                android:background="@drawable/round_outline"/>
+
+            <ImageView
+                android:id="@+id/attachment_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/default_image_bg"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/attachment_video_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/attachment_video_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/ic_playvideo"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/card_lay"
+            android:text=""
+            android:textSize="18dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/app_green"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/feed_title"/>
+        <TextView
+            android:id="@+id/feed_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/card_lay"
+            android:layout_below="@+id/feed_title"
+            android:text=""
+            android:textColor="#8A231f20"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:visibility="gone"/>
+    </RelativeLayout>
+         

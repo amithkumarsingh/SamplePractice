@@ -1,0 +1,62 @@
+@startuml
+actor User #red
+entity DashboardActivity #black
+entity TimeLineActivity #black
+entity FeedSummary as CommunityFullView #black
+entity ContentFullView #black
+boundary Service #blue
+box "Bookmark Service" #LightBlue
+	participant Service
+end box
+collections SERVER #red
+box "Web Server"
+	participant SERVER
+end box
+skinparam sequenceArrowThickness 2
+activate DashboardActivity
+User -> DashboardActivity :Bookmarks tapped
+activate Service
+DashboardActivity --[#blue]>Service: Run Bookmarks Service **(/ebiz-web/app/m/v1/feed/bookmark)**
+activate SERVER
+Service --[#red]> SERVER : request
+SERVER --[#red]> Service : response
+Service --[#blue]> DashboardActivity : Update success response
+
+
+
+...
+User -> DashboardActivity : Channel name tapped
+activate TimeLineActivity
+DashboardActivity -> TimeLineActivity :Navigate to Channel TimeLine
+User --> TimeLineActivity : Bookmarks tapped
+TimeLineActivity --[#blue]>Service: Run Bookmarks Service **(/ebiz-web/app/m/v1/feed/bookmark)**
+Service --[#red]> SERVER : request
+SERVER --[#red]> Service : response
+Service --[#blue]> TimeLineActivity : success response
+TimeLineActivity--[#black]>TimeLineActivity :Update response in list
+DashboardActivity--[#black]>DashboardActivity :Update response in list
+...
+
+DashboardActivity->CommunityFullView : Navigate to Post full view
+activate CommunityFullView
+User --> CommunityFullView: Tapped Post
+CommunityFullView --[#blue]>Service: Run Bookmarks Service
+Service --[#red]> SERVER : request
+SERVER --[#red]> Service : response
+Service --[#blue]> CommunityFullView : Update success response
+CommunityFullView--[#black]>DashboardActivity :success response
+DashboardActivity--[#black]>DashboardActivity :Update response in list
+
+...
+DashboardActivity->ContentFullView : Navigate to Article full view
+activate ContentFullView
+User --> ContentFullView: Tapped Article
+ContentFullView --[#blue]>Service: Run Bookmarks Service
+Service --[#red]> SERVER : request
+SERVER --[#red]> Service : response
+Service --[#blue]> ContentFullView : Update success response
+ContentFullView--[#black]>DashboardActivity :success response
+DashboardActivity--[#black]>DashboardActivity :Update response in list
+
+
+@enduml

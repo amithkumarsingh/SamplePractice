@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sub_category_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:gravity="center"
+    android:paddingBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+
+<!--  <RadioGroup-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:id="@+id/skilling_filters_cb_lay">-->
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/skilling_filters_cb"
+        android:gravity="center"
+        android:theme="@style/MyCustomTabLayout"
+        android:layout_centerVertical="true"/>
+<!--  </RadioGroup>-->
+
+    <TextView
+        android:id="@+id/sub_category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/skilling_filters_cb"
+        android:text="Jobs" />
+
+
+
+</RelativeLayout>

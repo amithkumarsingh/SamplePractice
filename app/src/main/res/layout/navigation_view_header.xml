@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_light">
+
+    <!--Header Layout-->
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hamburger_menu_header_bg"
+        android:padding="15dp"
+        android:paddingTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/image_lay_nav"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp">
+
+                <com.vam.whitecoats.ui.customviews.CircularImageViewWithBorder
+                    android:id="@+id/profile_image_nav"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/default_profilepic"
+                    android:visibility="gone" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/no_profile_image_nav"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/default_profilepic"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/no_profile_text_nav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="SA"
+                        android:textColor="@color/white" />
+                </androidx.cardview.widget.CardView>
+
+
+            </FrameLayout>
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:id="@+id/name_spec_lay"
+               android:layout_toRightOf="@+id/image_lay_nav"
+               android:weightSum="1">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15">
+
+
+                <TextView
+                    android:id="@+id/nav_doc_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DoctorName"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/nav_doc_spec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DoctorName"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                    android:layout_below="@+id/nav_doc_name"/>
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_weight=".85"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hamburger_arrow_white"
+                    android:layout_gravity="center"/>
+           </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_spec_lay"
+                android:background="@drawable/hamburger_menu_share_text_bg"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:layout_marginTop="8dp">
+
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/share_icon"
+                  android:src="@drawable/ic_profile_share"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/share_icon"
+                android:id="@+id/nav_doc_share_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:paddingLeft="4dp"
+                android:text="Share Profile"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <!--Menu Layout-->
+    <RelativeLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:background="@color/white">
+
+        <!--my post-->
+        <RelativeLayout
+            android:id="@+id/myPostMenu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="My Posts" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hamburger_menu_dark"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dp"/>
+
+        </RelativeLayout>
+
+        <!--my bookmarks-->
+        <RelativeLayout
+            android:id="@+id/myBookMarks"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/myPostMenu">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="My Bookmarks" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hamburger_menu_dark"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dp"/>
+
+
+        </RelativeLayout>
+
+        <!--My Home Preferences-->
+        <RelativeLayout
+            android:id="@+id/myHomePreferences"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/myBookMarks">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="My Home Preferences" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hamburger_menu_dark"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dp"/>
+
+
+        </RelativeLayout>
+
+        <!--My Speciality Preferences-->
+        <RelativeLayout
+            android:id="@+id/mySpecialityPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/myHomePreferences">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="My Specialty Preferences" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hamburger_menu_dark"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dp"/>
+
+
+        </RelativeLayout>
+
+        <!--Notification Preferences-->
+        <RelativeLayout
+            android:id="@+id/notificationPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/mySpecialityPreferences">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="Notification Preferences" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hamburger_menu_dark"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dp"/>
+
+
+        </RelativeLayout>
+
+
+        <!--Invite to WhiteCoats-->
+
+        <!--Help-->
+        <RelativeLayout
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/notificationPreferences">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="Help" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hamburger_menu_dark"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/change_password_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/help"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="Change Password" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hamburger_menu_dark"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/logout_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/change_password_tv">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="LogOut" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray" />
+        </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/logout_tv"
+          android:visibility="visible"
+          android:layout_marginBottom="16dp">
+
+          <RelativeLayout
+              android:id="@+id/inviteToWhiteCoats"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:background="@drawable/hamburger_menu_invite_background"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:layout_marginTop="32dp"
+              android:layout_marginBottom="32dp">
+
+              <ImageView
+                  android:id="@+id/invite_icon"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/hamburger_menu_invite_icon"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="8dp"/>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_toRightOf="@+id/invite_icon"
+                  android:layout_marginLeft="16dp"
+                  android:layout_centerVertical="true"
+                  android:weightSum="1">
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight=".15">
+
+                  <TextView
+                      android:id="@+id/invite_text1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Invite to WhiteCoats"
+                      android:textColor="@color/white"
+                      android:textSize="14sp"/>
+
+                  <TextView
+                      android:layout_width="150dp"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/invite_text1"
+                      android:layout_marginTop="8dp"
+                      android:text="Invite your peers &amp; friends to WhiteCoats platform"
+                      android:textColor="@color/white"
+                      android:textSize="10sp" />
+              </RelativeLayout>
+
+              <ImageView
+                  android:layout_weight=".85"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/hamburger_arrow_white"
+                  android:layout_marginTop="8dp"
+                  android:layout_gravity="center"/>
+
+              </LinearLayout>
+
+          </RelativeLayout>
+
+
+          <TextView
+              android:layout_below="@+id/inviteToWhiteCoats"
+              android:id="@+id/terms_of_use_tv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="32dp"
+              android:text="@string/terms_of_use" />
+
+          <TextView
+              android:layout_below="@+id/inviteToWhiteCoats"
+              android:id="@+id/privacy_policy"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:text="@string/str_policies"
+              android:layout_marginRight="32dp"/>
+
+      </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <!--footer Layout-->
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuLayout"
+        android:padding="8dp"
+        android:gravity="center">
+        <ImageView
+                android:id="@+id/logout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/hamburger_wc_logo"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/version_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="gggggbbbbbb"
+                android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

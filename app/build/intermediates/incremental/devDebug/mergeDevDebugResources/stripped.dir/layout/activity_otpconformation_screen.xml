@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_otpconformation_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    >
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/loginwith_text"
+      android:textSize="24sp"
+      android:textColor="#DE231f20"
+      android:layout_marginTop="8dp"
+      android:id="@+id/title_textotp"/>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="xxxxxxxxxxxxmail@gmail.com"
+      android:layout_marginTop="48dp"
+      android:textColor="#8A231f20"
+      android:textSize="18sp"
+      android:id="@+id/email_id_sentto"
+      />
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="48dp"
+      android:background="@color/app_green"
+      android:text="Go to login"
+      android:textColor="@color/white"
+      android:paddingLeft="32dp"
+      android:paddingRight="32dp"
+      android:id="@+id/gotologin_action"
+      android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="00:30"
+        android:layout_marginTop="48dp"
+        android:textSize="16sp"
+        android:textColor="#DE231f20"
+        android:id="@+id/countdown_timer"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="48dp"
+        android:visibility="gone"
+        android:id="@+id/havent_layout">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Haven't receive OTP?"
+          android:textSize="16sp"
+          android:textColor="#DE231f20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP"
+            android:textSize="16sp"
+            android:textColor="@color/app_green"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/resend_otp_action"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/about_me_border1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="#1A231f20" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need help?"
+                android:textSize="18sp"
+                android:textColor="#DE231f20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Contact Support"
+                android:textColor="@color/app_green"
+                android:id="@+id/contact_support_action"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

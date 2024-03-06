@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#80ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/membership_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:hintTextAppearance="@style/FloatLableColor">
+
+            <AutoCompleteTextView
+                android:id="@+id/add_membership"
+                style="@style/App_AutoCompleteTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCEDEFGHIJKLMNOPQRSTUVWXYZ- ,().&amp;"
+                android:hint="e.g. Indian Medical Association"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="100"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/awards_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:hintTextAppearance="@style/FloatLableColor">
+
+            <EditText
+                android:id="@+id/awards_title"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCEDEFGHIJKLMNOPQRSTUVWXYZ- ,'().&amp;"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/award_title"
+                android:inputType="textCapSentences"
+                android:maxLength="500"
+                android:maxLines="1"
+                android:paddingLeft="6dp" />
+
+            <TextView
+                android:id="@+id/awards_title_error"
+                style="@style/TextViewErrorStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please provide awards title" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:hintTextAppearance="@style/FloatLableColor">
+
+            <EditText
+                android:id="@+id/presented_at"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/presented_at"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCEDEFGHIJKLMNOPQRSTUVWXYZ- ,().&amp;"
+                android:inputType="textCapSentences"
+                android:maxLength="500"
+                android:maxLines="1"
+                android:paddingLeft="6dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:hintTextAppearance="@style/FloatLableColor">
+
+            <EditText
+                android:id="@+id/year_awards"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/year"
+                android:inputType="date"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:paddingLeft="6dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/remove_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@drawable/ic_delete"
+        android:drawablePadding="7dp"
+        android:text="@string/str_remove_mem" />
+
+</LinearLayout>

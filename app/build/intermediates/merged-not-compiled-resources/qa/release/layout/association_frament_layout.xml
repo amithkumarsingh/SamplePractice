@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical"
+    android:id="@+id/dashboardFragment">
+
+    <include
+        android:id="@+id/post_update_dashboard"
+        layout="@layout/post_an_update_layout"
+        android:visibility="gone" />
+    <!--<include android:id="@+id/category_list_layout"
+        layout="@layout/categories_list_parent_dashboard"
+        android:visibility="gone"/>-->
+
+    <include
+        layout="@layout/shimmer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/association_filter_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/frag2_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                app:tabGravity="fill"
+                app:tabMode="scrollable"
+                app:tabBackground="@drawable/tab_color_selector"
+                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                app:tabSelectedTextColor="@color/white"/>
+            <View
+                android:id="@+id/separator_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/frag2_tabs"
+                android:background="@color/app_green"
+                android:visibility="gone"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/frag2_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+           <!-- <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/frag2_viewpager2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+-->
+
+
+
+            <!--<FrameLayout
+                android:id="@+id/frame_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/iv_tabs_filter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_filter_tabs">
+
+
+            </ImageView>
+        </LinearLayout>-->
+    </RelativeLayout>
+</LinearLayout>

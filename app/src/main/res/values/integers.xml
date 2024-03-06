@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="default_dev_doc_id"> 138</integer>
+    <integer name="default_qa_doc_id">1369</integer>
+    <integer name="default_qakb_doc_id">1369</integer>
+    <integer name="default_stage_doc_id">444</integer>
+    <integer name="default_uat_doc_id">537</integer>
+    <integer name="default_prod_doc_id">25676</integer>
+
+</resources>

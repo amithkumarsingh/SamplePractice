@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_centerVertical="true"
+    android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/next_button"
+        style="@style/ActionBarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right|center"
+        android:text="Next"
+        android:background="@drawable/rectangle_border"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"/>
+    <TextView
+        android:id="@+id/title_edit"
+        style="@style/ActionBarTextViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/next_button"
+        android:gravity="center|left"
+        android:paddingRight="4dp"
+        android:text="Whitecoats"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+    <ImageView
+        android:id="@+id/editIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/delIcon"
+        android:src="@drawable/ic_edit_white"/>
+    <ImageView
+        android:id="@+id/delIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_delete_white"/>
+
+</RelativeLayout>

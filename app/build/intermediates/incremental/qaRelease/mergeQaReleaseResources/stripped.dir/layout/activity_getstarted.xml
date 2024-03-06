@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/getstarted"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4dedf5f3"
+        android:layout_above="@+id/register_info_layout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_wc" />
+
+    </RelativeLayout>
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/getstarted"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+
+
+
+
+
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#992ac2b3"
+        android:id="@+id/register_info_layout"
+        android:layout_above="@+id/login_info_layout"
+        android:paddingTop="@dimen/register_layout_padding"
+        android:paddingBottom="@dimen/register_layout_padding"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/createnew_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_bottom_new_account"
+            android:text="Create your new account"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/new_account_label_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/time_info_margin_bottom"
+            android:text="It takes less than a minute !"
+            android:textColor="@color/white"
+            android:textSize="@dimen/time_info_lable_size" />
+
+        <Button
+            android:id="@+id/register_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/createnew_textView"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            android:paddingBottom="8dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="8dp"
+            android:text="Sign Up"
+            android:textColor="@color/app_green"
+            android:textSize="@dimen/register_button_lable_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/login_info_layout"
+        android:background="#8096f6ef"
+        android:paddingTop="@dimen/login_layout_padding"
+        android:paddingBottom="@dimen/login_layout_padding"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/already_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:text="Already a WhiteCoats user ?"
+            android:textColor="#DE231f20"
+            android:textSize="@dimen/already_user_label_size" />
+
+        <TextView
+            android:id="@+id/login_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Sign In With OTP"
+            android:textColor="@color/app_green"
+            android:textSize="@dimen/login_button_lable_size" />
+    </LinearLayout>
+</RelativeLayout>

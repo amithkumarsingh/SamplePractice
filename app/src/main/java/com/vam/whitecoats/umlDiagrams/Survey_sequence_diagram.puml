@@ -1,0 +1,31 @@
+@startuml
+actor User #green
+entity DashboardActivity #black
+entity TimeLineActivity #black
+entity FeedSummary as FullView #black
+boundary Service #blue
+box "Survey Service" #LightBlue
+	participant Service
+end box
+collections SERVER #red
+box "Web Server"
+	participant SERVER
+end box
+skinparam sequenceArrowThickness 2
+activate DashboardActivity
+User -> DashboardActivity :Survey feed title clicked
+activate TimeLineActivity
+DashboardActivity ->TimeLineActivity: Go to TimeLine
+activate FullView
+TimeLineActivity -> FullView: Go to FullView
+DashboardActivity --> FullView : Survey feed tapped
+FullView --[#blue]>Service: Run Survey Service **(/ebiz-web/app/m/v1/feed/survey/submit)**
+Service --[#red]> SERVER : request
+SERVER --[#red]> Service : response
+Service --[#blue]> FullView : Update survey response
+FullView--[#blue]>TimeLineActivity :survey response
+TimeLineActivity--[#blue]>TimeLineActivity :Update response in list
+FullView --> DashboardActivity : Update survey response
+DashboardActivity-->DashboardActivity :Update response in list
+
+@enduml

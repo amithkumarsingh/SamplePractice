@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/single_image_lay">
+
+    <ImageView
+        android:id="@+id/communityImage"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_image_feed"
+        android:transitionName="profile"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/attachment_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/default_image_bg"
+        android:visibility="gone" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attachment_video_type"
+        android:visibility="gone"
+        android:src="@drawable/default_image_bg"
+        android:layout_gravity="center"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/single_image_lay"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50">
+
+            <ImageView
+                android:id="@+id/secondImageofCommunity"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image_bg"
+                android:transitionName="profile"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/attachment_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/default_image_bg"
+                android:visibility="gone" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attachment_video_type1"
+                android:visibility="gone"
+                android:src="@drawable/default_image_bg"
+               android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50">
+
+            <ImageView
+                android:id="@+id/thirdImageofCommunity"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image_bg"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/attachment_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/default_image_bg"
+                android:visibility="gone" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attachment_video_type2"
+                android:visibility="gone"
+                android:src="@drawable/default_image_bg"
+                android:layout_centerInParent="true"/>
+
+
+            <TextView
+                android:id="@+id/remaining_images_count"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_centerInParent="true"
+                android:background="#99231f20"
+                android:gravity="center"
+                android:text="+2 more"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+

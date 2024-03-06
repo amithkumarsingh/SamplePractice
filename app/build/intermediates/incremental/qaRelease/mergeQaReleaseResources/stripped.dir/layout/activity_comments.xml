@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/edit_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/add_user"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:layout_above="@+id/comment_input_layout"/>
+
+    <ProgressBar
+        android:id="@+id/loading_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"></ProgressBar>
+
+    <TextView
+        android:id="@+id/comment_total"
+        style="@style/SocialBarcount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A231f20"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="4dp"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/pullToLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_total"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Pull to load all comments"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/befirst_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pullToLoad"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.vam.whitecoats.ui.customviews.RoundedImageView
+            android:id="@+id/doc_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_profilepic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/first_comment" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/comment_input_layout"
+        android:layout_below="@+id/comment_total">
+
+        <RelativeLayout
+            android:id="@+id/edit_delete_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#40231f20"
+            android:visibility="gone"
+            android:clickable="true"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comments_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:visibility="gone" />
+    </FrameLayout>
+    <!-- <android.support.v4.widget.SwipeRefreshLayout
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/swipeContainer"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/comment_total"
+         android:layout_above="@+id/comment_input_layout"
+         >
+     <android.support.v7.widget.RecyclerView
+         android:id="@+id/comments_list"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:visibility="gone"
+         android:background="#ffffff"/>
+ </android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/comment_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#1A231f20"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <RelativeLayout
+            android:id="@+id/comment_edit_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/comment_cameraBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_camera" />
+
+            <EditText
+                android:id="@+id/comment_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toLeftOf="@+id/comment_sendBtn"
+                android:layout_toRightOf="@+id/comment_cameraBtn"
+                android:background="@color/transparent"
+                android:hint="@string/typeComment"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="2000"
+                android:maxLines="2" />
+
+            <ImageButton
+                android:id="@+id/comment_sendBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_send_disabled" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/update_cancel_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/comment_edit_area"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="@string/update"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="@string/cancel_text"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

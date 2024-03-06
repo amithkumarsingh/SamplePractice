@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.vam.whitecoats.ui.activities.SplashScreenActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:src="@drawable/splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:gravity="center_horizontal"
+       android:orientation="vertical"
+       android:padding="10dp"
+       android:visibility="gone"
+       android:id="@+id/layout_nointernet">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/sNetworkError"
+           android:textSize="14dp"
+           android:gravity="center"
+           android:id="@+id/tv_nointernet"
+           />
+       <Button
+           android:layout_marginTop="20dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Try Again"
+          android:id="@+id/tryagain_btn"
+          />
+   </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+@startuml
+DashBoardActivity  --> MaterialShowcaseSequence
+channelFragment --> MaterialShowcaseSequence
+CaseRoomAttachmentsActivity --> MaterialShowcaseSequence
+CaseRoomSummary --> MaterialShowcaseSequence
+ContentFullView --> MaterialShowcaseSequence
+CreateCasroomActivity  -->  MaterialShowcaseSequence
+FeedsSummary  --> MaterialShowcaseSequence
+MeActivity  ---> MaterialShowcaseSequence
+SearchContactsActivity  --> MaterialShowcaseSequence
+CaseRoomDialogsFragment  -->  MaterialShowcaseSequence
+ChatDialogsFragment -->  MaterialShowcaseSequence
+MyConnectsFragment  --> MaterialShowcaseSequence
+MaterialShowcaseSequence  --> MaterialShowcaseView
+
+class DashBoardActivity{
+isDashboardLoaded(boolean isDashboardLoaded, final ViewGroup postUpdateLabel, final boolean isDisplayPostIcon)
+presentShowcaseSequence()
+}
+
+class channelFragment{
+presentShowCase()
+}
+
+class CaseRoomAttachmentsActivity {
+presentShowcaseSequence()
+}
+
+class CaseRoomSummary {
+presentShowcaseSequence()
+}
+
+class ContentFullView {
+presentShowcaseSequence()
+}
+
+class CreateCasroomActivity {
+presentShowcaseSequence()
+}
+
+class FeedsSummary {
+presentShowcaseSequence()
+}
+
+class MeActivity {
+presentShowcaseSequence()
+}
+
+class SearchContactsActivity {
+presentShowcaseSequence()
+}
+
+class CaseRoomDialogsFragment {
+presentShowcaseSequence()
+}
+
+class ChatDialogsFragment {
+presentShowcaseSequence()
+}
+
+class MyConnectsFragment {
+presentShowcaseSequence()
+}
+
+class MaterialShowcaseSequence {
+New MaterialShowcaseView
+
+}
+
+class MaterialShowcaseView {
+MaterialShowcaseView.Builder(your activity)
+setTarget(View target)
+setDismissText("your text")
+setDismissTextColor()
+setMaskColour()
+setContentText("Display Text")
+shape()
+}
+
+@enduml

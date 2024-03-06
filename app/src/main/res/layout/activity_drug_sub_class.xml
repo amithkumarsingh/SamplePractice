@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.vam.whitecoats.viewmodel.DrugClassViewModel"/>
+        <variable
+            name="adapter"
+            type="com.vam.whitecoats.ui.adapters.DrugSubClassAdapter"/>
+    </data>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ui.activities.DrugSubClassActivity"
+        android:layout_width="match_parent"
+        android:id="@+id/drug_sub_class_refresh"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_content_layout"
+            android:background="@color/white">
+            <include android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/search_layout"
+                android:id="@+id/drug_search_layout">
+            </include>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/drug_search_layout"
+                android:id="@+id/doceree_ad_layout">
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/drug_sub_class_recycler"
+                android:layout_below="@+id/doceree_ad_layout"
+                app:adapter="@{adapter}"
+                app:customVisibility="@{viewModel.isListVisible}"
+                android:overScrollMode="never"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data_available"
+                android:layout_centerInParent="true"
+                app:customVisibility="@{viewModel.isEmptyMsgVisible}"
+                android:gravity="center_horizontal"/>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:indicatorName="BallClipRotatePulseIndicator"
+                android:id="@+id/drug_sub_class_aviInExplore"
+                app:indicatorColor="@color/app_green"
+                app:customVisibility="@{viewModel.isLoaderVisible}"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</layout>

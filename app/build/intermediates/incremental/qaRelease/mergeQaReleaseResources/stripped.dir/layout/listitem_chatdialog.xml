@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            >
+
+            <com.vam.whitecoats.ui.customviews.RoundedImageView
+                android:id="@+id/profilepic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/default_profilepic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/name_txt"
+                        style="@style/MyTextViewBody1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="4dp"
+                        android:paddingBottom="2dp"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:text="Name"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/time_txt"
+                        style="@style/MyTextViewBody3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:gravity="top"
+                        android:maxLines="1"
+                        android:text="2 days ago"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lastmessage_txt"
+                        style="@style/MyTextViewBody2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingRight="8dp"
+                        android:text="Hope you have " />
+
+
+                    <TextView
+                        android:id="@+id/unread_count_txt"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_without_solid_bg"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@color/app_green"
+                        android:textSize="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

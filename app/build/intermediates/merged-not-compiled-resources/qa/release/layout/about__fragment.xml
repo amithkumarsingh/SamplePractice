@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="#80ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/block"
+            android:gravity="left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp">
+
+            <com.vam.whitecoats.ui.customviews.DynamicImageView
+                android:id="@+id/logo_image"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/default_communitypic" />
+
+            <ImageButton
+                android:id="@+id/camera_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:background="@color/transparent"
+                android:paddingBottom="8dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_white_camera"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_aboutdescrip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frame_logo"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/block"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_community_Name"
+                    style="@style/MyTextViewBody1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:text="ABOUT COMMUNITY"
+                    android:textSize="18sp"
+                    android:textColor="#91231f20"/>
+
+                <LinearLayout
+                    android:id="@+id/communityname_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/transparent"
+                        android:src="@drawable/ic_edit"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_abtcommunity_descp"
+                style="@style/MyTextViewBody2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:lineSpacingExtra="1.3dp"
+                android:layout_marginTop="7dp"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/block"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/MyTextViewBody1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CONTACT DETAILS"
+                    android:textSize="18sp"
+                    android:textColor="#91231f20"/>
+
+                <LinearLayout
+                    android:id="@+id/edit_community_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:src="@drawable/ic_edit"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_details_layout"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <!--<TextView
+                android:id="@+id/tv_commlocation"
+                style="@style/MyTextViewBody2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/tv_commlocationborder1"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#1A231f20"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_commucall"
+                style="@style/MyTextViewBody2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/app_green"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/about_me_border2"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#1A231f20"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_commumail"
+                style="@style/MyTextViewBody2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/app_green"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tv_commwebsite"
+                style="@style/MyTextViewBody2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_website"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/app_green"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/about_me_border1"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#1A231f20"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/tv_commfacebook"
+                style="@style/MyTextViewBody2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_facebook"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/app_green"
+                android:visibility="gone" />-->
+
+            <TextView
+                android:id="@+id/contactsValidationTxtvw"
+                style="@style/MyTextViewBody3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="10dp"
+                android:text="@string/comm_contactprovidefull"
+                android:visibility="visible"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/block"
+            android:gravity="center_vertical"
+            android:id="@+id/admins_layout"
+            android:visibility="gone"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/community_admins_label"
+                    style="@style/MyTextViewBody1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"
+                    android:text="COMMUNITY ADMINS"
+                    android:textSize="18sp"
+                    android:textColor="#91231f20"/>
+
+                <LinearLayout
+                    android:id="@+id/community_addadminadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_add" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/adminlinearlist"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/community_admins_label"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <!--<ListView
+                android:id="@+id/admin_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+            </ListView>-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorName="BallClipRotatePulseIndicator"
+            android:id="@+id/aviInAboutFragment"
+            app:indicatorColor="@color/app_green"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

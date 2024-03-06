@@ -1,0 +1,138 @@
+        
+
+    
+
+                 
+                            
+                                                                        
+
+                 
+                          
+                                                                              
+           
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/fragment_feed_notification_0">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/device_notification_on_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0.0px"
+            android:elevation="4dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            android:tag="binding_1"                                   >
+
+            <RelativeLayout
+                android:id="@+id/device_notification_on_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+
+                <ImageView
+                    android:id="@+id/notification_on_iv"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_notification_on_bell">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/notification_on_close_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/close_button">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/notification_on_close_iv"
+                    android:layout_toRightOf="@+id/notification_on_iv"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView
+                        android:id="@+id/notification_on_header_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/notification_on_header_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/notification_on_desc_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/notification_on_desc_text">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/notification_on_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="16dp"
+                        android:text="TURN ON NOTIFICATIONS"
+                        android:textAllCaps="true"
+                        android:textColor="@color/app_green"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/feeds_notification_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/device_notification_on_cv"
+            android:tag="binding_2" 
+                                                             
+            tools:context="com.vam.whitecoats.ui.activities.FeedNotificationFragment" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/device_notification_on_cv"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:text="No Notifications"
+            android:tag="binding_3"                              >
+
+
+        </TextView>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/aviInNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="binding_4"                            
+            app:indicatorColor="@color/app_green"
+            app:indicatorName="BallClipRotatePulseIndicator" />
+
+    </RelativeLayout>
+         

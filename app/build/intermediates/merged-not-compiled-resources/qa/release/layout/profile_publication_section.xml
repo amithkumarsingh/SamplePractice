@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/Widget.CardContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/publications"
+                android:textAllCaps="true" />
+
+            <RelativeLayout
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:id="@+id/publication_add_img_lay">
+
+            <ImageView
+                android:id="@+id/publication_add_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/add_publications_heading"
+            style="@style/MyTextViewBody2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_profile_publications"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/add_publications"/>
+
+        <com.vam.whitecoats.ui.customviews.NonScrollListView
+            android:id="@+id/publications_print_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:headerDividersEnabled="false" />
+        <TextView
+            android:id="@+id/view_all_publications"
+            style="@style/MyTextViewBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="View all"
+            android:layout_gravity="center"
+            android:textColor="@color/app_green" />
+
+    </LinearLayout>
+</LinearLayout>

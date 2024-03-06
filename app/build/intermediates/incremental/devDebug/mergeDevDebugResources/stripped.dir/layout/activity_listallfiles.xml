@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_files_text"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="No files to attach"
+        android:layout_centerInParent="true"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/filesList"
+        android:divider="@color/action_selector_pressed"
+        android:dividerHeight="2dp">
+
+    </ListView>
+
+</RelativeLayout>

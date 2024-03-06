@@ -1,0 +1,29 @@
+@startuml
+hide footbox
+actor User
+entity MeSection
+entity CaseRoomActivity
+entity CaseroomDilogsFragment
+entity CaserRoomAdapter
+entity CreateCaseRoomActivity
+entity VolleySinglePartStringRequest
+entity CaseRoomSummary
+entity SelectContactsGroupActivity
+entity SelectContactsGroupAdapter
+entity RealmManager
+
+autonumber
+User ----> MeSection   : click on menu
+MeSection --->CaseRoomActivity :caseroom_activity(Frame Layout)
+CaseRoomActivity  ----> CaseroomDilogsFragment  : OnClick()(id:dash_layout_coserooms)
+CaseroomDilogsFragment --> CaserRoomAdapter :caseRoomInfolist<<ArrayList>>
+CaserRoomAdapter----> User  : display cases list from adapter
+CaseroomDilogsFragment ---> CreateCaseRoomActivity    :  OnClick of floating button(id:case_img_addcase)
+CreateCaseRoomActivity -->  VolleySinglePartStringRequest : Request URL("http:....../app/m/caseRoom")
+CreateCaseRoomActivity --> CaseRoomSummary  : Invite users(onTaskCompleted(String response))
+CaseRoomSummary -->  SelectContactsGroupActivity  : invitenowOnClick(id:lay_now)
+RealmManager -->  SelectContactsGroupActivity : select users from contacts list(ArrayList<ContactsInfo> getInviteContacts)
+SelectContactsGroupActivity  --> RealmManager  :  insertCaseRoomInfo()
+SelectContactsGroupAdapter  -->  User :  case created successfully
+@enduml
+

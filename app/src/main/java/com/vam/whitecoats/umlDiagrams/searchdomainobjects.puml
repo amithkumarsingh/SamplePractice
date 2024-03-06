@@ -1,0 +1,14 @@
+@startuml
+
+package "domain objects" {
+HTTP - [First Component]
+[Another Component]
+}
+
+package "Other Groups" {
+FTP - [Second Component]
+
+[First Component] --> FTP
+}
+
+@enduml

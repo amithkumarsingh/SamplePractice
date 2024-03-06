@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:id="@+id/file_item_layout"
+    android:background="#80ffffff">
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/file_type_img"
+        android:background="@drawable/default_channel_logo"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:id="@+id/file_name"
+        style="@style/MyTextViewBody1"
+        android:text="sampasdfasdfsadfsadfsadfsadfsadfsadfsad.pdf"/>
+    <CheckBox
+        android:visibility="visible"
+        android:id="@+id/file_select_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_marginRight="16dp"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+package com.vam.whitecoats.utils;
+
+public enum DeeplinkingNotifyId {
+
+
+    KNOWLEDGE_FEED_NOTIFICATION(11),KNOWLEDGE_DRUG_REFERENCE_NOTIFICATION(12),KNOWLEDGE_MEDICAL_EVENTS_NOTIFICATON(13),
+    COMMUNITY_SPOTLIGHT_NOTIFICATION(14),COMMUNITY_FEED_NOTIFICATION(15),COMMUNITY_DOCTORS_NOTIFICATION(16),COMMUNITY_ORGANIZATION_NOTIFICATION(17),
+    PROFESSIONAL_SKILLING_NOTIFICATION(18),PROFESSIONAL_OPPURTUNITIES_NOTIFICATION(19),PROFESSIONAL_PARTNERS_NOTIFICATION(20);
+    int notificationTagValue;
+    private DeeplinkingNotifyId(int mValue) {
+        this.notificationTagValue = mValue;
+    }
+
+    public int getNotificationDeeplinkingValue(){
+        return notificationTagValue;
+    }
+
+
+}

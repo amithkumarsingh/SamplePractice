@@ -1,0 +1,367 @@
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class androidx.core.content.FileProvider { <init>(); }
+-keep class androidx.profileinstaller.ProfileInstallReceiver { <init>(); }
+-keep class androidx.room.MultiInstanceInvalidationService { <init>(); }
+-keep class androidx.startup.InitializationProvider { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.RescheduleReceiver { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.SystemAlarmService { <init>(); }
+-keep class androidx.work.impl.background.systemjob.SystemJobService { <init>(); }
+-keep class androidx.work.impl.diagnostics.DiagnosticsReceiver { <init>(); }
+-keep class androidx.work.impl.foreground.SystemForegroundService { <init>(); }
+-keep class androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver { <init>(); }
+-keep class com.amazonaws.mobileconnectors.s3.transferutility.TransferService { <init>(); }
+-keep class com.brandkinesis.ReferrerReceiver { <init>(); }
+-keep class com.brandkinesis.activity.ads.BKAdsWebActivity { <init>(); }
+-keep class com.brandkinesis.activity.ads.BKInterstitialAdActivity { <init>(); }
+-keep class com.brandkinesis.activity.customactivity.BKCustomWebActivity { <init>(); }
+-keep class com.brandkinesis.activity.inappmessage.BKIAMShareActivity { <init>(); }
+-keep class com.brandkinesis.activity.inappmessage.BKIAMWebActivity { <init>(); }
+-keep class com.brandkinesis.activity.minigames.BKMiniGamesWebActivity { <init>(); }
+-keep class com.brandkinesis.activity.tutorials.interactivetutorials.BKTutorialActivity { <init>(); }
+-keep class com.brandkinesis.activitymanager.BKActivity { <init>(); }
+-keep class com.brandkinesis.activitymanager.BKSurveyActivity { <init>(); }
+-keep class com.brandkinesis.activitymanager.BKTriviaActivity { <init>(); }
+-keep class com.brandkinesis.activitymanager.BkScreenTipActivity { <init>(); }
+-keep class com.brandkinesis.inbox.BKInboxActivity { <init>(); }
+-keep class com.brandkinesis.push.BKPushRedirectionActivity { <init>(); }
+-keep class com.brandkinesis.push.internal.AnimatedLayoutListener { <init>(); }
+-keep class com.brandkinesis.push.internal.BKNotificationBuilder$ActionButtonListener { <init>(); }
+-keep class com.brandkinesis.push.internal.BKNotificationBuilder$DeleteReceiver { <init>(); }
+-keep class com.brandkinesis.push.internal.DeleteReceiver { <init>(); }
+-keep class com.brandkinesis.push.internal.EnhancedPushListener { <init>(); }
+-keep class com.brandkinesis.push.internal.GifNotificationDeleteReceiver { <init>(); }
+-keep class com.brandkinesis.utils.BKConnectivityStatusReceiver { <init>(); }
+-keep class com.droidninja.imageeditengine.ImageEditActivity { <init>(); }
+-keep class com.flurry.android.agent.FlurryContentProvider { <init>(); }
+-keep class com.google.android.datatransport.runtime.backends.TransportBackendDiscovery { <init>(); }
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+-keep class com.google.android.libraries.places.widget.AutocompleteActivity { <init>(); }
+-keep class com.google.android.play.core.assetpacks.AssetPackExtractionService { <init>(); }
+-keep class com.google.android.play.core.assetpacks.ExtractionForegroundService { <init>(); }
+-keep class com.google.android.play.core.common.PlayCoreDialogWrapperActivity { <init>(); }
+-keep class com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity { <init>(); }
+-keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
+-keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+-keep class com.soundcloud.android.crop.CropImageActivity { <init>(); }
+-keep class com.vam.whitecoats.App_Application { <init>(); }
+-keep class com.vam.whitecoats.core.gcm.MyFcmListenerService { <init>(); }
+-keep class com.vam.whitecoats.receiver.SchedulerEventReceiver { <init>(); }
+-keep class com.vam.whitecoats.receiver.SchedulerEventService { <init>(); }
+-keep class com.vam.whitecoats.receiver.SchedulerSetupReceiver { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.AboutMeActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.AcademicActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.AccountDeleteAckActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.AccountDeleteActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.AddEventsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.AreaOfInterest { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.AwardsAndMemberships { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.BasicProfileActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.CaseRoomEditAttachmentActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.CategoryDistributionTabsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.CategoryLoadingActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.CategorySearchActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.ChangePasswordActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.ChannelSelectionActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.CommentsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.CommentsPreviewActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.ContactSupport { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.ContentFullView { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.CreatePostActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.CustomPhotoGalleryActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.DashboardActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.DefaultHomePageActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.DepartmentMembersActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.DrugClassActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.DrugDetailsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.DrugSearchActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.DrugSubClassActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.DrugsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.EditPublicationsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.EmptyActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.ErrorResponseActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.FeedCategoryDistributionActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.FeedSearchActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.FeedsSummary { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.FilterSearchActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.ForgotPassword { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.GetStartedActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.GlobalSearchActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.ImageViewer { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.InactiveMembersCard { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.IntroSlidesActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.InviteContactsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.InviteRequestActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.JobFeedCompleteView { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.ListAllFilesActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.LocationAndExperienceActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.LoginActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.MCACardUploadActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.MandatoryPageActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.MandatoryProfileInfo { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.MediaFilesActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.MyBookmarksActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.NetworkSearchActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.Network_MyConnects { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.NotificationSettingsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.NotificationsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.OTPConformationScreen { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.OTP_Receiver { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.PdfViewerActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.PermissionAccessActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.PreferencesActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.ProfessionalDetActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.ProfessionalMemActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.ProfileViewActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.Profile_fullView { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.PublicationsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.RegistrationDetailsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.SearchContactsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.ShareWithContacts { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.SpecialityDialogActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.SplashScreenActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.SubCategoriesListActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.SuggestedListActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.TermsOfServiceActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.TimeLine { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.UserSearchResultsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.VideoStreamActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.ViewContactsActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.VisitOtherProfile { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.VisitProfileActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.WebViewActivity { <init>(); }
+-keep class com.vam.whitecoats.ui.activities.YoutubeVideoViewActivity { <init>(); }
+-keep class es.voghdev.pdfviewpager.library.service.CopyAssetService { <init>(); }
+-keep class in.myinnos.awesomeimagepicker.activities.AlbumSelectActivity { <init>(); }
+-keep class in.myinnos.awesomeimagepicker.activities.ImageSelectActivity { <init>(); }
+-keep class io.sentry.android.core.SentryInitProvider { <init>(); }
+-keep class io.sentry.android.core.SentryPerformanceProvider { <init>(); }
+-keep class net.alhazmy13.mediapicker.Image.ImageActivity { <init>(); }
+-keep class net.alhazmy13.mediapicker.Video.VideoActivity { <init>(); }
+-keep class android.widget.SearchView { <init>(android.content.Context); }
+
+-keep class android.widget.Space { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AppCompatButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AppCompatImageButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AppCompatImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AppCompatSpinner { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AppCompatTextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.DialogTitle { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.SearchView { <init>(android.content.Context); }
+
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.Toolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.cardview.widget.CardView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.constraintlayout.helper.widget.Flow { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.constraintlayout.widget.Barrier { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.constraintlayout.widget.ConstraintLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.constraintlayout.widget.Guideline { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.core.widget.NestedScrollView { <init>(...); }
+
+-keep class androidx.core.widget.NestedScrollView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.drawerlayout.widget.DrawerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.fragment.app.FragmentContainerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.fragment.app.FragmentTabHost { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.swiperefreshlayout.widget.SwipeRefreshLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.viewpager.widget.ViewPager { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.viewpager2.widget.ViewPager2 { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class co.lujun.androidtagview.TagContainerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.doceree.androidadslibrary.ads.DocereeAdView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.droidninja.imageeditengine.views.AutofitTextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.droidninja.imageeditengine.views.CustomPaintView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.droidninja.imageeditengine.views.PhotoEditorView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.droidninja.imageeditengine.views.VerticalSlideColorPicker { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.droidninja.imageeditengine.views.cropimage.CropImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.droidninja.imageeditengine.views.cropimage.CropOverlayView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.droidninja.imageeditengine.views.imagezoom.ImageViewTouch { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.facebook.shimmer.ShimmerFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.futuremind.recyclerviewfastscroll.FastScroller { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.libraries.places.widget.internal.ui.AutocompleteImplFragment { <init>(); }
+
+-keep class com.google.android.material.appbar.AppBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.appbar.CollapsingToolbarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.appbar.MaterialToolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.bottomappbar.BottomAppBar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.bottomnavigation.BottomNavigationView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.button.MaterialButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.button.MaterialButtonToggleGroup { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.chip.Chip { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.datepicker.MaterialCalendarGridView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.floatingactionbutton.FloatingActionButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.BaselineLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.CheckableImageButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.ClippableRoundedCornerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.NavigationMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.NavigationMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.TouchObserverFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.navigation.NavigationView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.snackbar.Snackbar$SnackbarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.snackbar.SnackbarContentLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.tabs.TabLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.textfield.TextInputEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.textfield.TextInputLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.timepicker.ChipTextInputComboView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.timepicker.ClockFaceView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.timepicker.ClockHandView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.timepicker.TimePickerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.youtube.player.YouTubePlayerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.hbb20.CountryCodePicker { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.soundcloud.android.crop.CropImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.tools.LoadMoreListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.ui.activities.ClearAllFields { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.ui.customviews.AutoFillDisableEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.ui.customviews.CircularImageViewWithBorder { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.ui.customviews.CustomRecycleView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.ui.customviews.DynamicImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.ui.customviews.NonScrollListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.ui.customviews.NonScrollableGridView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.ui.customviews.RoundedImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.ui.customviews.ScrollInterfacedListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.utils.BottomSheetListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.utils.ClearAllFieldsAutoComplete { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.utils.ControllableAppBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.utils.CustomViewPager { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.vam.whitecoats.utils.SquareImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.wang.avi.AVLoadingIndicatorView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class es.voghdev.pdfviewpager.library.subscaleview.SubsamplingScaleImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keepclassmembers class * { *** back(android.view.View); }
+
+-keepclassmembers class * { *** close(android.view.View); }
+
+-keepclassmembers class * { *** forward(android.view.View); }
+
+-keepclassmembers class * { *** onChangePasswordButtonClick(android.view.View); }
+
+-keepclassmembers class * { *** onEmailContactsClick(android.view.View); }
+
+-keepclassmembers class * { *** onLoginButtonClick(android.view.View); }
+
+-keepclassmembers class * { *** onPhoneContactsClick(android.view.View); }
+
+-keepclassmembers class * { *** onRegisterButtonClick(android.view.View); }
+
+-keepclassmembers class * { *** reload(android.view.View); }
+

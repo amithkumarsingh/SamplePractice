@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/channel_root_layout"
+    android:paddingBottom="16dp"
+    android:visibility="visible"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:id="@+id/channelNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#0d00a76d">
+
+        <com.vam.whitecoats.ui.customviews.RoundedImageView
+            android:src="@drawable/default_profilepic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/channelLog"
+            />
+
+        <TextView
+            android:id="@+id/tv_healthDay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Daykjkjkjhkbjbkjbkjbkjbkjbkjbkjbkbjkj jhhgjhjhjhjhjhjhjkj"
+            android:textColor="@color/app_green"
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:paddingLeft="8dp"
+            android:layout_weight=".90"
+            android:gravity="center_vertical"
+            android:paddingBottom="4dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/tv_healthDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+100000000000000000 new"
+            android:paddingRight="10dp"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".10"
+            android:maxLines="1"
+            android:maxWidth="80dp"
+            android:ellipsize="end"
+            android:textColor="@color/app_green"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/dashboard_feeds_layout"
+        >
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No data available"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:visibility="gone"
+        android:id="@+id/noData"/>
+
+
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/viewcompletedetails"
+         android:textColor="@color/app_green"
+         android:textSize="14sp"
+         android:text="view more"
+         android:paddingTop="10dp"
+         android:paddingBottom="10dp"
+         android:paddingLeft="20dp"
+         android:paddingRight="20dp"
+         android:textAllCaps="false"
+         android:background="@drawable/block"
+         android:layout_gravity="center_horizontal"
+         style="?android:attr/borderlessButtonStyle"
+         android:layout_marginTop="16dp"
+         android:layout_marginBottom="8dp"
+         android:singleLine="true"
+         android:layout_marginLeft="16dp"
+         android:layout_marginRight="16dp"
+         android:visibility="visible"
+         android:fontFamily="sans-serif-medium"
+         android:textStyle="bold"/>
+
+
+
+
+</LinearLayout>

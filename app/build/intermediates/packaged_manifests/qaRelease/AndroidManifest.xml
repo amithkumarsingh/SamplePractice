@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vam.whitecoats.qa"
+    android:versionCode="96"
+    android:versionName="1.11.61" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="33" />
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- this are the permission need so that application can read sms -->
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <!--
+    <permission
+        android:name="com.vam.whitecoats.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.vam.whitecoats.permission.C2D_MESSAGE" />
+    -->
+    <uses-configuration android:reqTouchScreen="finger" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="true" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE"/> -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.vam.whitecoats.qa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.vam.whitecoats.qa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:name="com.vam.whitecoats.App_Application"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_appicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:manageSpaceActivity=".ui.activities.SplashScreenActivity"
+        android:requestLegacyExternalStorage="true"
+        android:resizeableActivity="true"
+        android:supportsRtl="true"
+        android:theme="@style/CustomTheme"
+        android:usesCleartextTraffic="true" >
+        <receiver
+            android:name="com.vam.whitecoats.ui.activities.OTP_Receiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.vam.whitecoats.qa.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <!-- Autopilot calls takeOff without the need to override the Application -->
+        <!-- Autopilot calls takeOff without the need to override the Application -->
+        <!--
+        <meta-data
+            android:name="com.urbanairship.autopilot"
+            android:value="com.vam.whitecoats.utils.SampleAutopilot" />
+        <meta-data
+            android:name="com.urbanairship.job.PREFER_ANDROID_JOB_SCHEDULER"
+            android:value="true" /> &lt;!&ndash; Optional: Receives push and registration events from the Urban Airship SDK. &ndash;&gt;
+        <receiver
+            android:name=".receiver.MyAirshipReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.urbanairship.push.CHANNEL_UPDATED" />
+                <action android:name="com.urbanairship.push.OPENED" />
+                <action android:name="com.urbanairship.push.DISMISSED" />
+                <action android:name="com.urbanairship.push.RECEIVED" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.SplashScreenActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="true"
+            android:label="@string/app_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="dev.whitecoats.com"
+                    android:scheme="http" />
+                <data
+                    android:host="qa.whitecoats.com"
+                    android:scheme="http" />
+                <data
+                    android:host="stage.whitecoats.com"
+                    android:scheme="http" />
+                <data
+                    android:host="whitecoats.com"
+                    android:scheme="http" />
+                <data
+                    android:host="wcts.app"
+                    android:scheme="http" />
+                <!--
+                    <data
+                    android:host="wcts.in"
+                    android:scheme="http" />
+                -->
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.ChangePasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_title"
+            android:screenOrientation="portrait" />
+        <!-- ENGG-3376 Added the windowSoftInputMode to avoid the keyboard issue -->
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.DashboardActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.CustomPhotoGalleryActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.ProfileViewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/profilelist_activity_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+         <receiver android:name=".receiver.NetWorkReceiver" >
+             <intent-filter>
+                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+             </intent-filter>
+         </receiver>
+        -->
+        <receiver android:name="com.vam.whitecoats.receiver.SchedulerEventReceiver" />
+        <receiver
+            android:name="com.vam.whitecoats.receiver.SchedulerSetupReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.vam.whitecoats.receiver.SchedulerEventService" />
+
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.BasicProfileActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_basic_profile"
+            android:parentActivityName="com.vam.whitecoats.ui.activities.ProfileViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.ProfessionalDetActivity"
+            android:label="@string/title_activity_professional_det"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.Profile_fullView"
+            android:label="@string/title_Profile_fullView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.AcademicActivity"
+            android:label="@string/title_activity_academic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.IntroSlidesActivity"
+            android:label="IntroSlidesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.PublicationsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_publications"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.InviteRequestActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.SearchContactsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:label="@string/app_title"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.AboutMeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.MandatoryProfileInfo"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:label="@string/app_title"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.VisitProfileActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.ProfessionalMemActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.EditPublicationsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.NotificationsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.ViewContactsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.CaseRoomEditAttachmentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.ImageViewer"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.TermsOfServiceActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.Network_MyConnects"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.NetworkSearchActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <!-- GCM (Push Notifications) setup: http://developer.android.com/google/gcm/gs.html#android-app -->
+        <!-- 1.With FCM, receiver added in library. So removing it. -->
+        <!--
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.vam.whitecoats" />
+            </intent-filter>
+        </receiver>
+        -->
+        <!-- 2. Add the following intent service: -->
+        <service
+            android:name="com.vam.whitecoats.core.gcm.MyFcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+            <service
+            android:name=".core.gcm.RegistrationIntentService"
+            android:exported="false"></service>
+        -->
+        <meta-data
+            android:name="com.quickblox.messages.TYPE"
+            android:value="FCM" />
+        <meta-data
+            android:name="com.quickblox.messages.SENDER_ID"
+            android:value="@string/gcm_sender_id" />
+        <meta-data
+            android:name="com.quickblox.messages.QB_ENVIRONMENT"
+            android:value="PRODUCTION" /> <!-- <service android:name="com.vam.whitecoats.utils.OnClearFromRecentService" android:stopWithTask="false" /> -->
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.ShareWithContacts"
+            android:label="@string/title_Add_to_Connects" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.TimeLine"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.FeedsSummary"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.CreatePostActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            &lt;!&ndash; This activity also handles "SEND" and "SEND_MULTIPLE" with media data &ndash;&gt;
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                &lt;!&ndash;<action android:name="android.intent.action.SEND_MULTIPLE"/>&ndash;&gt;
+                <category android:name="android.intent.category.DEFAULT"/>
+                &lt;!&ndash;<data android:mimeType="application/vnd.google.panorama360+jpg"/>&ndash;&gt;
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.DepartmentMembersActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <!--
+        <receiver android:name=".ui.broadCasts.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.ConnectivityManager.CONNECTIVITY_ACTION" />
+            </intent-filter>
+        </receiver>
+        -->
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.InactiveMembersCard"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.ContentFullView"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.PreferencesActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.PdfViewerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.CommentsActivity"
+            android:configChanges="orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.GetStartedActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.RegistrationDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.MCACardUploadActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.MediaFilesActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.ForgotPassword"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.ContactSupport"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.OTPConformationScreen"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.InviteContactsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.SpecialityDialogActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="unspecified"
+            android:theme="@style/NoTitleActivityDialog" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.EmptyActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+
+        <!--
+              <meta-data
+              android:name="io.fabric.ApiKey"
+              android:value="5877054a4d20766c036ceefb84ffbf2b7d39a44f" />
+        -->
+
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.MyBookmarksActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.FeedSearchActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity android:name=".ui.activities.AwardsAndMemberships"
+            android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.AwardsAndMemberships"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.VisitOtherProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.UserSearchResultsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.FilterSearchActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.GlobalSearchActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.CommentsPreviewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.ErrorResponseActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.MandatoryPageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.ChannelSelectionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="video/mp4" />
+            </intent-filter>
+            <!-- This activity also handles "SEND" and "SEND_MULTIPLE" with media data -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- <data android:mimeType="application/vnd.google.panorama360+jpg"/> -->
+                <data android:mimeType="image/*" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.AddEventsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.AreaOfInterest"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.ListAllFilesActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.VideoStreamActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@style/VideoViewStyle" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.DefaultHomePageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- ENGG-3376 Added the windowSoftInputMode to avoid the keyboard issue -->
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.PermissionAccessActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.LocationAndExperienceActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:excludeFromRecents="true"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.NotificationSettingsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.NOTIFICATION_PREFERENCES" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.WebViewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.SuggestedListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.YoutubeVideoViewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.CategoryDistributionTabsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.FeedCategoryDistributionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.SubCategoriesListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.CategoryLoadingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.DrugSearchActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.DrugDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.DrugsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.DrugSubClassActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.DrugClassActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.CategorySearchActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.JobFeedCompleteView"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.AccountDeleteActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vam.whitecoats.ui.activities.AccountDeleteAckActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+<service
+            android:enabled="true"
+            android:name=".utils.AppKillIdentifyService"
+            android:exported="false"
+            android:stopWithTask="false" />
+        -->
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <!--
+            <meta-data
+            android:name="com.doceree.androidadslibrary.ads.APPLICATION_ID"
+            android:value="3d7e35f8-99d7-4716-9604-77d410d15d97" />
+        -->
+        <meta-data
+            android:name="io.sentry.auto-init"
+            android:value="false" />
+        <meta-data
+            android:name="unityplayer.SkipPermissionsDialog"
+            android:value="false" />
+
+        <activity
+            android:name="com.brandkinesis.push.BKPushRedirectionActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.brandkinesis.activitymanager.BKActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.brandkinesis.activitymanager.BkScreenTipActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.brandkinesis.activitymanager.BKSurveyActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.brandkinesis.inbox.BKInboxActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.brandkinesis.activity.ads.BKAdsWebActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.brandkinesis.activity.inappmessage.BKIAMWebActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.brandkinesis.activity.inappmessage.BKIAMShareActivity"
+            android:exported="true"
+            android:theme="@style/DialogSlideAnim" />
+        <activity
+            android:name="com.brandkinesis.activity.customactivity.BKCustomWebActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.brandkinesis.activity.minigames.BKMiniGamesWebActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.brandkinesis.activity.ads.BKInterstitialAdActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.brandkinesis.activitymanager.BKTriviaActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.brandkinesis.activity.tutorials.interactivetutorials.BKTutorialActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <receiver
+            android:name="com.brandkinesis.push.internal.BKNotificationBuilder$DeleteReceiver"
+            android:exported="true" />
+        <receiver
+            android:name="com.brandkinesis.push.internal.BKNotificationBuilder$ActionButtonListener"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="BK_ACTION" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.brandkinesis.push.internal.GifNotificationDeleteReceiver"
+            android:exported="true" />
+        <receiver
+            android:name="com.brandkinesis.push.internal.AnimatedLayoutListener"
+            android:exported="true" />
+        <receiver
+            android:name="com.brandkinesis.push.internal.DeleteReceiver"
+            android:exported="true" />
+        <receiver
+            android:name="com.brandkinesis.push.internal.EnhancedPushListener"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="BK_ACTION" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.brandkinesis.utils.BKConnectivityStatusReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver> <!-- Used for install referrer tracking -->
+        <receiver
+            android:name="com.brandkinesis.ReferrerReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="in.myinnos.awesomeimagepicker.activities.AlbumSelectActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.myinnos.awesomeimagepicker.activities.ImageSelectActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.droidninja.imageeditengine.ImageEditActivity"
+            android:theme="@style/LibAppTheme"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+            android:exported="false"
+            android:label="@string/places_autocomplete_label"
+            android:theme="@style/PlacesAutocompleteOverlay"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="net.alhazmy13.mediapicker.Image.ImageActivity"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="net.alhazmy13.mediapicker.Video.VideoActivity"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             but set to not exported to explicitly avoid allowing another app to call it.
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <provider
+            android:name="com.flurry.android.agent.FlurryContentProvider"
+            android:authorities="com.vam.whitecoats.qa.FlurryContentProvider"
+            android:exported="false" />
+
+        <service
+            android:name="es.voghdev.pdfviewpager.library.service.CopyAssetService"
+            android:exported="false" >
+        </service>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.vam.whitecoats.qa.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" />
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.vam.whitecoats.qa.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" /> <!-- Needs to be explicitly declared on P+ -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 'android:authorities' must be unique in the device, across all apps -->
+        <provider
+            android:name="io.sentry.android.core.SentryInitProvider"
+            android:authorities="com.vam.whitecoats.qa.SentryInitProvider"
+            android:exported="false" />
+        <provider
+            android:name="io.sentry.android.core.SentryPerformanceProvider"
+            android:authorities="com.vam.whitecoats.qa.SentryPerformanceProvider"
+            android:exported="false"
+            android:initOrder="200" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
+        <activity
+            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+            android:enabled="false"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:process=":playcore_missing_splits_activity"
+            android:stateNotNeeded="true" />
+        <activity
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true"
+            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+        <service
+            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+            android:enabled="false"
+            android:exported="true" >
+            <meta-data
+                android:name="com.google.android.play.core.assetpacks.versionCode"
+                android:value="11003" />
+        </service>
+        <service
+            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+            android:enabled="false"
+            android:exported="false" />
+    </application>
+
+</manifest>

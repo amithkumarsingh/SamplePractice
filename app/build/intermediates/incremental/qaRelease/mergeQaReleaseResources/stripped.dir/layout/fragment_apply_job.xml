@@ -1,0 +1,391 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="8dp"
+        tools:context="com.vam.whitecoats.ui.fragments.ApplyJobFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TableLayout
+            android:id="@+id/attachmentsTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:orientation="vertical"
+            android:stretchColumns="*"
+            android:visibility="visible">
+
+            <TableRow android:id="@+id/email_row">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Email"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textColor="#000000" />
+
+
+            </TableRow>
+
+            <TableRow android:id="@+id/mobile_row">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Mobile"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp_jobfullview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        app:ccp_defaultNameCode="IN"
+                        app:ccp_showFlag="false"
+                        app:ccp_showNameCode="false" />
+
+                    <EditText
+                        android:id="@+id/et_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="16dp"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+
+            </TableRow>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_specialization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    app:hintTextAppearance="@style/FloatLableColor">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/speciality_job_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_specialty"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/speciality_error_text"
+                style="@style/MyTextViewErrorStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:text="@string/dlg_not_speciality_field_entered" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/FloatLableColor"
+                    android:paddingStart="16dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/city_job_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ. -&amp;'"
+                        android:inputType="textCapWords|textNoSuggestions"
+                        android:maxLength="240"
+                        android:textSize="14sp"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:hint="City or Town"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/city_error_text"
+                style="@style/MyTextViewErrorStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:text="@string/location_validation_msg"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/experience_job_view_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subSpeciality_lay"
+                    app:hintTextAppearance="@style/FloatLableColor"
+                    android:paddingStart="16dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/experience_autocomplete_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:inputType="number"
+                        android:textSize="14sp"
+                        android:hint="Overall Experience"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/experience_error_text"
+                style="@style/MyTextViewErrorStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="18dp"
+                android:text="Please enter experience"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/preferred_speciality_et_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/FloatLableColor"
+                android:paddingStart="16dp">
+
+                <EditText
+                    android:id="@+id/preferred_speciality_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ. -&amp;'"
+                    android:inputType="textCapWords|textNoSuggestions"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:hint="Preferred Speciality"
+                    android:drawableRight="@drawable/spinner_bg"
+                    android:focusable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/preferred_speciality_error_text"
+                style="@style/MyTextViewErrorStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="18dp"
+                android:text="Please enter Preferred Speciality"
+                />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/preferred_location_et_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/FloatLableColor"
+                android:paddingStart="16dp">
+
+                <EditText
+                    android:id="@+id/preferred_location_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ. -&amp;'"
+                    android:inputType="textCapWords|textNoSuggestions"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:hint="Preferred Job Location"
+                    android:drawableRight="@drawable/spinner_bg"
+                    android:focusable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/preferred_location_error_text"
+                style="@style/MyTextViewErrorStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="18dp"
+                android:text="Please enter Preferred Job Location"
+                />
+
+
+
+
+
+            <TableRow android:id="@+id/cv_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="CV"
+                    android:textColor="#000000"
+                    android:layout_weight="0.4"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="0.6">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/tv_attach_cv"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_attach"
+                            android:drawablePadding="8dp"
+                            android:padding="16dp"
+                            android:text="Attach file"
+                            android:textColor="#000000" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/ll_cvDeleteButton"
+                        android:visibility="gone">
+                        <Button
+                            android:id="@+id/cvDeleteButton"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="#66000000"
+                            android:drawableRight="@drawable/ic_close_white"
+                            android:gravity="center"
+                            android:paddingRight="5dp"/>
+                    </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </TableRow>
+
+
+            <TableRow android:id="@+id/covering_letter_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Covering Letter"
+                    android:textColor="#000000"
+                    android:layout_weight="0.4"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/tv_attach_convering"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/coveringDeleteButton"
+                            android:drawableLeft="@drawable/ic_attach"
+                            android:drawablePadding="8dp"
+                            android:padding="16dp"
+                            android:text="Attach file"
+                            android:textColor="#000000" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/ll_coveringDeleteButton"
+                        android:visibility="gone">
+                    <Button
+                        android:id="@+id/coveringDeleteButton"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#66000000"
+                        android:drawableRight="@drawable/ic_close_white"
+                        android:gravity="center"
+                        android:paddingRight="5dp" />
+                    </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <Button
+                android:id="@+id/button_apply_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/app_green"
+                android:text="Submit Application"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/tv_submitted_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="16dp"
+                android:text="Application submitted"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="gone">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <include layout="@layout/postcreator_and_latestcomment_layout">
+
+        </include>
+
+    </LinearLayout>
+</ScrollView>

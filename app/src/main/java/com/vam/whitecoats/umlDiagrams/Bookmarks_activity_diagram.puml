@@ -1,0 +1,27 @@
+@startuml
+start
+
+if (Tap on bookmark?) then
+
+  fork
+    :FeedCard;
+  fork again
+    :TimeLine;
+  fork again
+    :FullView;
+  end fork
+endif
+note right
+Update JSON
+end note
+
+:Send Data to Server;
+if (success?) then (Yes)
+    :Process Success response;
+else (No)
+    : Display Alert;
+endif
+:Update in DB;
+stop
+
+@enduml

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <!--  <group android:id="@+id/grp1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_doctor_name"
+            android:title="Doctor Name" />
+        <item
+            android:id="@+id/nav_share_profile"
+            android:icon="@drawable/profile_share"
+            android:title="Share Profile" />
+    </group>-->
+    <group android:id="@+id/grp2" android:checkableBehavior="single">
+    <item
+            android:id="@+id/nav_post"
+            android:title="My Posts" />
+    </group>
+    <group  android:id="@+id/grp3" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bookmarks"
+            android:title="@string/my_bookmarks" />
+    </group>
+    <group android:id="@+id/grp4" android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home_preferences"
+            android:title="@string/my_home_preferences" />
+    </group>
+    <group android:id="@+id/grp5" android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_speciality_preferences"
+            android:title="Speciality Preferences" />
+    </group>
+    <group android:id="@+id/grp6" android:checkableBehavior="single">
+
+
+    <item
+            android:id="@+id/nav_notification_preferences"
+            android:title="Notification Preferences" />
+    </group>
+    <group android:id="@+id/grp7" android:checkableBehavior="single">
+
+
+    <item
+            android:id="@+id/nav_invite_whiteCoats"
+            android:title="@string/invite_to_whitecoats" />
+    </group>
+    <group android:id="@+id/grp8" android:checkableBehavior="single">
+
+
+    <item
+            android:id="@+id/nav_help"
+            android:title="@string/action_help" />
+
+      <item
+          android:title=""
+          android:id="@+id/nav_footer_header"
+          app:actionLayout="@layout/navigation_view_footer_header" />
+
+<!--      <item-->
+<!--          android:title=""-->
+<!--          />-->
+
+<!--      <item-->
+<!--          android:title=""-->
+<!--          />-->
+<!--      <item-->
+<!--          android:title=""-->
+<!--          />-->
+
+
+    </group>
+
+
+  <group
+      android:id="@+id/nav_footer">
+
+    <item
+        android:title=""
+        android:id="@+id/nav_log_version"
+        app:actionLayout="@layout/navigation_view_footer" />
+  </group>
+
+</menu>

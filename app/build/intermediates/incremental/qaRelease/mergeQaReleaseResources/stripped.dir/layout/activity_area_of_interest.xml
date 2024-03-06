@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vam.whitecoats.ui.activities.AreaOfInterest"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="32dp">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/areaOfInterest_editText_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speciality_error_text"
+        app:hintTextAppearance="@style/FloatLableColor"
+        >
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/areaOfInterest_editText"
+          android:hint="@string/area_of_interest_ed_text"
+          android:maxLength="25"
+          android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+          />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/areaOfInterest_editText_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/areaOfInterest_editText_lay"
+        android:text="Please enter area of interest"
+        style="@style/TextViewErrorStyle"
+        />
+    
+    
+    <Button
+        android:id="@+id/add_more_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_add_another_workplace"
+        android:layout_marginTop="40dp"
+        android:background="@color/app_green"
+        android:textColor="@color/white"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/areaOfInterest_editText_error"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+
+        <TextView
+            android:id="@+id/remove_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Remove"
+            android:layout_toRightOf="@+id/delete_ig"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="16dp"
+            android:drawableLeft="@drawable/ic_delete"
+            android:drawablePadding="8dp"
+            android:visibility="gone"/>
+</RelativeLayout>

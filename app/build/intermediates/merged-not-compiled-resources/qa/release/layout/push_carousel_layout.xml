@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/carousel_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/main_push_header_layout"
+            layout="@layout/header_push_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <LinearLayout
+            android:id="@+id/text_push_data_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_push_header_layout"
+            android:layout_toLeftOf="@id/app_icon_image"
+            android:minHeight="@dimen/push_text_layout_minheight"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/text_content_border_less"
+                layout="@layout/push_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/text_content_border"
+                layout="@layout/push_content_layout_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/app_icon_image"
+            android:layout_width="@dimen/push_large_icon_size"
+            android:layout_height="@dimen/push_large_icon_size"
+            android:layout_below="@id/main_push_header_layout"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_buttons_include_layout"
+        android:layout_below="@+id/carousel_data_layout"
+        android:autoStart="true"
+        android:flipInterval="2500"
+        android:inAnimation="@anim/bk_slide_in_right"
+        android:outAnimation="@anim/bk_slide_out_left" />
+
+    <include
+        android:id="@+id/main_buttons_include_layout"
+        layout="@layout/push_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

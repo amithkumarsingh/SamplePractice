@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <CheckBox
+            android:id="@+id/certification_cb"
+            style="@style/MyTextViewBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:checked="false"
+            android:text="Certifications" />
+
+        <CheckBox
+            android:id="@+id/fellowShip_cb"
+            style="@style/MyTextViewBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/certification_cb"
+            android:checked="false"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text="Fellowships" />
+
+        <CheckBox
+            android:id="@+id/clinical_rotation_cb"
+            style="@style/MyTextViewBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="false"
+            android:text="Clinical Rotations" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/child_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

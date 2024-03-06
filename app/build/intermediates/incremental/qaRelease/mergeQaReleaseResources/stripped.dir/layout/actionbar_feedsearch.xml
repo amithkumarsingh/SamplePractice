@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<com.vam.whitecoats.ui.activities.ClearAllFields
+        android:id="@+id/searchfield"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textFilter"
+        android:layout_marginRight="10dp"
+        app:backgroundTint="@color/white"
+        android:text=""/>-->
+    <!--<android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search"
+        android:background="@drawable/textview_onselector"
+        app:searchIcon="@null"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search" />-->
+    <!--<item android:id="@+id/action_back"
+        android:title="Back"
+        android:icon="@drawable/ic_back"
+        android:orderInCategory="100"
+        app:showAsAction="always" />-->
+</RelativeLayout>

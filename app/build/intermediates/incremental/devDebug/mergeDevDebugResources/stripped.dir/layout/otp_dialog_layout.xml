@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp"
+    android:id="@+id/mainLay">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Mobile"
+        android:textSize="24sp"
+        android:textColor="#DE231F20"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"
+        android:textColor="#8A231F20"
+        android:text="Enter the OTP you received on"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/mobile_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/number_edit"
+            android:layout_marginTop="10dp"
+            android:hint="+91 9968524569"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textColor="#DE231F20"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <Button
+            android:id="@+id/number_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#00A76D" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:layout_gravity="center_horizontal">
+        <EditText
+            android:id="@+id/et_otp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="false"
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:maxLength="4"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="40dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:maxLength="1"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:focusable="false"
+            android:focusableInTouchMode="true"/>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="40dp"
+            android:inputType="number"
+            android:clickable="true"
+            android:maxLength="1"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:focusable="false"
+            android:focusableInTouchMode="true"/>
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="40dp"
+            android:inputType="number"
+            android:clickable="true"
+            android:maxLength="1"
+            android:textSize="20sp"
+            android:enabled="true"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="40dp"
+            android:clickable="true"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="20sp"
+            android:enabled="true"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/red"
+        android:id="@+id/otp_error"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:alpha=".54"
+        android:text="Haven't received your OTP?"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/resend_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_onselector"
+        android:text="Resend OTP"
+        android:layout_gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</LinearLayout>
